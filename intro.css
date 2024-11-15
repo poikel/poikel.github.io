@@ -2,4 +2,5 @@
 this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
 
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); :root { --font: 'Jua', sans-serif; } .boxcontainer { display: flex; height: auto; padding: 0px; justify-content: center; } .art { float: left; overflow: hidden; position: relative; margin-bottom: -60px; } .box1 { background: #5f9191; background-image: url('https://i.imgur.com/SNoSgwW.png'); float: left; color: #0b2843; height: 100px; width: 400px; overflow: hidden; padding: 20px; padding-top: 7px; margin-top: 0px; font-family: var(--font); letter-spacing: -1px; margin-left: 0rem; border: 2px solid #ebebeb; text-shadow: 0px 0px 1px #10362d; }
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+:root { --font: 'Jua', sans-serif; } .boxcontainer { display: flex; height: auto; padding: 0px; justify-content: center; } .art { float: left; overflow: hidden; position: relative; margin-bottom: -60px; } .box1 { background: #5f9191; background-image: url('https://i.imgur.com/SNoSgwW.png'); float: left; color: #0b2843; height: 100px; width: 400px; overflow: hidden; padding: 20px; padding-top: 7px; margin-top: 0px; font-family: var(--font); letter-spacing: -1px; margin-left: 0rem; border: 2px solid #ebebeb; text-shadow: 0px 0px 1px #10362d;}
