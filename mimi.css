@@ -4,12 +4,16 @@ code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 
 :root {
-    --black: #16161d;
-    --blue: #242434;
-    --purple: #aca4af;
-    --gray: #8c8d9b;
-    --blue2: #4d5366;
-    --white: #cfc9d0;
+    --gray: #5F5C69ff;
+    --brown: #4F3937ff;
+    --black: #271E21ff;
+    --black-2: #2B242Aff;
+    --black-3: #160e0f;
+    --mute: #7D6A71ff;
+    --mute-2: #3B3339ff;
+    --mute-3: #BAABB6ff;
+    --black-4: #211412ff;
+    --salmon: #BD958Fff;
     --font1: "Metamorphous", serif;
     --font2: "Alegreya", serif;
     --font3: "Eczar", serif;
@@ -17,23 +21,6 @@ code by #6488 on wd, @poikel on github*/
     --font5: "Mr Bedfort", serif;
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
-
-.alert {
-    background: linear-gradient(to right, transparent, #16161d94, var(--black), #16161d94, transparent);
-    border: 3px double var(--black);
-    text-align: center;
-    font-family: var(--font4);
-    color: var(--gray);
-}
-.alert a {
-    color: var(--white)!important;
-    transition: .2s ease!important;
-}
-.alert a:hover {
-    text-decoration: none!important;
-    transition: .2s ease!important;
-    color: #e7e7e7!important;
-}
 .alert img[src$="scout.png"], .alert img[src$="foothunt.png"] {
     content: url('https://i.imgur.com/zwA5s5Z.png');
     max-height: 30px;
@@ -44,28 +31,30 @@ code by #6488 on wd, @poikel on github*/
 }
 
 body {
-    background-image: url('https://i.imgur.com/A6KNe2c.png');
+    background-image: url('https://i.imgur.com/qnJ7AaV.png');
     background-size: cover;
+    background-position: right center;
 }
 
 #main {
-    background: rgba(0,0,0,0.6)
-}
-
-.breadcrumb-nav {
-    visibility: hidden;
-}
-
-.navbar-status {
-    border-radius: 0px 0px 10px 10px;
-    background: linear-gradient(to right, transparent, #16161d94, var(--black), #16161d94, transparent)!important;
-    border: 4px double var(--black);
+    background: rgba(0,0,0,0.6);
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
 }
 
 .navbar-main {
     margin-top: 2rem;
     border-radius: 10px 10px 0px 0px;
-    background: linear-gradient(to right, transparent, #16161d94, var(--black), #16161d94, transparent)!important;
+    background: linear-gradient(to right, transparent, #160e0f8c, #160e0fdb, var(--black-3), #160e0fdb, #160e0f8c, transparent)!important;
     margin-bottom: 0.2rem;
     border: 4px double var(--black);
+}
+
+.navbar-status {
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(to right, transparent, #160e0f8c, var(--black-3), #160e0f8c, transparent)!important;
+    border: 4px double var(--black);
+}
+
+.breadcrumb-nav {
+    visibility: hidden;
 }
