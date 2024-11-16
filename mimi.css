@@ -1,36 +1,29 @@
 /* do not remove credit, edit code or reupload 
 this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
-.fog {
-    animation-name: fog;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-}
-
-@keyframes fog {
-    0% {
-        translate: 0px 0 0px;
-    }
-    50% {
-        translate: -30px 0 0px;
-    }
-    100% {
-        translate: 0px 0 0px;
-    }
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 
 :root {
-    
+    --lgray: #bfc8c6;
+    --green: #a5a77a;
+    --black: #222322;
+    --gray: #767a79;
+    --dgreen: #6b6a4d;
+    --dgreen2: #494937;
+    --blue: #7c8b9c;
+    --font: "Metamorphous", serif;
+    --font2: "Alegreya", serif;
+    --font3: "Eczar", serif;
+    --font4: "IM Fell DW Pica", serif;
+    --font5: "Mr Bedfort", serif;
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
 body {
-    background-image: url('https://i.imgur.com/vepbotJ.jpeg');
+    background-image: url('https://i.imgur.com/OBsgyCc.jpeg');
     background-size: cover;
+}
+
+#main {
+    background: rgba(0,0,0,0.4)
 }
