@@ -37,24 +37,91 @@ body {
 }
 
 #main {
-    background: rgba(0,0,0,0.6);
-    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+background-image: url();
 }
 
-.navbar-main {
-    margin-top: 2rem;
-    border-radius: 10px 10px 0px 0px;
-    background: linear-gradient(to right, transparent, #160e0f8c, #160e0fdb, var(--black-3), #160e0fdb, #160e0f8c, transparent)!important;
-    margin-bottom: 0.2rem;
-    border: 4px double var(--black);
+#header .navbar-main {
+    background: none;
+    padding: 2px;
+    font-family: var(--font1);
+}
+
+#header .navbar-main a {
+    font-size: 14px!important;
+    color: var(--black)!important;
+    font-weight: bold;
+    text-shadow: 0 0 2px var(--black-3);
+}
+
+ #header .navbar-main a i {
+    display: none!important;
+}
+
+#main-menu>ul>li:nth-child(1)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f71c';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(2)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f132';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(3)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f81c';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(4)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f70f';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(5)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f724';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(6)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f6b9';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(7)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f51e';
+    padding-right: 5px;
+}
+
+#main-menu>ul>li:nth-child(8)>a:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f701';
+    padding-right: 5px;
+}
+
+@media (min-width: 992px) {
+#header .navbar-expand-lg .navbar-nav, #header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end!important;
+    }
+#header .mr-auto, .mx-auto { 
+	margin-right: 0!important;
+	margin-bottom: -1.5rem!important;
+    }
 }
 
 .navbar-status {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     background: linear-gradient(to right, transparent, #160e0f8c, var(--black-3), #160e0f8c, transparent)!important;
-    border: 4px double var(--black);
+
 }
 
 .breadcrumb-nav {
     visibility: hidden;
 }
+
