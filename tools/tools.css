@@ -1,3 +1,18 @@
-/*.alert img[src$=""]
+/*.
+alert images
+===============
+alert img[src$="123.png"]
 scout.png / foothunt.png / herbalist.png 
-replace alert images */
+replace alert images 
+===============
+remove blue under den cards
+===============
+#denCards card-img-top {
+background-color: transparent;
+}
+===============
+white featured wolf square removal
+===============
+.justify-content-between.mb-3 div { border: none !important; }
+===============
+*/
