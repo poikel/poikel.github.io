@@ -4,14 +4,13 @@ code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 
 :root {
-    --lgray: #bfc8c6;
-    --green: #a5a77a;
-    --black: #222322;
-    --gray: #767a79;
-    --dgreen: #6b6a4d;
-    --dgreen2: #494937;
-    --blue: #7c8b9c;
-    --font: "Metamorphous", serif;
+    --black: #16161d;
+    --blue: #242434;
+    --purple: #aca4af;
+    --gray: #8c8d9b;
+    --blue2: #4d5366;
+    --white: #cfc9d0;
+    --font1: "Metamorphous", serif;
     --font2: "Alegreya", serif;
     --font3: "Eczar", serif;
     --font4: "IM Fell DW Pica", serif;
@@ -19,11 +18,55 @@ code by #6488 on wd, @poikel on github*/
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
+.alert {
+    background: linear-gradient(to right, transparent, #16161d94, var(--black), #16161d94, transparent);
+    border: 3px double var(--black);
+    text-align: center;
+    font-family: var(--font4);
+    color: var(--gray);
+}
+.alert a {
+    color: var(--white)!important;
+    transition: .2s ease!important;
+}
+.alert a:hover {
+    text-decoration: none!important;
+    transition: .2s ease!important;
+    color: #e7e7e7!important;
+    transform: rotateZ(-3deg)!important;
+}
+.alert img[src$="scout.png"], .alert img[src$="foothunt.png"] {
+    content: url('https://i.imgur.com/zwA5s5Z.png');
+    max-height: 30px;
+}
+.alert img[src$="herbalist.png"] {
+    content: url('https://i.imgur.com/JRx7Rey.png');
+    max-height: 30px;
+}
+
 body {
-    background-image: url('https://i.imgur.com/OBsgyCc.jpeg');
-    background-size: cover;
+    background-image: url('https://i.imgur.com/A6KNe2c.png');
+    background-size: 0% cover;
 }
 
 #main {
-    background: rgba(0,0,0,0.4)
+    background: rgba(0,0,0,0.6)
+}
+
+.breadcrumb-nav {
+    visibility: hidden;
+}
+
+.navbar-status {
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(to right, transparent, #16161d94, var(--black), #16161d94, transparent)!important;
+    border: 4px double var(--black);
+}
+
+.navbar-main {
+    margin-top: 2rem;
+    border-radius: 10px 10px 0px 0px;
+    background: linear-gradient(to right, transparent, #16161d94, var(--black), #16161d94, transparent)!important;
+    margin-bottom: 0.2rem;
+    border: 4px double var(--black);
 }
