@@ -33,7 +33,6 @@ code by #6488 on wd, @poikel on github*/
     text-decoration: none!important;
     transition: .2s ease!important;
     color: #e7e7e7!important;
-    transform: rotateZ(-3deg)!important;
 }
 .alert img[src$="scout.png"], .alert img[src$="foothunt.png"] {
     content: url('https://i.imgur.com/zwA5s5Z.png');
@@ -46,7 +45,7 @@ code by #6488 on wd, @poikel on github*/
 
 body {
     background-image: url('https://i.imgur.com/A6KNe2c.png');
-    background-size: 0% cover;
+    background-size: cover;
 }
 
 #main {
