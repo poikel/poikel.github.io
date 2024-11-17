@@ -4,26 +4,33 @@ code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 
 :root {
-    --gray: #5F5C69ff;
-    --brown: #4F3937ff;
-    --black: #271E21ff;
-    --black-2: #2B242Aff;
-    --black-3: #160e0f;
-    --mute: #7D6A71ff;
-    --mute-2: #3B3339ff;
-    --mute-3: #BAABB6ff;
-    --black-4: #211412ff;
-    --salmon: #BD958Fff;
     --font1: "Metamorphous", serif;
     --font2: "Alegreya", serif;
-    --font3: "Eczar", serif;
-    --font4: "IM Fell DW Pica", serif;
-    --font5: "Mr Bedfort", serif;
+    --font3: "IM Fell DW Pica", serif;
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
-.alert img[src$="scout.png"], .alert img[src$="foothunt.png"] {
-    content: url('https://i.imgur.com/zwA5s5Z.png');
-    max-height: 30px;
+
+.alert {
+    background: #000;
+    border: none;
+    font-family: var(--font2);
+    font-size: 16px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, var(--black), transparent);
+    border-image-slice: 1;
+}
+.alert-danger i {
+    visibility: hidden;
+}
+.alert-danger i:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f71c';
+    visibility: visible;
+}
+.alert img[src$="scout.png"] {
+}
+.alert img[src$="foothunt.png"] {
 }
 .alert img[src$="herbalist.png"] {
     content: url('https://i.imgur.com/JRx7Rey.png');
@@ -48,9 +55,15 @@ body {
 
 #header .navbar-main a {
     font-size: 14px!important;
-    color: var(--black)!important;
+    color: #34221b!important;
     font-weight: bold;
-    text-shadow: 0 0 2px var(--black-3);
+    text-shadow: 0 0 2px #442820;
+    transition: .3s ease;
+}
+
+#header .navbar-main a:hover {
+    transform: rotateZ(-5deg);
+    transition: .3s ease;
 }
 
  #header .navbar-main a i {
@@ -116,9 +129,11 @@ body {
 }
 
 .navbar-status {
-    border-radius: 10px 10px 10px 10px;
-    background: linear-gradient(to right, transparent, #160e0f8c, var(--black-3), #160e0f8c, transparent)!important;
-
+    background: transparent!important;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, #34221b, transparent);
+    border-image-slice: 1;
 }
 
 .breadcrumb-nav {
