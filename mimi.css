@@ -54,7 +54,7 @@ body {
 }
 
 #header .navbar-main a {
-    font-size: 14px!important;
+    font-size: 13px!important;
     color: #34221b!important;
     font-weight: bold;
     text-shadow: 0 0 2px #442820;
@@ -134,6 +134,25 @@ body {
     border-top: 2px solid;
     border-image: linear-gradient(to right, transparent, #34221b, transparent);
     border-image-slice: 1;
+    font-family: var(--font3);
+    color: #442820!important;
+    font-weight: 800;
+}
+
+#header .navbar-status .text-light, #header .navbar-status a {
+    color: #442820!important;
+    font-weight: 800;
+}
+
+.breadcrumb:after {
+    position: absolute;
+    content: 'css by #6488 🗡';
+    visibility: visible;
+    right: 30px;
+    font-family: var(--font2);
+    color: #34221b;
+    font-weight: bold;
+    text-shadow: 0 0 2px #442820;
 }
 
 .breadcrumb-nav {
