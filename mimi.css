@@ -11,14 +11,21 @@ code by #6488 on wd, @poikel on github*/
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
 .alert {
-    background: #000;
-    border: none;
-    font-family: var(--font2);
-    font-size: 16px;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    border-image: linear-gradient(to right, transparent, var(--black), transparent);
-    border-image-slice: 1;
+    font-family: var(--font3);
+    font-size: 12px;
+    text-align: center;
+    color: #28130d;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+.alert a {
+    color: #28130d!important;
+    transition: .3s ease;
+}
+.alert a:hover {
+    transition: .3s ease;
+    color: #cfc9b9!important;
+    text-decoration: none;
 }
 .alert-danger i {
     visibility: hidden;
@@ -33,36 +40,24 @@ code by #6488 on wd, @poikel on github*/
 .alert img[src$="foothunt.png"] {
 }
 .alert img[src$="herbalist.png"] {
-    content: url('https://i.imgur.com/JRx7Rey.png');
-    max-height: 30px;
-}
 
-body {
-    background-image: url('https://i.imgur.com/qnJ7AaV.png');
-    background-size: cover;
-    background-position: right center;
-}
-
-#main {
-    background-image: none;
 }
 
 #header .navbar-main {
     background: none;
-    padding: 2px;
     font-family: var(--font1);
 }
 
 #header .navbar-main a {
-    font-size: 13px!important;
-    color: #28130d!important;
+    font-size: 12px!important;
+    color: #cfc9b9!important;
     font-weight: bold;
-    text-shadow: 0 1px 1px #442820;
+    text-shadow: 1px 1px 1px #271611;
     transition: .3s ease;
 }
 
 #header .navbar-main a:hover {
-    transform: rotateZ(-5deg);
+    transform: rotateZ(-4deg);
     transition: .3s ease;
 }
 
@@ -74,48 +69,56 @@ body {
     font-family: 'Font Awesome 5 Free';
     content: '\f71c';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(2)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f132';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(3)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f81c';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(4)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f70f';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(5)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f724';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(6)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f6b9';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(7)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f51e';
     padding-right: 5px;
+    color: #523f3d;
 }
 
 #main-menu>ul>li:nth-child(8)>a:before {
     font-family: 'Font Awesome 5 Free';
     content: '\f701';
     padding-right: 5px;
+    color: #523f3d;
 }
 #header .user_current_sc:after { content: ' sc'; }
 #header .user_current_gc:after { content: ' gc'; }
@@ -130,25 +133,27 @@ body {
 	margin-bottom: -1.5rem!important;
     }
 }
-
 .navbar-status {
-    background: transparent!important;
+    background: linear-gradient(to right, transparent, #34221be8, transparent)!important;
     border-bottom: 2px solid;
     border-top: 2px solid;
     border-image: linear-gradient(to right, transparent, #34221b, transparent);
     border-image-slice: 1;
     font-family: var(--font3);
-    color: #28130d!important;
+    color: #C9C2B1!important;
     font-weight: 800;
     text-transform: lowercase;
     font-size: 12px;
 }
 #header .navbar-status i { display: none!important; }
 #header .navbar-status .text-light, #header .navbar-status a {
-    color: #28130d!important;
-    text-shadow: 0 1px 1px #442820;
+    color: #C9C2B1!important;
+    text-shadow: 1px 1px 1px #271611;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 10px;
+}
+#header .navbar-status .text-light, #header .navbar-status a:active {
+    box-shadow: none!important;
 }
 #header .navbar-status {
     margin-right: 1rem;
@@ -161,7 +166,7 @@ span.d-none.d-lg-inline.navbar-text:after {
     content: 'your story begins here, traveller...';
     visibility: visible;
     letter-spacing: 1px;
-    text-shadow: 0 1px 1px #442820;
+    text-shadow: 1px 1px 1px #271611;
 }
 span.d-none.d-lg-inline.navbar-text:before {
     content: '\f71c';
@@ -169,7 +174,8 @@ span.d-none.d-lg-inline.navbar-text:before {
     font-family: 'Font Awesome 5 Free';
     position: fixed;
     margin-left: 4.5rem;
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
+    text-shadow: -1px 1px 1px #271611;
 }
 
 .breadcrumb:after {
@@ -180,7 +186,7 @@ span.d-none.d-lg-inline.navbar-text:before {
     font-family: var(--font3), 'Font Awesome 5 Free';
     color: #28130d;
     font-weight: bold;
-    text-shadow: 0 1px 1px #442820;
+    text-shadow: 0px 1px 1px #271611;
     font-size: 9px;
 }
 .badge-danger { background: #3b2422; color: #f5decf;}
@@ -191,3 +197,39 @@ span.d-none.d-lg-inline.navbar-text:before {
     transform: none;
 }
 
+body {
+    background-image: url('https://i.imgur.com/6Oykd5x.jpeg');
+    background-size: cover;
+    background-position: right center;
+}
+
+#main {
+    background-image: none;
+}
+
+#main h1 {
+    text-align: center;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #cfc9b9;
+    letter-spacing: 3px;
+    color: #e6dfcf;
+}
+
+#main h1:after {
+    content: '.'!important;
+    visibility: visible;
+    position: absolute;
+    right: 190px;
+}
+#main h1:before {
+    content: '.'!important;
+    visibility: visible;
+    position: absolute;
+    left: 190px;
+}
+
+#sidebar {
+    background: none;
+    text-transform: lowercase;
+}
