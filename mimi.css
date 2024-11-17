@@ -234,7 +234,7 @@ body {
     text-transform: lowercase;
 }
 
-#header .navbar-status, #main .table th {
+#main .table th {
     padding: 40px;
     text-transform: lowercase;
     padding-right: 1rem;
