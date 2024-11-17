@@ -2,11 +2,11 @@
 this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 :root {
     --font1: "Metamorphous", serif;
     --font2: "Alegreya", serif;
-    --font3: "IM Fell DW Pica", serif;
+    --font3: "Merriweather", serif;
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
@@ -55,7 +55,7 @@ body {
 
 #header .navbar-main a {
     font-size: 13px!important;
-    color: #34221b!important;
+    color: #28130d!important;
     font-weight: bold;
     text-shadow: 0 0 2px #442820;
     transition: .3s ease;
@@ -117,6 +117,9 @@ body {
     content: '\f701';
     padding-right: 5px;
 }
+#header .user_current_sc:after { content: ' sc'; }
+#header .user_current_gc:after { content: ' gc'; }
+.icon-beetle-gold, .icon-beetle-silver { display: none; }
 
 @media (min-width: 992px) {
 #header .navbar-expand-lg .navbar-nav, #header .navbar-expand-lg .navbar-collapse {
@@ -135,27 +138,56 @@ body {
     border-image: linear-gradient(to right, transparent, #34221b, transparent);
     border-image-slice: 1;
     font-family: var(--font3);
-    color: #442820!important;
+    color: #28130d!important;
     font-weight: 800;
+    text-transform: lowercase;
+    font-size: 12px;
 }
-
+#header .navbar-status i { display: none!important; }
 #header .navbar-status .text-light, #header .navbar-status a {
-    color: #442820!important;
+    color: #28130d!important;
+    text-shadow: 0 0 2px #442820;
     font-weight: 800;
+    font-size: 12px;
+}
+#header .navbar-status {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+span.d-none.d-lg-inline.navbar-text {
+    visibility: hidden!important;
+}
+span.d-none.d-lg-inline.navbar-text:after {
+    content: 'your story begins here, traveller...';
+    visibility: visible;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px #442820;
+}
+span.d-none.d-lg-inline.navbar-text:before {
+    content: '\f71c';
+    visibility: visible;
+    font-family: 'Font Awesome 5 Free';
+    position: fixed;
+    margin-left: 4.5rem;
+    transform: rotate(-90deg)
 }
 
 .breadcrumb:after {
     position: absolute;
-    content: 'css by #6488 🗡';
+    content: '📜 css by #6488';
     visibility: visible;
     right: 30px;
-    font-family: var(--font2);
-    color: #34221b;
+    font-family: var(--font3);
+    color: #28130d;
     font-weight: bold;
     text-shadow: 0 0 2px #442820;
+    font-size: 8px;
 }
-
+.badge-danger { background: #3b2422; color: #f5decf;}
 .breadcrumb-nav {
     visibility: hidden;
+}
+#header .navbar-main .navbar-brand:hover {
+    transform: none;
 }
 
