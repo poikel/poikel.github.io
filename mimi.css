@@ -170,9 +170,6 @@ code by #6488 on wd, @poikel on github*/
     box-shadow: none!important;
 }
 
-#header > nav.navbar.navbar-status.navbar-expand > div > button {
-    font-size: 12px;
-}
 #header .navbar-status {
     margin-right: 1rem;
     margin-left: 1rem;
