@@ -10,6 +10,20 @@ code by #6488 on wd, @poikel on github*/
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-3px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
 .alert {
     font-family: var(--font3);
     font-size: 12px;
