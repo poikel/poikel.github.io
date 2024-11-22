@@ -190,7 +190,7 @@ span.d-none.d-lg-inline.navbar-text:before {
     content: '\f71c';
     visibility: visible;
     font-family: 'Font Awesome 5 Free';
-    position: fixed;
+    position: absolute;
     margin-left: 4.5rem;
     transform: rotate(-90deg);
     text-shadow: -1px 1px 1px #271611;
@@ -222,7 +222,7 @@ body {
 }
 
 #main {
-    background-image: none;
+    background: rgb(39 22 17 / 37%);
 }
 
 #main h1 {
