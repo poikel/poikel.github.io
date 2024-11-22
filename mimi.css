@@ -10,19 +10,19 @@ code by #6488 on wd, @poikel on github*/
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-            }
+@keyframes float {
+	0% {
+	transform: translateY(0);
+	}
 
-            50% {
-                transform: translateY(-3px);
-            }
+	50% {
+	transform: translateY(-3px);
+	}
 
-            100% {
-                transform: translateY(0);
-            }
-        }
+	100% {
+	transform: translateY(0);
+	}
+}
 
 .alert {
     font-family: var(--font3);
@@ -264,7 +264,6 @@ body {
 }
 #denCards a[href*='/pack-overview'] {
     content: url('https://static.wolvden.com/images/items/food/deerdoe.png');
-    
 }
 #denCards a[href*='/breed'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
@@ -275,13 +274,11 @@ body {
 }
 #denCards a[href*='/nesting'] {
     content: url('https://static.wolvden.com/images/items/trophies/ear_deer.png');
-    
 }
 #denCards a[href*='/socializing'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
     transform: rotateY(180deg);
 }
-
 #denCards {
     padding: 2rem;
 }
