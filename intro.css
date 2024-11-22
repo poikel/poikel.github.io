@@ -1,4 +1,45 @@
 /* do not remove credit, edit code or reupload 
 this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); :root { --text: 'Jua', sans-serif; } .boxcontainer { display: flex; height: auto; padding: 0px; justify-content: center; } .art { float: left; overflow: hidden; position: relative; margin-bottom: -35px; margin-left: 3rem; } .box1 { background-color: #afbfd5; background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%2391a6c2' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"); float: left; color: #5977a0; height: 100px; width: 400px; overflow: hidden; padding: 20px; padding-top: 7px; margin-top: 0px; font-family: var(--text); letter-spacing: -1px; margin-left: 0rem; border: 2px solid #ebebeb; }
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+ :root {
+    --text: 'Merriweather', serif;
+}
+
+.boxcontainer {
+    display: flex;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+}
+
+.art {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -35px;
+    margin-left: 3rem;
+    animation: float 3s infinite ease-in-out!important;
+}
+
+.box1 {
+    float: left;
+    color: #e4ddcd;
+    height: 100px;
+    width: 400px;
+    overflow: hidden;
+    padding: 20px;
+    padding-top: 12px;
+    margin-top: 0px;
+    font-family: var(--text);
+    letter-spacing: -1px;
+    margin-left: 0rem;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    background: linear-gradient(to right, transparent, #34221be8, transparent)!important;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, transparent, #34221b, transparent);
+    border-image-slice: 1;
+    text-shadow: 2px 1px 2px #271611;
+}
