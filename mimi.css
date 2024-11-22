@@ -266,17 +266,18 @@ body {
     content: url('https://static.wolvden.com/images/items/food/deerdoe.png');
 }
 #denCards a[href*='/breed'] {
-    content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
-    transform: rotateY(180deg);
+    content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
 }
 #denCards a[href*='/pup-sitting'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
+	transform: rotateY(180deg);
 }
 #denCards a[href*='/nesting'] {
-    content: url('https://static.wolvden.com/images/items/trophies/ear_deer.png');
+    content: url('https://static.wolvden.com/images/items/food/deerdoe.png');
+	transform: rotateY(180deg);
 }
 #denCards a[href*='/socializing'] {
-    content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
+    content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
     transform: rotateY(180deg);
 }
 #denCards { padding: 1rem; } #denCards a { display: flex; width: 84px; height: 84px; padding: 0; filter: sepia(.6) saturate(.5); transition: .3s ease-in-out } #denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; } #denCards a:hover { filter: sepia(.6) saturate(.5) blur(0.5px) brightness(1.1); transition: .3s ease-in-out; }
