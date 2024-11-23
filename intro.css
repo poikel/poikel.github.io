@@ -1,45 +1,315 @@
 /* do not remove credit, edit code or reupload 
 this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
- :root {
-    --text: 'Merriweather', serif;
+
+:root {
+    --font1: "Metamorphous", serif;
+    --font2: "Alegreya", serif;
+    --font3: "Merriweather", serif;
+	--c: #ada792;
+	--c2: #cfc9b9;
+	--g: #484d44;
+	--g2: #57574f;
+	--b: #887f70;
+	--shd: #271611;
+}
+* { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
+
+@keyframes float {
+	0% {
+	transform: translateY(0);
+	}
+
+	50% {
+	transform: translateY(-7px);
+	}
+
+	100% {
+	transform: translateY(0);
+	}
+}
+#fraDenHTML img, #fraDenHTML img:hover {
+	filter: none!important;
+}
+.alert {
+    font-family: var(--font3);
+	font-size: 12px;
+	text-align: center;
+	color: var(--c2);
+	font-weight: bold;
+	text-transform: lowercase;
+	margin-top: 1.7rem;
+	background: var(--b);
+	border: 1px var(--g2) solid;
+}
+.alert a {
+    color: var(--c2)!important;
+	text-decoration: underline;
+}
+.alert-danger i {
+    visibility: hidden;
+}
+.alert-danger i:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f71c';
+    visibility: visible;
+}
+#header .navbar-main {
+    background: none;
+    font-family: var(--font2);
 }
 
-.boxcontainer {
-    display: flex;
-    height: auto;
-    padding: 0px;
-    justify-content: center;
+#header .navbar-main a {
+    font-size: 16px!important;
+    color: var(--c2)!important;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px var(--shd);
+    transition: .3s ease;
+	text-transform: lowercase!important;
 }
 
-.art {
-    float: left;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: -35px;
-    margin-left: 3rem;
-    animation: float 3s infinite ease-in-out!important;
+ #header .navbar-main a i {
+    display: none!important;
 }
+#header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: var(--c)!important; }
+#header .user_current_sc:after { content: ' sc'; }
+#header .user_current_gc:after { content: ' gc'; }
+.icon-beetle-gold, .icon-beetle-silver { display: none; }
 
-.box1 {
-    float: left;
-    color: #e4ddcd;
-    height: 100px;
-    width: 400px;
-    overflow: hidden;
-    padding: 20px;
-    padding-top: 12px;
-    margin-top: 0px;
-    font-family: var(--text);
-    letter-spacing: -1px;
-    margin-left: 0rem;
-    font-size: 12px;
-    letter-spacing: 0.2px;
-    background: linear-gradient(to right, transparent, var(--g), transparent)!important;
+@media (min-width: 992px) {
+#header .navbar-expand-lg .navbar-nav, #header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end!important;
+    }
+#header .mr-auto, .mx-auto { 
+	margin-right: 0!important;
+	margin-bottom: -1.5rem!important;
+    }
+}
+.navbar-status {
+    background: linear-gradient(to right, transparent, var(--g2), transparent)!important;
     border-bottom: 2px solid;
     border-top: 2px solid;
-    border-image: linear-gradient(to right, transparent, var(--shd), transparent);
+    border-image: linear-gradient(to right, transparent, var(--g), transparent);
     border-image-slice: 1;
-    text-shadow: 2px 1px 2px #271611;
+    font-family: var(--font3);
+    color: var(--c2)!important;
+    font-weight: 800;
+    text-transform: lowercase;
+    font-size: 12px;
 }
+#header .navbar-status i { display: none!important; }
+#header .navbar-status .text-light, #header .navbar-status a {
+    color: var(--c2)!important;
+    text-shadow: 1px 1px 1px var(--shd);
+    font-weight: 800;
+    font-size: 10px;
+}
+#header .navbar-status .text-light, #header .navbar-status a:active {
+    box-shadow: none!important;
+}
+
+#header .navbar-status {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+span.d-none.d-lg-inline.navbar-text {
+    visibility: hidden!important;
+}
+span.d-none.d-lg-inline.navbar-text:after {
+    content: 'your story begins here, traveller...';
+    visibility: visible;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px var(--shd);
+}
+span.d-none.d-lg-inline.navbar-text:before {
+    content: '\f71c';
+    visibility: visible;
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    margin-left: 4.5rem;
+    transform: rotate(-90deg);
+    text-shadow: -1px 1px 1px var(--shd);
+}
+
+.breadcrumb:after {
+    position: absolute;
+    content: '\f02d \00a0 \00a0 \00a0 css by #6488';
+    visibility: visible;
+    right: 30px;
+    font-family: var(--font3), 'Font Awesome 5 Free';
+    color: var(--c);
+    font-weight: bold;
+    text-shadow: 0px 1px 1px var(--shd);
+    font-size: 9px;
+}
+.badge-danger { background: var(--g2); color: var(--c2);}
+.breadcrumb-nav {
+    visibility: hidden;
+}
+#header .navbar-main .navbar-brand:hover {
+    transform: none;
+}
+.navbar-brand {margin-top:.5rem;}
+
+body {
+	background-color: var(--b);
+	background-image: url('https://i.imgur.com/VnE9ZjU.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-transform: lowercase!important;
+}
+
+#main {
+    background: transparent;
+}
+
+#main img, #sidebar img {
+	filter: sepia(.3) saturate(.5);
+	transition: 0.2s ease-in-out;
+}
+#main img:hover, #sidebar img:hover {
+	filter: sepia(.3) saturate(1) blur(.5px);
+	transition: 0.2s ease-in-out;
+}
+#main h1 {
+    text-align: center;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    text-shadow: 0 0 3px var(--c2);
+    letter-spacing: 3px;
+    color: var(--c2);
+}
+#main h1:after {
+    content: '.'!important;
+    visibility: visible;
+    position: absolute;
+    right: 190px;
+}
+#main h1:before {
+    content: '.'!important;
+    visibility: visible;
+    position: absolute;
+    left: 190px;
+}
+@media only screen and (max-width: 992px) {
+    #main h1:before, #main h1:after {
+        display: none;
+    }
+}
+#main .nav-tabs {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	justify-content: right!important;
+}
+#main .nav-tabs, #main .nav-link {
+	border: none;
+}
+#main .nav-link {
+	background: none;
+	font-size: 0;
+	padding: 0;
+	color: var(--c2);
+	text-shadow: 0px 1px 1px var(--shd);
+}
+#main .nav-link[href*='/den/']:after { content: '\f701'; font-family: 'Font Awesome 5 Free'; font-size: 14px;
+}
+#main .nav-link[href*='/profile/']:after { content: '\f277'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
+}
+#main .nav-link[href*='/profile/']:active, #main .nav-link[href*="/den/"] { color: var(--b); }
+@media only screen and (max-width: 992px) {
+	#main .nav-tabs {
+		top: -20px;
+	}
+	.alert {
+		margin-top: 0;
+	}
+}
+#main > table > tbody > tr:nth-child(1) > th {
+	display: none;
+}
+.table {
+	border: none;
+}
+#main .table th {
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: var(--b);
+	background-image: url("https://i.imgur.com/0nZB1bx.png");
+	padding: 40px;
+    text-transform: lowercase;
+    padding-right: 1rem;
+    padding-left: 1rem;
+	font-family: var(--font3);
+	color: var(--c2);
+	text-shadow: 0px 1px 1px var(--shd);
+	border: 1px solid var(--c);
+}
+#main .card {
+	background: none;
+}
+#main .table th a {
+	color: var(--c2);
+}
+.table td {
+	text-transform: lowercase;
+	font-family: var(--font2);
+	color: var(--c2)!important;
+	text-shadow: 0px 1px 1px var(--shd);
+}
+.table td a:hover {
+	text-decoration: none!important;
+}
+#sidebar {
+    background: none;
+    text-transform: lowercase;
+}
+
+#denCards a[href*='/dynasty'] {
+    content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
+}
+#denCards a[href*='/pack-overview'] {
+    content: url('https://static.wolvden.com/images/items/food/deerdoe.png');
+}
+#denCards a[href*='/breed'] {
+    content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
+}
+#denCards a[href*='/pup-sitting'] {
+    content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
+	transform: rotateY(180deg);
+}
+#denCards a[href*='/nesting'] {
+    content: url('https://static.wolvden.com/images/items/food/deerdoe.png');
+	transform: rotateY(180deg);
+}
+#denCards a[href*='/socializing'] {
+    content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
+    transform: rotateY(180deg);
+}
+#denCards { padding: 1rem; } #denCards a { display: flex; width: 84px; height: 84px; padding: 0; filter: sepia(.6) saturate(.5); transition: .3s ease-in-out } #denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; } #denCards a:hover { filter: sepia(.6) saturate(.5) blur(0.5px) brightness(1.1); transition: .3s ease-in-out; }
+.rounded-bottom, .bg-light, .bg-dark {
+	padding: 0px!important;
+	background: none!important;
+	margin: 0px!important;
+	color: none;
+}
+.rounded-bottom {
+	border: 1px solid var(--c);
+}
+.border-none .striped tr {
+	background: transparent!important;
+}
+.b {
+	color: var(--c2);
+}
+.border-none {
+	border: 1px solid var(--c);
+	background-image: url("https://i.imgur.com/0nZB1bx.png");
+	background-attachment: fixed;
+}
+.table .bottom, .table-striped tbody tr:nth-of-type(odd) { background: transparent; }
+.border-none a { color: var(--c2); }
+.text-success { color: var(--g2)!important; }
