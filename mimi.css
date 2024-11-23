@@ -210,9 +210,9 @@ body {
 	color: #cfc9b9;
 	text-shadow: 0px 1px 1px #271611;
 }
-#main .nav-link[href*='/den/']:after { content: '\f6ba'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 10px;
+#main .nav-link[href*='/den/']:after { content: '\f701'; font-family: 'Font Awesome 5 Free'; font-size: 14px;
 }
-#main .nav-link[href*='/profile/']:after { content: '\f6b3'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
+#main .nav-link[href*='/profile/']:after { content: '\f277'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
 }
 @media only screen and (max-width: 992px) {
 	#main .nav-tabs {
@@ -223,20 +223,33 @@ body {
 #main .table th {
 	background-repeat: repeat;
 	background-attachment: fixed;
-	background-color: #000000;
+	background-color: #887f70;
 	background-image: url("");
 }
-
-#sidebar {
-    background: none;
-    text-transform: lowercase;
-}
-
 #main .table th {
     padding: 40px;
     text-transform: lowercase;
     padding-right: 1rem;
     padding-left: 1rem;
+	font-family: var(--font3);
+	color: var(--c2);
+	text-shadow: 0px 1px 1px #271611;
+}
+#main .table th a {
+	color: var(--c2);
+}
+.table td {
+	text-transform: lowercase;
+	font-family: var(--font2);
+	color: var(--c2);
+	text-shadow: 0px 1px 1px #271611;
+}
+.table td a:hover {
+	text-decoration: none!important;
+}
+#sidebar {
+    background: none;
+    text-transform: lowercase;
 }
 
 #denCards a[href*='/dynasty'] {
