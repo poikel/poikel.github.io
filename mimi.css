@@ -229,11 +229,11 @@ body {
 
 #main img {
 	filter: sepia(.3) saturate(.5);
-	transition: 0.3s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 #main img:hover {
 	filter: sepia(.3) saturate(1) blur(.5px);
-	transition: 0.3s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 #main h1 {
     text-align: center;
