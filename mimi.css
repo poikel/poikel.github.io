@@ -3,6 +3,8 @@ this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* #ada792 */
 :root {
     --font1: "Metamorphous", serif;
     --font2: "Alegreya", serif;
@@ -211,9 +213,10 @@ span.d-none.d-lg-inline.navbar-text:before {
 }
 
 body {
-    background-image: url('https://i.imgur.com/u5q0XYl.jpeg');
-    background-size: cover;
-    background-position: right center;
+	background-color: #887f70;
+	background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+	background-size: auto;
+	background-repeat: repeat;
 }
 
 #main {
@@ -261,7 +264,12 @@ body {
 }
 #main .nav-link[href*='/profile/']:after { content: '\f6b3'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
 }
+#main .table th {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
+}
 #sidebar {
     background: none;
     text-transform: lowercase;
