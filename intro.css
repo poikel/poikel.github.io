@@ -36,10 +36,10 @@ code by #6488 on wd, @poikel on github*/
     margin-left: 0rem;
     font-size: 12px;
     letter-spacing: 0.2px;
-    background: linear-gradient(to right, transparent, #34221be8, transparent)!important;
+    background: linear-gradient(to right, transparent, var(--g), transparent)!important;
     border-bottom: 2px solid;
     border-top: 2px solid;
-    border-image: linear-gradient(to right, transparent, #34221b, transparent);
+    border-image: linear-gradient(to right, transparent, var(--shd), transparent);
     border-image-slice: 1;
     text-shadow: 2px 1px 2px #271611;
 }
