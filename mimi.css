@@ -33,11 +33,11 @@ code by #6488 on wd, @poikel on github*/
 }
 .alert {
     font-family: var(--font3);
-    font-size: 12px;
-    text-align: center;
-    color: #cfc9b9;
-    font-weight: bold;
-    text-transform: lowercase;
+	font-size: 12px;
+	text-align: center;
+	color: #cfc9b9;
+	font-weight: bold;
+	text-transform: lowercase;
 	margin-top: 1.7rem;
 	background: #3c3531;
 	border: 1px #271611 solid;
@@ -152,9 +152,10 @@ span.d-none.d-lg-inline.navbar-text:before {
 .navbar-brand {margin-top:.5rem;}
 body {
 	background-color: #887f70;
-	background-image: url('');
-	background-size: auto;
-	background-repeat: repeat;
+	background-image: url('https://i.imgur.com/VnE9ZjU.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 
 #main {
@@ -216,24 +217,31 @@ body {
 }
 @media only screen and (max-width: 992px) {
 	#main .nav-tabs {
-		right: 13.2rem;
-		top: 3.2rem;
+		top: -20px;
+	}
+	.alert {
+		margin-top: 0;
 	}
 }
-#main .table th {
-	background-repeat: repeat;
-	background-attachment: fixed;
-	background-color: #887f70;
-	background-image: url("");
+#main > table > tbody > tr:nth-child(1) > th {
+	display: none;
+}
+.table {
+	border: none;
 }
 #main .table th {
-    padding: 40px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #887f70;
+	background-image: url("https://i.imgur.com/0nZB1bx.png");
+	padding: 40px;
     text-transform: lowercase;
     padding-right: 1rem;
     padding-left: 1rem;
 	font-family: var(--font3);
 	color: var(--c2);
 	text-shadow: 0px 1px 1px #271611;
+	border: 1px solid var(--c);
 }
 #main .table th a {
 	color: var(--c2);
