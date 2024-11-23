@@ -9,6 +9,7 @@ code by #6488 on wd, @poikel on github*/
     --font2: "Alegreya", serif;
     --font3: "Merriweather", serif;
 	--c: #ada792;
+	--c2: #cfc9b9;
 	--g: #484d44;
 	
 }
@@ -53,91 +54,24 @@ code by #6488 on wd, @poikel on github*/
     content: '\f71c';
     visibility: visible;
 }
-
-.alert img[src$="scout.png"] {
-}
-.alert img[src$="foothunt.png"] {
-}
-.alert img[src$="herbalist.png"] {
-}
-
 #header .navbar-main {
     background: none;
-    font-family: var(--font1);
+    font-family: var(--font2);
 }
 
 #header .navbar-main a {
-    font-size: 12px!important;
+    font-size: 16px!important;
     color: #cfc9b9!important;
     font-weight: bold;
     text-shadow: 1px 1px 1px #271611;
     transition: .3s ease;
-}
-
-#header .navbar-main a:hover {
-    transform: rotateZ(-4deg);
-    transition: .3s ease;
+	text-transform: lowercase!important;
 }
 
  #header .navbar-main a i {
     display: none!important;
 }
-
-#main-menu>ul>li:nth-child(1)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f71c';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(2)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f132';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(3)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f81c';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(4)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f70f';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(5)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f724';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(6)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f6b9';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(7)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f51e';
-    padding-right: 5px;
-    color: #523f3d;
-}
-
-#main-menu>ul>li:nth-child(8)>a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f701';
-    padding-right: 5px;
-    color: #523f3d;
-}
+#header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: var(--c)!important; }
 #header .user_current_sc:after { content: ' sc'; }
 #header .user_current_gc:after { content: ' gc'; }
 .icon-beetle-gold, .icon-beetle-silver { display: none; }
@@ -195,7 +129,7 @@ span.d-none.d-lg-inline.navbar-text:before {
     margin-left: 4.5rem;
     transform: rotate(-90deg);
     text-shadow: -1px 1px 1px #271611;
-}
+}z
 
 .breadcrumb:after {
     position: absolute;
@@ -215,10 +149,10 @@ span.d-none.d-lg-inline.navbar-text:before {
 #header .navbar-main .navbar-brand:hover {
     transform: none;
 }
-
+.navbar-brand {margin-top:.5rem;}
 body {
-	background-color: #887f70;
-	background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+	background-color: #8e7c68;
+	background-image: url('');
 	background-size: auto;
 	background-repeat: repeat;
 }
@@ -227,11 +161,11 @@ body {
     background: transparent;
 }
 
-#main img {
+#main img, #sidebar img {
 	filter: sepia(.3) saturate(.5);
 	transition: 0.2s ease-in-out;
 }
-#main img:hover {
+#main img:hover, #sidebar img:hover {
 	filter: sepia(.3) saturate(1) blur(.5px);
 	transition: 0.2s ease-in-out;
 }
@@ -287,9 +221,10 @@ body {
 	}
 }
 #main .table th {
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-attachment: fixed;
+	background-color: #000000;
+	background-image: url("");
 }
 
 #sidebar {
