@@ -28,18 +28,16 @@ code by #6488 on wd, @poikel on github*/
     font-family: var(--font3);
     font-size: 12px;
     text-align: center;
-    color: #28130d;
+    color: #cfc9b9;
     font-weight: bold;
     text-transform: lowercase;
+	margin-top: 1.7rem;
+	background: #3c3531;
+	border: 1px #271611 solid;
 }
 .alert a {
-    color: #28130d!important;
-    transition: .3s ease;
-}
-.alert a:hover {
-    transition: .3s ease;
     color: #cfc9b9!important;
-    text-decoration: none;
+	text-decoration: underline;
 }
 .alert-danger i {
     visibility: hidden;
