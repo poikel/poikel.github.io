@@ -243,6 +243,26 @@ body {
     position: absolute;
     left: 190px;
 }
+#main .nav-tabs {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	justify-content: right!important;
+}
+#main .nav-tabs, #main .nav-link {
+	border: none;
+}
+#main .nav-link {
+	background: none;
+	font-size: 0;
+	padding: 0;
+	color: #cfc9b9;
+	text-shadow: 0px 1px 1px #271611;
+}
+#main .nav-link[href*='/den/']:after { content: '\f6ba'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 10px;
+}
+#main .nav-link[href*='/profile/']:after { content: '\f6b3'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
+}
 
 #sidebar {
     background: none;
