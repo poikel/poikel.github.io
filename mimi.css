@@ -267,6 +267,16 @@ body {
     background: none;
     text-transform: lowercase;
 }
+#sidebar .card {
+	background: transparent;
+	border: none;
+	color: var(--c);
+	text-shadow: 0px 1px 1px var(--shd);
+	font-family: var(--font2);
+}
+#sidebar .card a {
+	color: var(--c2)
+}
 
 #denCards a[href*='/dynasty'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
@@ -313,3 +323,4 @@ body {
 .table .bottom, .table-striped tbody tr:nth-of-type(odd) { background: transparent; }
 .border-none a { color: var(--c2); }
 .text-success { color: var(--g2)!important; }
+.justify-content-between.mb-3 div { border: none !important; }
