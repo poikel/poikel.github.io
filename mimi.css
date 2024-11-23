@@ -4,11 +4,13 @@ code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=Eczar&family=IM+Fell+DW+Pica&family=Metamorphous&family=Mr+Bedfort&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-/* #ada792 */
 :root {
     --font1: "Metamorphous", serif;
     --font2: "Alegreya", serif;
     --font3: "Merriweather", serif;
+	--c: #ada792;
+	--g: #484d44;
+	
 }
 * { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
 
@@ -25,7 +27,9 @@ code by #6488 on wd, @poikel on github*/
 	transform: translateY(0);
 	}
 }
-
+#fraDenHTML img, #fraDenHTML img:hover {
+	filter: none!important;
+}
 .alert {
     font-family: var(--font3);
     font-size: 12px;
@@ -49,12 +53,12 @@ code by #6488 on wd, @poikel on github*/
     content: '\f71c';
     visibility: visible;
 }
+
 .alert img[src$="scout.png"] {
 }
 .alert img[src$="foothunt.png"] {
 }
 .alert img[src$="herbalist.png"] {
-
 }
 
 #header .navbar-main {
@@ -220,9 +224,17 @@ body {
 }
 
 #main {
-    background: rgb(39 22 17 / 37%);
+    background: transparent;
 }
 
+#main img {
+	filter: sepia(.3) saturate(.5);
+	transition: 0.3s ease-in-out;
+}
+#main img:hover {
+	filter: sepia(.3) saturate(1) blur(.5px);
+	transition: 0.3s ease-in-out;
+}
 #main h1 {
     text-align: center;
     font-family: var(--font1);
@@ -231,7 +243,6 @@ body {
     letter-spacing: 3px;
     color: #e6dfcf;
 }
-
 #main h1:after {
     content: '.'!important;
     visibility: visible;
@@ -243,6 +254,11 @@ body {
     visibility: visible;
     position: absolute;
     left: 190px;
+}
+@media only screen and (max-width: 992px) {
+    #main h1:before, #main h1:after {
+        display: none;
+    }
 }
 #main .nav-tabs {
 	position: absolute;
@@ -264,12 +280,18 @@ body {
 }
 #main .nav-link[href*='/profile/']:after { content: '\f6b3'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
 }
+@media only screen and (max-width: 992px) {
+	#main .nav-tabs {
+		right: 13.2rem;
+		top: 3.2rem;
+	}
+}
 #main .table th {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
 }
+
 #sidebar {
     background: none;
     text-transform: lowercase;
@@ -304,3 +326,7 @@ body {
     transform: rotateY(180deg);
 }
 #denCards { padding: 1rem; } #denCards a { display: flex; width: 84px; height: 84px; padding: 0; filter: sepia(.6) saturate(.5); transition: .3s ease-in-out } #denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; } #denCards a:hover { filter: sepia(.6) saturate(.5) blur(0.5px) brightness(1.1); transition: .3s ease-in-out; }
+.rounded-bottom, .bg-light, .bg-dark {
+	padding: 0!important;
+	background: none!important;
+}
