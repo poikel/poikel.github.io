@@ -299,7 +299,7 @@ body {
     content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
     transform: rotateY(180deg);
 }
-#denCards { padding: 1rem; } #denCards a { display: flex; width: 84px; height: 84px; padding: 0; filter: sepia(.6) saturate(.5); transition: .3s ease-in-out } #denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; } #denCards a:hover { filter: sepia(.6) saturate(.5) blur(0.5px) brightness(1.1); transition: .3s ease-in-out; }
+#denCards { padding: 1rem; } #denCards a { display: flex; width: 84px; height: 84px; padding: 0; filter: sepia(.3) saturate(.5); transition: .3s ease-in-out } #denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; } #denCards a:hover { filter: sepia(.3) saturate(1) blur(.5px); transition: .3s ease-in-out; }
 .rounded-bottom, .bg-light, .bg-dark {
 	padding: 0px!important;
 	background: none!important;
@@ -323,4 +323,14 @@ body {
 .table .bottom, .table-striped tbody tr:nth-of-type(odd) { background: transparent; }
 .border-none a { color: var(--c2); }
 .text-success { color: var(--g2)!important; }
-.justify-content-between.mb-3 div { border: none !important; }
+.justify-content-between.mb-3 div, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > div > img { border: none !important; }
+.w-50 > a img, .w-50 div a img, .border-none .card img, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img { border: 1px solid var(--c)}
+.card-title:before {
+	font-size: 0.875rem !important;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f71c' !important;
+	padding-right: 10px;
+}
+.fa-angle-right:before {
+	content: '\f7ff';
+}
