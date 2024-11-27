@@ -223,7 +223,7 @@ body {
 }
 #main .nav-link[href*='/profile/']:after { content: '\f277'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
 }
-#main .nav-link[href*='/profile/']:active, #main .nav-link[href*="/den/"] { color: var(--b); }
+#main .nav-link.active { color: var(--b); }
 @media only screen and (max-width: 992px) {
 	#main .nav-tabs {
 		top: -20px;
@@ -341,4 +341,10 @@ body {
 }
 #main > table:nth-child(11) > tbody > tr:nth-child(2) > td {
 	display: none;
+}
+.right a, .right .text-success {
+	color: var(--c2)!important;
+}
+.left {
+	background: none!important;
 }
