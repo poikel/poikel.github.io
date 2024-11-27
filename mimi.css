@@ -278,6 +278,10 @@ body {
 	color: var(--c2)
 }
 
+#sidebar .fa-angle-right:before {
+	content: '\f7ff';
+}
+
 #denCards a[href*='/dynasty'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
 }
@@ -330,7 +334,4 @@ body {
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f71c' !important;
 	padding-right: 10px;
-}
-.fa-angle-right:before {
-	content: '\f7ff';
 }
