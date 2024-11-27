@@ -56,6 +56,10 @@ code by #6488 on wd, @poikel on github*/
     content: '\f71c';
     visibility: visible;
 }
+.alert-info.text-center:hover {
+	text-decoration: underline;
+	color: var(--c2);
+}
 #header .navbar-main {
     background: none;
     font-family: var(--font2);
@@ -334,4 +338,7 @@ body {
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f71c' !important;
 	padding-right: 10px;
+}
+#main > table:nth-child(11) > tbody > tr:nth-child(2) > td {
+	display: none;
 }
