@@ -136,12 +136,12 @@ code by #6488 on wd, @poikel on github*/
 .d-lg-inline {font-weight: bold;font-size:14px;}
 button.btn.dropdown-toggle:focus {box-shadow: none!important;}
 #header .breadcrumb-nav {visibility: hidden}
-#main:after {
+.breadcrumb:after {
 	position: absolute;
 	right: 30px;
 	content: '\f121\00a0 css by #6488';
 	visibility: visible;
-	margin-top: 2px;
+	margin-top: 1rem;
 	font-family: var(--text), "Font Awesome 5 Free";
 	font-size: 11px;
 	text-shadow:
@@ -149,8 +149,9 @@ button.btn.dropdown-toggle:focus {box-shadow: none!important;}
 	0 0 11px var(--r5),
 	0 0 18px var(--r6),
     0 0 25px var(--r7);
-	color: var(--bl);
+	color: var(--r7);
 	font-weight: bold;
+	z-index: 1;
 }
 body {
 	background-image: url('https://i.imgur.com/PcvGrxr.png');
