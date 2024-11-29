@@ -2,9 +2,8 @@
 	this code is free-to-use!
 code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-* { cursor: url('https://i.imgur.com/qpDsiea.png'), auto !important; } a:hover { cursor: url('https://i.imgur.com/ll070JO.png'), auto !important;}
+* { cursor: url('https://i.imgur.com/qpDsiea.png'), auto !important; } a:hover, img:hover { cursor: url('https://i.imgur.com/ll070JO.png'), auto !important;}
 :root{
---re: #f44c4c;
 --or2: #F17B74;
 --wh: #FDF4E7;
 --bei: #EDC0AB;
@@ -19,8 +18,10 @@ code by #6488 on wd, @poikel on github*/
 	border-radius: 25px;
 	border: 2px solid var(--gr2);
 	color: var(--wh);
-	text-shadow: 0 0 2px var(--gr2)
+	text-shadow: 0 0 2px var(--gr2);
+	margin-top: 1rem;
 }
+#header > nav.navbar.navbar-status.navbar-expand > div > button:focus {box-shadow: none;}
 #header .navbar-main {
 	background-color: var(--pi);
 	margin-top:1.5rem;
@@ -55,11 +56,23 @@ code by #6488 on wd, @poikel on github*/
 	background-color: var(--pi2);
 	border-top: 5px groove var(--gr);
 	font-size: 13px;
-	text-shadow: 0 0 2px var(--or);
 	text-transform: lowercase;
 }
+#header .navbar-status a {
+	color: var(--wh)!important;
+	text-shadow: 0 0 2px var(--or);
+}
+#header .navbar-status .nav-item:last-child .nav-link { margin-right: 1rem;}
 #header .breadcrumb-nav {visibility: hidden;}
 .navbar-expand-lg .navbar-collapse {margin-left:3rem;}
+.justify-content-between.mb-3 div { border: none !important; }
+#header .breadcrumb-nav #bookmarkPage {
+	display: flex;
+    visibility: visible;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: var(--gr2)!important;}
 #main:before {
 	position: absolute;
 	font-family: 'Font Awesome 5 Free', var(--font);
@@ -68,41 +81,66 @@ code by #6488 on wd, @poikel on github*/
 	visibility: visible;
 	font-size: 9px;
 	right: 20px;
-	top: 12px
+	top: 12px;
+	z-index: 1;
 }
-a {
+a, .d-lg-inline, #lblCharacterCounter {
 	color: var(--bei)!important;
 	text-shadow: 0 0 2px var(--or);
 	transition: .2s ease-in-out;
 }
 .progress {background:rgb(255 255 255 / 29%)!important;border-radius:100px;margin-bottom:2px;}
-.bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {background:linear-gradient(90deg, var(--gr), var(--pi2))!important;border-radius:100px;border:1px solid var(--wh);}
+.bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {background:linear-gradient(90deg, var(--gr), var(--gr2))!important;border-radius:100px;border:1px solid var(--gr2);}
 body {
 	background-image: url('https://i.imgur.com/xuZZ22B.png');
 	background-size: contain;background-repeat: repeat-x;
 	font-family: var(--font);
 }
 #main {
-	background: var(--pi2);
+	background: #d69387b8;
 	border-radius: 20px;
+	
 }
-#main h1 {text-align: center;color: var(--bei);text-shadow: 0 0 2px var(--or);}
+#main h1 {text-align: center;color: var(--wh);text-shadow: 0 0 2px var(--or);}
 #main h1:before, #main h1:after{font-family: 'Font Awesome 5 Free';content:'\f7ff';font-size: 12px;margin: 1rem;}
 #sidebar {background: transparent;}
 #sidebar .card {
-	background: var(--pi);
+	background: var(--pi2);
 	border-radius: 20px;
 	border-bottom: none;
-	color: var(--wh)
+	color: var(--wh);
 }
+.w-50 > a img {
+	border-radius: 100px 100px 100px 0px;
+	border: 2px solid var(--wh);
+}
+.w-50 div a img {
+	border-radius: 100px 100px 0px 100px;
+	border: 2px solid var(--wh);
+}
+#main .nav-link {
+	font-size: 0;
+}
+#main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
+#main .nav-link[href*='/den/']:after { content: '\f015'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
 .nav-tabs {
 	justify-content: center;
 	border: none;
 }
-.nav-tabs:hover, .nav-tabs .nav-link:hover {
+.nav-tabs .nav-link.active {
 	border: none;
+	background-color: transparent;
+	color: var(--wh)!important;
+	border-radius: 30px;
+	text-transform: lowercase;
 }
-
+.nav-tabs .nav-link {
+	border: none;
+	background-color: transparent;
+	color: var(--wh)!important;
+	border-radius: 30px;
+	text-transform: lowercase;
+}
 .card-title:before {content:'\f7ff';font-family:'Font Awesome 5 Free';font-size:12px;padding:6px;}
 .btn-primary, .btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
 	background: var(--gr);
@@ -110,13 +148,15 @@ body {
 	border-radius: 30px;
 	border: 2px solid var(--gr2);
 }
-.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
-	background: var(--gr2);
-	border: none;
-	border-radius: 30px;
-	border: 2px solid var(--gr2);
-	text-shadow: 0 0 2px var(--wh);
-	color: var(--wh);
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover
+.btn-primary:focus, .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus {
+	background: var(--gr2)!important;
+	border: none!important;
+	border-radius: 30px!important;
+	border: 2px solid var(--gr2)!important;
+	text-shadow: 0 0 2px var(--wh)!important;
+	color: var(--wh)!important;
+	box-shadow: none!important;
 }
 .table th, .table th a, .table, .table a {
 	color: var(--wh)!important;
@@ -127,14 +167,51 @@ body {
 	border-radius: 20px 20px 0px 0px;
 	border-bottom: 5px groove var(--gr);
 }
-
 .table {
-	background: var(--or2);
+	background: var(--pi2);
 	border-radius: 20px;
 	border: none;
 }
-
 .table-striped tbody tr:nth-of-type(odd) {
 	background: transparent;
 }
-#denCards card-img-top {background-color: transparent;}
+.border-none .card img, #main > table.table.table-striped.border-none.mt-3.mb-0 > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img,
+img.rounded-bottom {
+	border-radius:100%!important;
+}
+#chatMessageContainer {
+	color: var(--wh);
+	border: 2px solid var(--pi);
+}
+.s-chat-message {background: var(--or2)!important;}
+#chatMessagePinned{background-color: var(--gr)!important;border-bottom:none!important;}
+#chatMessagePinned.s-chat-message__pinned .s-chat-message_content{color:var(--gr2);}
+#chatMessagePinned.s-chat-message__pinned .s-chat-message_content a{color:var(--wh)!important;}
+.s-chat-sidebar #label_currentChannel,#fra_chatContainer #txtChatInput {
+	background: var(--or2);
+	border-radius: 20px;
+	border: 2px var(--pi) solid;
+	color: var(--wh);
+}
+#fra_chatContainer #txtChatInput {padding: .6rem;}
+#main .card {background-color: transparent;}
+.bg-light { background: var(--pi)!important;border-radius:25px;box-shadow:0px 0px 10px #520e2169;padding-bottom: 4px!important;color: var(--wh);}
+.bg-dark { background: var(--pi)!important;margin-bottom: 7px;border-radius:20px 20px 0px 0px!important;}
+img.rounded-bottom {padding:5px!important;}
+.table .bottom, .table tfoot td {
+	background: var(--pi);
+	border-radius: 0px 0px 20px 20px;
+}
+select.form-control {
+	background: var(--gr);
+	border-radius: 20px;
+	border: solid 2px var(--gr2);
+	color: var(--wh);
+}
+select.form-control:focus {
+	background: var(--gr);
+	border-radius: 20px;
+	border: solid 2px var(--gr2);
+	color: var(--wh);
+	box-shadow: none;
+}
