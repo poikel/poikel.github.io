@@ -215,3 +215,12 @@ select.form-control:focus {
 	color: var(--wh);
 	box-shadow: none;
 }
+::-webkit-scrollbar {
+	background: var(--gr);
+	width: 7px!important;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--gr2);
+	border-radius: 20px;
+	width: 3px!important;
+}
