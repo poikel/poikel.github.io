@@ -18,6 +18,15 @@ code by #6488 on wd, @poikel on github*/
 	--text3: "Anta", sans-serif;
 }
 * {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur271.cur), auto !important;}
+::-webkit-scrollbar {
+	width: 7px;
+	background: var(--r1);
+}
+::-webkit-scrollbar-thumb {
+	border-radius:30px;
+	background: var(--r3);
+}
+
 .alert {
 	background: var(--r2);
 	border-radius: 7px;
@@ -95,25 +104,7 @@ code by #6488 on wd, @poikel on github*/
 	font-family: var(--text3);
 	font-size: 12px;
 }
-@media (min-width: 992px) {
-#header .navbar-status {
-	position: absolute;
-	width: 110%;
-	right: 1px;
-}
-#header > nav.navbar.navbar-status.navbar-expand > span {
-	position: absolute;
-	left: 41%;
-}
-#header > nav.navbar.navbar-status.navbar-expand > div {
-	position: absolute;
-	left: 46%;
-}
-#header > nav.navbar.navbar-status.navbar-expand > ul {
-	right: 20%;
-	position: absolute;
-}
-}
+
 #header .navbar-status a {
 	color: var(--r4);
 	text-transform: uppercase;
@@ -133,7 +124,7 @@ code by #6488 on wd, @poikel on github*/
 #header .user_current_sc:after { content: ' SC'; }
 #header .user_current_gc:after { content: ' gc'; }
 .icon-beetle-gold, .icon-beetle-silver { display: none; }
-.d-lg-inline {font-weight: bold;font-size:14px;}
+.d-lg-inline {font-weight: bold;font-size:14px;text-transform:uppercase}
 button.btn.dropdown-toggle:focus {box-shadow: none!important;}
 #header .breadcrumb-nav {visibility: hidden}
 #main:before {
@@ -158,7 +149,12 @@ body {
 }
 #main {
 	background: rgba(0,0,0,0.8);
-	margin-top: 2rem;
+		border: 1px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
 }
 #main h1 {
 	color: var(--r7)!important;
@@ -172,6 +168,15 @@ body {
 	font-family: var(--text3);
 }
 #sidebar {background: none;}
+.w-50 > a img, .w-50 div a img {
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+	border-radius:100%;
+}
 #sidebar .card {
 	border: 1px solid var(--r7);
 	box-shadow:
@@ -180,4 +185,25 @@ body {
 	0 0 16px var(--r5),
 	inset 0 0 .5rem var(--r7);
 	background: var(--bl);
+	font-family: var(--text3);
+	color: var(--r4);
+}
+#sidebar .card-title {
+	color: var(--r7)!important;
+	text-shadow:
+	0 0 4px var(--r4),
+	0 0 11px var(--r5),
+	0 0 18px var(--r6);
+}
+.justify-content-between.mb-3 div { border: none !important; }
+#sidebar a {
+	color: var(--r7);
+}
+#sidebar a:hover {
+	text-decoration: none;
+	text-shadow:
+	0 0 4px var(--r4),
+	0 0 11px var(--r5),
+	0 0 18px var(--r6);
+	animation: blink 1.5s infinite;
 }
