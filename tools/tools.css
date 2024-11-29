@@ -13,4 +13,25 @@ white featured wolf square removal
 ===============
 .justify-content-between.mb-3 div { border: none !important; }
 ===============
+stretch navbar across screen
+===============
+@media (min-width: 992px) {
+#header .navbar-status {
+	position: absolute;
+	width: 110%;
+	right: 1px;
+}
+#header > nav.navbar.navbar-status.navbar-expand > span {
+	position: absolute;
+	left: 41%;
+}
+#header > nav.navbar.navbar-status.navbar-expand > div {
+	position: absolute;
+	left: 46%;
+}
+#header > nav.navbar.navbar-status.navbar-expand > ul {
+	right: 20%;
+	position: absolute;
+}
+}
 */
