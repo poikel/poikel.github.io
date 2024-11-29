@@ -124,7 +124,8 @@ code by #6488 on wd, @poikel on github*/
 #header .user_current_sc:after { content: ' SC'; }
 #header .user_current_gc:after { content: ' gc'; }
 .icon-beetle-gold, .icon-beetle-silver { display: none; }
-.d-lg-inline {font-weight: bold;font-size:14px;text-transform:uppercase}
+.d-lg-inline {font-weight: bold;font-size:14px;text-transform:uppercase;}
+button.btn.dropdown-toggle{color:var(--r4)!important;}
 button.btn.dropdown-toggle:focus {box-shadow: none!important;}
 #header .breadcrumb-nav {visibility: hidden}
 #main:before {
@@ -197,13 +198,71 @@ body {
 }
 .justify-content-between.mb-3 div { border: none !important; }
 #sidebar a {
-	color: var(--r7);
+	color: #fff;
+	transition: .3s ease;
 }
 #sidebar a:hover {
 	text-decoration: none;
 	text-shadow:
-	0 0 4px var(--r4),
-	0 0 11px var(--r5),
-	0 0 18px var(--r6);
+	0 0 4px #fff,
+	0 0 11px #fff;
 	animation: blink 1.5s infinite;
+	transition: .3s ease;
+}
+.progress {background:#ffffff17!important;border-radius:100px;margin-bottom: 2px;margin-top: 2px;}
+.bg-warning, .bg-danger, .bg-info, .bg-primary, .bg-success {
+	background: linear-gradient(90deg, var(--r2), var(--r5));
+	border: 1px solid var(--r5);
+	border-radius: 100px;
+}
+.table {
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+	font-family: var(--text3);
+	font-size: 1rem;
+	color: 
+}
+.table th, .table-striped tbody tr:nth-of-type(odd) {
+	background: none!important;
+}
+.table th {
+	text-align: center;
+	border-bottom: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+}
+.bg-light, .bg-dark {background:none!important;}
+.badge-info {background: var(--bl);} .text-wrap {color: #fff;}
+img.rounded-bottom {
+	padding: 0!important;
+	border-radius: 100%!important;
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+	margin-top: 8px;
+}
+.btn-primary, .btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+	background: var(--r3);
+	border: none;
+	border-radius: 30px;
+	border: 2px solid var(--r2);
+	font-family: var(--text3);
+}
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover
+.btn-primary:focus, .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus {
+	background: var(--r2)!important;
+	border: none!important;
+	border-radius: 30px!important;
+	border: 2px solid var(--r1)!important;
+	box-shadow: none!important;
 }
