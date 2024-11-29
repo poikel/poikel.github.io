@@ -60,7 +60,7 @@ code by #6488 on wd, @poikel on github*/
 	color: var(--r7);
 }
 #header .navbar-main a:hover, #header .navbar-main a:hover i {
-	color: #fff!important;
+	animation: blink 1.5s infinite;
 }
 #header .navbar-status {
 	margin-top: 1rem;
