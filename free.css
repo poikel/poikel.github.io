@@ -56,6 +56,7 @@ code by #6488 on wd, @poikel on github*/
 	border-top: 5px groove var(--gr);
 	font-size: 13px;
 	text-shadow: 0 0 2px var(--or);
+	text-transform: lowercase;
 }
 #header .breadcrumb-nav {visibility: hidden;}
 .navbar-expand-lg .navbar-collapse {margin-left:3rem;}
@@ -74,6 +75,8 @@ a {
 	text-shadow: 0 0 2px var(--or);
 	transition: .2s ease-in-out;
 }
+.progress {background:rgb(255 255 255 / 29%)!important;border-radius:100px;margin-bottom:2px;}
+.bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {background:linear-gradient(90deg, var(--gr), var(--pi2))!important;border-radius:100px;border:1px solid var(--wh);}
 body {
 	background-image: url('https://i.imgur.com/xuZZ22B.png');
 	background-size: contain;background-repeat: repeat-x;
@@ -90,4 +93,48 @@ body {
 	background: var(--pi);
 	border-radius: 20px;
 	border-bottom: none;
+	color: var(--wh)
 }
+.nav-tabs {
+	justify-content: center;
+	border: none;
+}
+.nav-tabs:hover, .nav-tabs .nav-link:hover {
+	border: none;
+}
+
+.card-title:before {content:'\f7ff';font-family:'Font Awesome 5 Free';font-size:12px;padding:6px;}
+.btn-primary, .btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+	background: var(--gr);
+	border: none;
+	border-radius: 30px;
+	border: 2px solid var(--gr2);
+}
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--gr2);
+	border: none;
+	border-radius: 30px;
+	border: 2px solid var(--gr2);
+	text-shadow: 0 0 2px var(--wh);
+	color: var(--wh);
+}
+.table th, .table th a, .table, .table a {
+	color: var(--wh)!important;
+	text-align: center;
+}
+.table th {
+	background: var(--pi);
+	border-radius: 20px 20px 0px 0px;
+	border-bottom: 5px groove var(--gr);
+}
+
+.table {
+	background: var(--or2);
+	border-radius: 20px;
+	border: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background: transparent;
+}
+#denCards card-img-top {background-color: transparent;}
