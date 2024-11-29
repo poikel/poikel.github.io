@@ -25,7 +25,6 @@ code by #6488 on wd, @poikel on github*/
 	box-shadow:
 		0 0 0.2rem var(--r7),
 	    0 0 .2rem var(--r7),
-
         inset 0 0 1.3rem var(--r7);
 	text-align: center;
 	font-family: var(--text3);
@@ -43,7 +42,7 @@ code by #6488 on wd, @poikel on github*/
 	0 0 0.2rem var(--r7),
 	0 0 8px var(--r4),
 	0 0 16px var(--r5),
-	inset 0 0 1.3rem var(--r7);
+	inset 0 0 1rem var(--r7);
 	font-family: var(--text2);
 	background: var(--bl);
 }
@@ -89,7 +88,7 @@ code by #6488 on wd, @poikel on github*/
 	0 0 0.2rem var(--r7),
 	0 0 8px var(--r4),
 	0 0 16px var(--r5),
-	inset 0 0 1.3rem var(--r7);
+	inset 0 0 .5rem var(--r7);
 	background: var(--bl);
 	color: var(--r4);
 	font-family: var(--text3);
