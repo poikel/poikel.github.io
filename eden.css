@@ -1,0 +1,119 @@
+/* do not remove credit, edit code or reupload 
+this code is *not* free-to-use
+code by #6488 on wd, @poikel on github*/
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+:root {
+	--bl: #000000;
+	--r1: #190106;
+	--r2: #33010c;
+	--r3: #4d0211;
+	--r4: #660317;
+	--r5: #80041d;
+	--r6: #990423;
+	--r7: #b30529;
+	--text: "DotGothic16", sans-serif;
+	--text2: "Rubik Iso", system-ui;
+	--text3: "Anta", sans-serif;
+}
+* {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur271.cur), auto !important;}
+#header .navbar-main {
+	margin-top: 1rem;
+	border: groove var(--r6);
+	box-shadow:
+	0 0 8px var(--r4),
+	0 0 16px var(--r5);
+	font-family: var(--text2);
+	background: linear-gradient(90deg, var(--bl), var(--r2), var(--bl))
+}
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+	0 0 4px var(--r4),
+	0 0 11px var(--r5),
+	0 0 18px var(--r6),
+    0 0 25px var(--r7);
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+#header .navbar-main a {
+	color: var(--r7)!important;
+	text-shadow:
+	0 0 4px var(--r4),
+	0 0 11px var(--r5),
+	0 0 18px var(--r6),
+    0 0 25px var(--r7);
+	font-weight: bold;
+	font-size: 1rem!important;
+	animation: flicker 4s infinite alternate;  
+}
+#header .navbar-main a i {
+	font-size: 0!important;
+}
+#header .navbar-main a i:after {
+	font-size: .875rem;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f120' !important;
+	color: var(--r7);
+}
+#header .navbar-main a:hover, #header .navbar-main a:hover i {
+	color: #fff!important;
+}
+#header .navbar-status {
+	margin-top: 1rem;
+	border: groove var(--r6);
+	box-shadow:
+	0 0 8px var(--r4),
+	0 0 16px var(--r5);
+	background: var(--bl);
+	color: var(--r4);
+	font-family: var(--text3);
+	font-size: 12px;
+}
+#header .navbar-status a {
+	color: var(--r4);
+	text-transform: uppercase;
+}
+@keyframes blink {
+	0% { opacity: 0.5 ;}
+	25% { opacity: 1.0; }
+	50% { opacity: 0.5; }
+	75% { opacity: 1.0; }
+	100% { opacity: 0.5; }
+}
+#header .navbar-status a:hover {
+	color: var(--r7);
+	transition: .2s ease-in-out;
+	animation: blink 1.5s infinite;
+}
+#header .user_current_sc:after { content: ' SC'; }
+#header .user_current_gc:after { content: ' gc'; }
+.icon-beetle-gold, .icon-beetle-silver { display: none; }
+.d-lg-inline {font-weight: bold;font-size:14px;}
+button.btn.dropdown-toggle:focus {box-shadow: none!important;}
+#header .breadcrumb-nav {visibility: hidden}
+.breadcrumb:after {
+	position: absolute;
+	right: 30px;
+	content: '\f121\00a0 css by #6488';
+	visibility: visible;
+	margin-top: 2px;
+	font-family: var(--text), "Font Awesome 5 Free";
+	font-size: 11px;
+	text-shadow:
+	0 0 4px var(--r4),
+	0 0 11px var(--r5),
+	0 0 18px var(--r6),
+    0 0 25px var(--r7);
+	color: var(--r7);
+}
+body {
+	background-image: url('https://i.imgur.com/PcvGrxr.png');
+	background-position: left center;
+}
+#main {
+	background: rgba(0,0,0,0.8);
+}
