@@ -36,7 +36,6 @@ code by #6488 on wd, @poikel on github*/
 	text-transform: lowercase!important;
 }
 #header .navbar-main a i { 
-	font-size: 0 !important;
 	color: var(--pi2)!important;
 	text-shadow: 0 0 2px var(--or);
 	transition: .2s ease-in-out;
