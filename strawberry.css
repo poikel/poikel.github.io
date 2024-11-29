@@ -21,6 +21,7 @@ code by #6488 on wd, @poikel on github*/
 	text-shadow: 0 0 2px var(--gr2);
 	margin-top: 1rem;
 }
+#header > nav.navbar.navbar-status.navbar-expand > div > button {color: var(--wh)!important;}
 #header > nav.navbar.navbar-status.navbar-expand > div > button:focus {box-shadow: none;}
 #header .navbar-main {
 	background-color: var(--pi);
