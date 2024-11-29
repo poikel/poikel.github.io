@@ -5,11 +5,9 @@ alert img[src$="123.png"]
 scout.png / foothunt.png / herbalist.png 
 replace alert images 
 ===============
-remove blue under den cards
+remove blue under den cards/lead wolf
 ===============
-#denCards card-img-top {
-background-color: transparent;
-}
+#main .card {background-color: transparent;}
 ===============
 white featured wolf square removal
 ===============
