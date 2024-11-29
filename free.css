@@ -1,9 +1,8 @@
 /* do not remove credit, edit code or reupload 
 	this code is free-to-use!
 code by #6488 on wd, @poikel on github*/
-
-* { cursor: url('https://i.imgur.com/qpDsiea.png'), auto !important; } a:hover { cursor: url('https://i.imgur.com/ll070JO.png'), auto !important;}
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+* { cursor: url('https://i.imgur.com/qpDsiea.png'), auto !important; } a:hover { cursor: url('https://i.imgur.com/ll070JO.png'), auto !important;}
 :root{
 --red: #F17B74;
 --wh: #FDF4E7;
