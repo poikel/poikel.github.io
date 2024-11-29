@@ -29,6 +29,7 @@ code by #6488 on wd, @poikel on github*/
 	text-align: center;
 	font-family: var(--text3);
 	text-transform: uppercase;
+	margin-top: 2rem;
 }
 .alert a{transition: .5s ease-in-out;}
 .alert a:hover {
@@ -75,7 +76,7 @@ code by #6488 on wd, @poikel on github*/
 #header .navbar-main a i:after {
 	font-size: .875rem;
 	font-family: 'Font Awesome 5 Free';
-	content: '\f120' !important;
+	content: '\f078' !important;
 	color: var(--r7);
 }
 #header .navbar-main a:hover, #header .navbar-main a:hover i {
@@ -113,7 +114,6 @@ code by #6488 on wd, @poikel on github*/
 	position: absolute;
 }
 }
-
 #header .navbar-status a {
 	color: var(--r4);
 	text-transform: uppercase;
@@ -136,12 +136,11 @@ code by #6488 on wd, @poikel on github*/
 .d-lg-inline {font-weight: bold;font-size:14px;}
 button.btn.dropdown-toggle:focus {box-shadow: none!important;}
 #header .breadcrumb-nav {visibility: hidden}
-.breadcrumb:after {
+#main:before {
 	position: absolute;
-	right: 30px;
+	right: 20px;
 	content: '\f121\00a0 css by #6488';
 	visibility: visible;
-	margin-top: 1rem;
 	font-family: var(--text), "Font Awesome 5 Free";
 	font-size: 11px;
 	text-shadow:
@@ -154,7 +153,7 @@ button.btn.dropdown-toggle:focus {box-shadow: none!important;}
 	z-index: 1;
 }
 body {
-	background-image: url('https://i.imgur.com/PcvGrxr.png');
+	background-image: url('https://i.imgur.com/D7I1y5k.jpeg');
 	background-position: left center;
 }
 #main {
