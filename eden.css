@@ -18,14 +18,34 @@ code by #6488 on wd, @poikel on github*/
 	--text3: "Anta", sans-serif;
 }
 * {cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur271.cur), auto !important;}
+.alert {
+	background: var(--r2);
+	border-radius: 7px;
+	border: 1px solid var(--r7);
+	box-shadow:
+		0 0 0.2rem var(--r7),
+	    0 0 .2rem var(--r7),
+
+        inset 0 0 1.3rem var(--r7);
+	text-align: center;
+	font-family: var(--text3);
+	text-transform: uppercase;
+}
+.alert a{transition: .5s ease-in-out;}
+.alert a:hover {
+	animation: blink 1.5s infinite;
+	transition: .5s ease-in-out;
+}
 #header .navbar-main {
 	margin-top: 1rem;
-	border: groove var(--r6);
+	border: 2px solid var(--r7);
 	box-shadow:
+	0 0 0.2rem var(--r7),
 	0 0 8px var(--r4),
-	0 0 16px var(--r5);
+	0 0 16px var(--r5),
+	inset 0 0 1.3rem var(--r7);
 	font-family: var(--text2);
-	background: linear-gradient(90deg, var(--bl), var(--r2), var(--bl))
+	background: var(--bl);
 }
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -64,10 +84,12 @@ code by #6488 on wd, @poikel on github*/
 }
 #header .navbar-status {
 	margin-top: 1rem;
-	border: groove var(--r6);
+	border: 1px solid var(--r7);
 	box-shadow:
+	0 0 0.2rem var(--r7),
 	0 0 8px var(--r4),
-	0 0 16px var(--r5);
+	0 0 16px var(--r5),
+	inset 0 0 1.3rem var(--r7);
 	background: var(--bl);
 	color: var(--r4);
 	font-family: var(--text3);
@@ -117,4 +139,15 @@ body {
 }
 #main {
 	background: rgba(0,0,0,0.8);
+}
+#main h1 {
+	color: var(--r7)!important;
+	text-shadow:
+	0 0 4px var(--r4),
+	0 0 11px var(--r5),
+	0 0 18px var(--r6);
+	font-weight: bold;
+	font-size: 3em!important;
+	text-align: center;
+	font-family: var(--text3);
 }
