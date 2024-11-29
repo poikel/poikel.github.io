@@ -225,3 +225,12 @@ select.form-control:focus {
 	border-radius: 20px;
 	width: 3px!important;
 }
+#footer {
+	background: var(--bei);
+	margin-top: 1.5em;
+	color: var(--pi2)!important;
+	max-width: 100%;
+}
+#footer a {
+	color: var(--wh)!important;
+}
