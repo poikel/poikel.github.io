@@ -4,16 +4,90 @@ code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 * { cursor: url('https://i.imgur.com/qpDsiea.png'), auto !important; } a:hover { cursor: url('https://i.imgur.com/ll070JO.png'), auto !important;}
 :root{
---red: #F17B74;
+--re: #f44c4c;
+--or2: #F17B74;
 --wh: #FDF4E7;
 --bei: #EDC0AB;
 --or: #D9896E;
---pas: #F6D0DD;
---font: "Jua", sans-serif;
+--pi: #b36b6b;
+--pi2: #d69387;
+--gr: #bcbc4c;
+--gr2: #6c6c2c;
+--font: "Jua", sans-serif;}
+.alert {
+	background: var(--gr);
+	border-radius: 25px;
+	border: 2px solid var(--gr2);
+	color: var(--wh);
+	text-shadow: 0 0 2px var(--gr2)
 }
-#header .navbar-main { background-color: var(--bei);}
+#header .navbar-main {
+	background-color: var(--pi);
+	margin-top:1.5rem;
+	border-radius: 30px 30px 0px 0px;
+}
+#header .navbar-main a i { font-size: 0!important;}
+#header .navbar-main a {
+	color: var(--bei)!important;
+	transition: .2s ease-in-out;
+	text-shadow: 0 0 2px var(--or);
+	text-transform: lowercase!important;
+}
+#header .navbar-main a i { 
+	font-size: 0 !important;
+	color: var(--pi2)!important;
+	text-shadow: 0 0 2px var(--or);
+	transition: .2s ease-in-out;
+}
+#header .navbar-main a:hover, #header .navbar-main a:hover i, a:hover {
+	color: var(--wh) !important;
+	text-shadow: 0 0 2px var(--wh);
+	transition: .2s ease-in-out;
+	text-decoration: none;
+}
+#header .navbar-main a i:after {
+	font-size: .875rem;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f7ff' !important;
+}
+#header .navbar-status {
+	border-radius: 0px 0px 30px 30px;
+	background-color: var(--pi2);
+	border-top: 5px groove var(--gr);
+	font-size: 13px;
+	text-shadow: 0 0 2px var(--or);
+}
 #header .breadcrumb-nav {visibility: hidden;}
+.navbar-expand-lg .navbar-collapse {margin-left:3rem;}
+#main:before {
+	position: absolute;
+	font-family: 'Font Awesome 5 Free', var(--font);
+	content:'\f7ff\00a0 css by #6488';
+	color: var(--wh);
+	visibility: visible;
+	font-size: 9px;
+	right: 20px;
+	top: 12px
+}
+a {
+	color: var(--bei)!important;
+	text-shadow: 0 0 2px var(--or);
+	transition: .2s ease-in-out;
+}
 body {
-background-image: url('https://i.imgur.com/xuZZ22B.png');
-background-size: contain;background-repeat: repeat-x;
-font-family: var(--font);}
+	background-image: url('https://i.imgur.com/xuZZ22B.png');
+	background-size: contain;background-repeat: repeat-x;
+	font-family: var(--font);
+}
+#main {
+	background: var(--pi2);
+	border-radius: 20px;
+}
+#main h1 {text-align: center;color: var(--bei);text-shadow: 0 0 2px var(--or);}
+#main h1:before, #main h1:after{font-family: 'Font Awesome 5 Free';content:'\f7ff';font-size: 12px;margin: 1rem;}
+#sidebar {background: transparent;}
+#sidebar .card {
+	background: var(--pi);
+	border-radius: 20px;
+	border-bottom: none;
+}
