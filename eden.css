@@ -1,5 +1,5 @@
 /* do not remove credit, edit code or reupload 
-this code is *not* free-to-use, made for #10298 on wolvden.com
+this code is *not* free-to-use
 code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
@@ -472,7 +472,7 @@ a.dropdown-item {
 	inset 0 0 .5rem var(--r7);
 }
 #denCards img[src$="nesting.png"] {
-	content: url('https://i.imgur.com/XJLorWi.gif');
+	content: url('https://i.imgur.com/wLYJlr8.gif');
 	height: 148px;
 	width: 268px;
 	border: 2px solid var(--r7);
@@ -512,4 +512,10 @@ a.dropdown-item {
 }
 #denCards img {
 	transition: .5s ease;
+}
+.left, .right {
+	background: none!important;
+}
+#main > table.table.mt-3 > tbody > tr:nth-child(6) > td.right > span {
+	color: var(--r7)!important;
 }
