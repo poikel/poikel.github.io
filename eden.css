@@ -26,7 +26,8 @@ code by #6488 on wd, @poikel on github*/
 	border-radius:30px;
 	background: var(--r3);
 }
-
+a:hover {text-decoration:none!important;}
+#main .card {background-color: transparent;}
 .alert {
 	background: var(--r2);
 	border-radius: 7px;
@@ -44,6 +45,7 @@ code by #6488 on wd, @poikel on github*/
 .alert a:hover {
 	animation: blink 1.5s infinite;
 	transition: .5s ease-in-out;
+	text-decoration: none;
 }
 #header .navbar-main {
 	margin-top: 1rem;
@@ -104,10 +106,13 @@ code by #6488 on wd, @poikel on github*/
 	font-family: var(--text3);
 	font-size: 12px;
 }
-
+.small, small,#txtChatContainer > div:nth-child(1) > span > a {color: #fff!important; }
 #header .navbar-status a {
 	color: var(--r4);
 	text-transform: uppercase;
+}
+#txtChatContainer > div:nth-child(1) > span > a {
+	font-family: var(--text3);
 }
 @keyframes blink {
 	0% { opacity: 0.5 ;}
@@ -150,7 +155,7 @@ body {
 }
 #main {
 	background: rgba(0,0,0,0.8);
-		border: 1px solid var(--r7);
+	border: 1px solid var(--r7);
 	box-shadow:
 	0 0 0.2rem var(--r7),
 	0 0 8px var(--r4),
@@ -185,7 +190,7 @@ body {
 	0 0 8px var(--r4),
 	0 0 16px var(--r5),
 	inset 0 0 .5rem var(--r7);
-	background: var(--bl);
+	background: rgba(0,0,0,0.8);
 	font-family: var(--text3);
 	color: var(--r4);
 }
@@ -215,6 +220,18 @@ body {
 	border: 1px solid var(--r5);
 	border-radius: 100px;
 }
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img,
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img {
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+	border-radius: 100%;
+	margin-top: .5em;
+}
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > div > img {margin-left: .9em;}
 .table {
 	border: 2px solid var(--r7);
 	box-shadow:
@@ -237,9 +254,13 @@ body {
 	0 0 8px var(--r4),
 	0 0 16px var(--r5),
 	inset 0 0 .5rem var(--r7);
+	color: #fff;
 }
+.table td {color: #fff;}
+.table th a, .table td a{color:var(--r7);}
+.table th a:hover {text-decoration: none!important;animation: blink 1.5s infinite;}
 .bg-light, .bg-dark {background:none!important;}
-.badge-info {background: var(--bl);} .text-wrap {color: #fff;}
+.badge {background: var(--r5);} .text-wrap {color: #fff;}
 img.rounded-bottom {
 	padding: 0!important;
 	border-radius: 100%!important;
@@ -265,4 +286,128 @@ img.rounded-bottom {
 	border-radius: 30px!important;
 	border: 2px solid var(--r1)!important;
 	box-shadow: none!important;
+}
+#main .nav-link {
+	font-size: 0;
+}
+#main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+#main .nav-link[href*='/den/']:after { content: '\f015'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+.nav-tabs {
+	justify-content: center;
+	border: none;
+	transition: ease-in-out;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+	color: var(--r7);
+	transition: ease-in-out;
+}
+.nav-tabs .nav-link {
+	border: none;
+	background-color: transparent;
+	color: var(--r4);
+	transition: ease-in-out;
+}
+.nav-tabs .nav-link:hover {
+	animation: blink 1.5s infinite;
+	transition: ease-in-out;
+}
+td.bottom {background: none!important;}
+select.form-control, select.form-control:focus {
+	background: var(--r3);
+    border: none;
+    border-radius: 30px;
+    border: 2px solid var(--r2);
+    font-family: var(--text3);
+	box-shadow: none;
+	color: #fff;
+}
+#chatMessagePinned {display: none;}
+#chatMessageContainer {
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+	color: #fff;
+	font-family: var(--text3);
+}
+.s-chat-sidebar #label_currentChannel, #fra_chatContainer #txtChatInput {
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+	color: #fff;
+	font-family: var(--text3);
+	background: var(--bl);
+}
+#fra_chatContainer #txtChatInput {
+	padding: 6px;
+	margin-bottom: .3rem;
+}
+.s-chat-message {
+	background: var(--r2)!important;
+	color: #fff;
+}
+.s-chat-message a {color: var(--r7);}
+.s-chat-message a:hover {animation: blink 1.5s infinite;}
+.dropdown-menu {
+	background: var(--bl);
+	margin-top: .8rem;
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+}
+.dropdown-item {
+	background: none;
+}
+a.dropdown-item {
+	color: var(--r6)!important;
+	text-shadow: 0 0 8px var(--r5);
+}
+.dropdown-item:hover {
+	background: none;
+}
+.dropdown-divider {display: none;}
+.s-chat-sidebar #fraChatChannelMenu {
+	background: var(--bl);
+	margin-top: .5rem;
+	border: 2px solid var(--r7);
+	box-shadow:
+	0 0 0.2rem var(--r7),
+	0 0 8px var(--r4),
+	0 0 16px var(--r5),
+	inset 0 0 .5rem var(--r7);
+}
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: var(--r6)!important;
+	text-shadow: 0 0 8px var(--r5);
+	font-family: var(--text3);
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: none;
+	animation: flicker 4s infinite alternate;
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: none;
+	animation: blink 1.5s infinite;
+}
+
+#footer {
+	background: none;
+	font-family: var(--text);
+	font-size: 12px;
+}
+.copyright:After {
+	content: '\f121\00a0 css by #6488';
+	display: block;
+	padding-top: 1rem;
+	font-family: var(--text), 'Font Awesome 5 Free';
 }
