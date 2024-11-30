@@ -411,3 +411,13 @@ a.dropdown-item {
 	padding-top: 1rem;
 	font-family: var(--text), 'Font Awesome 5 Free';
 }
+
+@media only screen and (min-width: 992px) {
+    
+.float {
+    z-index: 1;
+    position:fixed!important;
+	animation: blink 4s infinite;
+}
+.float.bl, .float.tl {right:-100px;} .float.bl, .float.br {bottom:10px;}
+}
