@@ -16,13 +16,24 @@ code by #6488 on wd, @poikel on github*/
 #header nav.navbar.navbar-status.navbar-expand div button:focus {
     box-shadow: none;
 }
+#header nav.navbar.navbar-status.navbar-expand div button {
+	text-shadow: 0 0 12px;	
+}
 ::-webkit-scrollbar {
     background-color: var(--bl2)!important;
     width: 4px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--dg2);
+    background-color: var(--dg);
     border-radius: 100px;
+}
+.alert {
+	color: #d2d2d2;
+	background-color: var(--bl);
+	border: 1px solid var(--bl2);
+	box-shadow: 0px 0px 10px var(--bl);
+	text-shadow: 0 0 12px;
+	text-align: center;
 }
 #header .navbar-main {
     border-radius: 10px 10px 0px 0px;
@@ -52,11 +63,12 @@ code by #6488 on wd, @poikel on github*/
 }
 #header .navbar-status {
     background-color: var(--bl2);
-    border-bottom: solid #d2d2d259 2px;
-    border-top: solid #d2d2d259 2px;
+    border-bottom: solid #d2d2d259 1px;
+    border-top: solid #d2d2d259 1px;
 }
 #header .navbar-status a, .d-lg-inline {
-    color: var(--lg);
+    color: #d2d2d2;
+	text-shadow: 0 0 12px;
 }
 #header .breadcrumb-nav {display: none;}
 #header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: #d2d2d2!important; }
@@ -67,7 +79,10 @@ code by #6488 on wd, @poikel on github*/
     margin-top: 1em;
     color: #d2d2d2;
     border-bottom: none;
-    background: var(--bl2);
+    background: linear-gradient(120deg, var(--bl2), var(--bl))!important;
+}
+#sidebar .card {
+	border: 1px solid #d2d2d259;
 }
 #sidebar .card-title, #sidebar h3 a {
 	color: #d2d2d2!important;
@@ -79,7 +94,7 @@ code by #6488 on wd, @poikel on github*/
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
     border-radius: 0px 100px 100px 100px!important;
-    border: 2px solid var(--dg);
+    border: 2px solid #d2d2d2;
 }
 .progress {
     background: var(--bl)!important;
@@ -102,10 +117,28 @@ body {
 #main a {
     color: #d2d2d2;
 }
+#main:before {
+	content: 'css by #6488';
+	position: absolute;
+	right: 20px;
+	font-size: 10px;
+}
 .table, .table th, .table-striped tbody tr:nth-of-type(odd) {
     background-color: var(--bl2)!important;
     border: none;
 	color: #d2d2d2;
+}
+.table {
+	border: 1px solid #d2d2d259;
+}
+.table th {
+	border-bottom: 4px double #d2d2d259;
+	text-align: center;
+    background: linear-gradient(120deg, var(--bl2), var(--bl))!important;
+
+}
+small {
+	color: #d2d2d2;!important;
 }
 .nav-tabs {
 	justify-content: right;
