@@ -1,0 +1,62 @@
+/* do not remove credit, edit code or reupload
+this code is *not* free-to-use, made for #4391 on wolvden.com
+code by #6488 on wd, @poikel on github*/
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+:root {
+    --font: "Domine", serif;
+    --bl: #0e1c1f;
+    --bl2: #193538;
+    --dg: #11613c;
+    --dg2: #2e9254;
+    --dg3: #13332c;
+    --lg: #73cc60;
+    --pl: #aff59f;
+}
+#header .navbar-main {
+    border-radius: 10px 10px 0px 0px;
+    margin-top: .6em;
+    background-color: var(--bl);
+}
+#header .navbar-main .nav-link {
+    font-size: 1rem!important;
+}
+#header .navbar-main a i {font-size: 0!important;}
+#header .navbar-main a i:after {
+	font-size: .875rem;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f1bb' !important;
+}
+#header .navbar-status {
+    background-color: var(--bl2);
+    border-bottom: double #d2d2d259 4px;;
+}
+#header .breadcrumb-nav {display: none;}
+#header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: #d2d2d2!important; }
+#sidebar {
+    background: #0e1c1fc2;
+}
+#sidebar .card {
+    margin-top: 1em;
+    background: var(--bl2);
+    color: #d2d2d2;
+    border-bottom: none;
+}
+.progress {
+    background: var(--bl)!important;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+.bg-warning, .bg-danger, .bg-info, .bg-primary, .bg-success {
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--dg), var(--lg));
+    border: 1px solid var(--bl);
+}
+body {
+    font-family: var(--font);
+    background-image: url('https://i.imgur.com/hl4QjeG.png');
+    background-position: center;
+}
+#main {
+    background: #0e1c1fc2;
+}
