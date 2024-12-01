@@ -66,4 +66,20 @@ remove box shadow when click on welcome
 #header nav.navbar.navbar-status.navbar-expand div button:focus {
     box-shadow: none;
 }
+
+
+
+.fog {
+    background: url('https://i.imgur.com/KJ0EH1L.png');
+    height: 200%;
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 100%;
+    z-index: -1;
+    position: fixed;
+    width: 300%;
+    left: 1px;
+    top: 1px;
+}
+
 */
