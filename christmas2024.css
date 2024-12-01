@@ -1,0 +1,57 @@
+/* do not remove credit, edit code or reupload 
+	this code is free-to-use!
+code by #6488 on wd, @poikel on github*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+    --font: 'Josefin Sans', sans-serif;
+}
+
+* { cursor: url('https://i.imgur.com/xDpTpiJ.png'), auto}
+a {color: white;}
+#header .navbar-main {
+    background: #864040;
+    margin-top: .6em;
+    border-radius: 10px 10px 0px 0px;
+}
+#header .navbar-main .nav-link {
+    font-size: 1rem!important;
+}
+#header .navbar-main a i {font-size: 0!important;}
+#header .navbar-main a i:after {
+	font-size: .875rem;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f7d5' !important;
+    color: white;
+}
+#header .navbar-status {
+    background-color: #55884c;
+    color: white;
+}
+#header .breadcrumb-nav {
+    background: #3c6b3c;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: .6em;
+}
+#header .breadcrumb-nav a, .breadcrumb-item.active,
+.breadcrumb-item+.breadcrumb-item:before {
+    color: white!important;
+}
+#sidebar {
+    background: none;
+}
+#sidebar .card {
+    background: #3c6b3c;
+    border-radius: 10px;
+    border-bottom: none;
+}
+body {
+    background-image: url('https://i.imgur.com/TlujD2M.png');
+    background-size: revert;
+    background-repeat: repeat;
+    background-color: #709275;
+    font-family: var(--font);
+}
+#main {
+    background-color: #3c6b3c;
+    border-radius: 10px;
+}
