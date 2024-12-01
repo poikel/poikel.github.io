@@ -45,7 +45,7 @@ code by #6488 on wd, @poikel on github*/
 #header .navbar-main a {
     color: #d2d2d2!important;
     font-weight: bold;
-    text-shadow: 0 0 4px;
+	text-shadow: 0 0 14px;
 }
 #header .navbar-main a:hover {
     transform: rotateY(10deg)!important;
@@ -72,6 +72,9 @@ code by #6488 on wd, @poikel on github*/
 #sidebar .card-title, #sidebar h3 a {
 	color: #d2d2d2!important;
 	text-align: center;
+}
+#sidebar a {
+	color: #d2d2d2
 }
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
@@ -112,10 +115,18 @@ body {
 .nav-tabs .nav-link.active {
 	border: none;
 	background-color: transparent;
+	color: var(--dg)!important;
 }
 .nav-tabs .nav-link {
     border: none;
     padding: 4px;
+	color: var(--lg)!important;
+	text-shadow: 0 0 4px;
+	transition: .1s ease;
+}
+.nav-tabs .nav-link:hover {
+	transform:scale(1.2);
+	transition: .1s ease;
 }
 #main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
 #main .nav-link[href*='/den/']:after { content: '\f724'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
