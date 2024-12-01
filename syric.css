@@ -57,9 +57,11 @@ code by #6488 on wd, @poikel on github*/
     color: #d2d2d2!important;
     font-weight: bold;
 	text-shadow: 0 0 14px;
+	transition: .2s ease;
 }
 #header .navbar-main a:hover {
-    transform: rotateY(10deg)!important;
+    transform: rotate(3deg);
+	transition: .2s ease;
 }
 #header .navbar-status {
     background-color: var(--bl2);
@@ -87,9 +89,17 @@ code by #6488 on wd, @poikel on github*/
 #sidebar .card-title, #sidebar h3 a {
 	color: #d2d2d2!important;
 	text-align: center;
+	text-shadow: 0 0 12px;
 }
 #sidebar a {
-	color: #d2d2d2
+	color: #d2d2d2;
+	transition: .1s ease;
+}
+#sidebar a:hover {
+	text-decoration: none!important;
+	letter-spacing: 1px;
+	transition: .1s ease;
+	text-shadow: 0 0 12px;
 }
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
@@ -118,10 +128,18 @@ body {
     color: #d2d2d2;
 }
 #main:before {
-	content: 'css by #6488';
+	content: '\f121\00a0 \00a0 css by #6488';
 	position: absolute;
 	right: 20px;
 	font-size: 10px;
+	font-family: var(--font), 'Font Awesome 5 Free';
+}
+#main h1 {
+	text-align: center;
+	margin-top: 1em;
+	text-shadow: 0 0 12px;
+	letter-spacing: 1px;
+	color: #d2d2d2;
 }
 .table, .table th, .table-striped tbody tr:nth-of-type(odd) {
     background-color: var(--bl2)!important;
@@ -165,4 +183,11 @@ small {
 #main .nav-link[href*='/den/']:after { content: '\f724'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
 .bg-light, .bg-dark {
 	background: transparent!important;
+}
+#footer {
+	background: #0e1c1fc2;;
+}
+.copyright:after {
+	content: '\f121\00a0 \00a0 css by #6488';
+	display: block;
 }
