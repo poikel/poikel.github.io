@@ -13,10 +13,26 @@ code by #6488 on wd, @poikel on github*/
     --lg: #73cc60;
     --pl: #aff59f;
 }
+.justify-content-between.mb-3 div { border: none !important; }
+#main .card {background-color: transparent!important;border: 0px!important;}
+#header nav.navbar.navbar-status.navbar-expand div button:focus {
+    box-shadow: none;
+}
+::-webkit-scrollbar {
+    background-color: var(--bl2)!important;
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--dg2);
+    border-radius: 100px;
+}
 #header .navbar-main {
     border-radius: 10px 10px 0px 0px;
     margin-top: .6em;
     background-color: var(--bl);
+}
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 1.5rem;
 }
 #header .navbar-main .nav-link {
     font-size: 1rem!important;
@@ -26,10 +42,23 @@ code by #6488 on wd, @poikel on github*/
 	font-size: .875rem;
 	font-family: 'Font Awesome 5 Free';
 	content: '\f1bb' !important;
+    color: var(--dg);
+}
+#header .navbar-main a {
+    color: var(--lg)!important;
+    font-weight: bold;
+    text-shadow: 0 0 4px var(--dg);
+}
+#header .navbar-main a:hover {
+    transform: rotateY(10deg)!important;
 }
 #header .navbar-status {
     background-color: var(--bl2);
-    border-bottom: double #d2d2d259 4px;;
+    border-bottom: solid #d2d2d259 2px;
+    border-top: solid #d2d2d259 2px;
+}
+#header .navbar-status a, .d-lg-inline {
+    color: var(--lg);
 }
 #header .breadcrumb-nav {display: none;}
 #header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: #d2d2d2!important; }
@@ -38,9 +67,13 @@ code by #6488 on wd, @poikel on github*/
 }
 #sidebar .card {
     margin-top: 1em;
-    background: var(--bl2);
     color: #d2d2d2;
     border-bottom: none;
+    background: var(--bl2);
+}
+.w-50 > a img, .w-50 div a img {
+    border-radius: 0px 100px 100px 100px;
+    border: 2px solid var(--dg);
 }
 .progress {
     background: var(--bl)!important;
@@ -60,3 +93,25 @@ body {
 #main {
     background: #0e1c1fc2;
 }
+#main a {
+    color: var(--lg)
+}
+.table, .table th, .table-striped tbody tr:nth-of-type(odd) {
+    background-color: transparent!important;
+    border: none;
+}
+.nav-tabs {
+	justify-content: right;
+	border: none;
+    	font-size: 0;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+}
+.nav-tabs .nav-link {
+    border: none;
+    padding: 4px;
+}
+#main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+#main .nav-link[href*='/den/']:after { content: '\f724'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
