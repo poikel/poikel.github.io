@@ -8,8 +8,6 @@ code by #6488 on wd, @poikel on github*/
     --bl: #0e1c1f;
     --bl2: #193538;
     --dg: #11613c;
-    --dg2: #2e9254;
-    --dg3: #13332c;
     --lg: #73cc60;
     --pl: #aff59f;
 }
@@ -42,12 +40,12 @@ code by #6488 on wd, @poikel on github*/
 	font-size: .875rem;
 	font-family: 'Font Awesome 5 Free';
 	content: '\f1bb' !important;
-    color: var(--dg);
+    color: #d2d2d2;
 }
 #header .navbar-main a {
-    color: var(--lg)!important;
+    color: #d2d2d2!important;
     font-weight: bold;
-    text-shadow: 0 0 4px var(--dg);
+    text-shadow: 0 0 4px;
 }
 #header .navbar-main a:hover {
     transform: rotateY(10deg)!important;
@@ -71,8 +69,13 @@ code by #6488 on wd, @poikel on github*/
     border-bottom: none;
     background: var(--bl2);
 }
-.w-50 > a img, .w-50 div a img {
-    border-radius: 0px 100px 100px 100px;
+#sidebar .card-title, #sidebar h3 a {
+	color: #d2d2d2!important;
+	text-align: center;
+}
+.w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+#main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
+    border-radius: 0px 100px 100px 100px!important;
     border: 2px solid var(--dg);
 }
 .progress {
@@ -94,16 +97,17 @@ body {
     background: #0e1c1fc2;
 }
 #main a {
-    color: var(--lg)
+    color: #d2d2d2;
 }
 .table, .table th, .table-striped tbody tr:nth-of-type(odd) {
-    background-color: transparent!important;
+    background-color: var(--bl2)!important;
     border: none;
+	color: #d2d2d2;
 }
 .nav-tabs {
 	justify-content: right;
 	border: none;
-    	font-size: 0;
+    font-size: 0;
 }
 .nav-tabs .nav-link.active {
 	border: none;
@@ -115,3 +119,6 @@ body {
 }
 #main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
 #main .nav-link[href*='/den/']:after { content: '\f724'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+.bg-light, .bg-dark {
+	background: transparent!important;
+}
