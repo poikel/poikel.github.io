@@ -34,4 +34,33 @@ stretch navbar across screen
 	position: absolute;
 }
 }
+===============
+make table stuff invisible
+===============
+.table, .table th, .table-striped tbody tr:nth-of-type(odd) {
+    background-color: transparent!important;
+    border: none;
+}
+===============
+den/profile icons center
+===============
+.nav-tabs {
+	justify-content: center;
+	border: none;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+}
+.nav-tabs .nav-link {
+	border: none;
+}
+===============
+replace den/profile icons
+===============
+#main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
+#main .nav-link[href*='/den/']:after { content: '\f015'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+===============
+
+===============
 */
