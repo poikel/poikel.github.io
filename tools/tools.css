@@ -61,6 +61,9 @@ replace den/profile icons
 #main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
 #main .nav-link[href*='/den/']:after { content: '\f015'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
 ===============
-
+remove box shadow when click on welcome
 ===============
+#header nav.navbar.navbar-status.navbar-expand div button:focus {
+    box-shadow: none;
+}
 */
