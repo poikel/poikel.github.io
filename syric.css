@@ -310,6 +310,7 @@ a:hover {
 .badge {
 	background: var(--dg);
 }
+
 @media only screen and (min-width: 992px) {
 .rain {
     background: url('https://i.imgur.com/Llt1RgS.png');
@@ -352,7 +353,6 @@ a:hover {
 		background-position: 20% 100%;
 	}
 }
-
 .quote {
 	margin: 1rem;
 	background: #0e1c1fba;
@@ -360,18 +360,34 @@ a:hover {
 	text-align: center;
 	padding-top: 1em;
 }
-
+.box1 {
+	float: left;
+}
+.box2 {
+	text-align: right;
+}
 .box1, .box2 {
+	transition: .5s ease;
+	height: 50px;
+	width: 386px;
+	background-color: #0e1c1fba;
+	overflow: auto;
+	border: 1px solid #d2d2d259;
+	padding: 1em;
+	transition: .5s ease;
+}
+.box1:hover, .box2:hover {
 	height: 180px;
 	width: 386px;
 	background-color: #0e1c1fba;
 	overflow: auto;
 	border: 1px solid #d2d2d259;
 	padding: 1em;
+	transition: .5s ease;
 }
-
 .boxcontainer {
 	column-gap: 20px;
 	display: flex;
 	justify-content: center;
+	
 }
