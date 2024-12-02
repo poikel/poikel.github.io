@@ -88,9 +88,11 @@ code by #6488 on wd, @poikel on github*/
 }
 #header .breadcrumb-nav { visibility: hidden;padding: 0!important;margin: 0!important; }
 #header .breadcrumb-item { display: none; }
+@media only screen and (min-width: 992px) {
 #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: var(--lg)!important; }
+}
 #sidebar {
-    background: #0e1c1fc2;
+	background: #0e1c1fc2;
 	border: 1px solid #d2d2d259;
 	border-right: 0px;
 }
@@ -305,6 +307,9 @@ a:hover {
 	text-decoration: none;
 	color: #d2d2d2;
 }
+.badge {
+	background: var(--dg);
+}
 @media only screen and (min-width: 992px) {
 .rain {
     background: url('https://i.imgur.com/Llt1RgS.png');
@@ -356,18 +361,17 @@ a:hover {
 	padding-top: 1em;
 }
 
-#x__bxxs {
-	text-align: center;
-	background: #0e1c1fba;
+.box1, .box2 {
+	height: 180px;
+	width: 386px;
+	background-color: #0e1c1fba;
 	overflow: auto;
-	margin: 1em;
+	border: 1px solid #d2d2d259;
 	padding: 1em;
 }
 
-#x__bxxs2 {
-	text-align: center;
-	background: #0e1c1fba;
-	overflow: auto;
-	margin: 1em;
-	padding: 1em;
+.boxcontainer {
+	column-gap: 20px;
+	display: flex;
+	justify-content: center;
 }
