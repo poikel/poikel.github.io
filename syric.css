@@ -347,3 +347,27 @@ a:hover {
 		background-position: 20% 100%;
 	}
 }
+
+.quote {
+	margin: 1rem;
+	background: #0e1c1fba;
+	border: 1px solid #d2d2d259;
+	text-align: center;
+	padding-top: 1em;
+}
+
+#x__bxxs {
+	text-align: center;
+	background: #0e1c1fba;
+	overflow: auto;
+	margin: 1em;
+	padding: 1em;
+}
+
+#x__bxxs2 {
+	text-align: center;
+	background: #0e1c1fba;
+	overflow: auto;
+	margin: 1em;
+	padding: 1em;
+}
