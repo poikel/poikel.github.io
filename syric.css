@@ -32,8 +32,16 @@ code by #6488 on wd, @poikel on github*/
 	background-color: var(--bl);
 	border: 1px solid var(--bl2);
 	box-shadow: 0px 0px 10px var(--bl);
-	text-shadow: 0 0 12px;
 	text-align: center;
+}
+.alert a {
+	transition: .2s ease!important;
+}
+.alert a:hover {
+	letter-spacing: 0.4px;
+	transition: .2s ease!important;
+	text-shadow: 0 0 12px;
+	text-decoration: none;
 }
 #header .navbar-main {
     border-radius: 10px 10px 0px 0px;
@@ -60,22 +68,31 @@ code by #6488 on wd, @poikel on github*/
 	transition: .2s ease;
 }
 #header .navbar-main a:hover {
-    transform: rotate(3deg);
+    transform: rotate(2deg);
 	transition: .2s ease;
 }
 #header .navbar-status {
     background-color: var(--bl2);
-    border-bottom: solid #d2d2d259 1px;
-    border-top: solid #d2d2d259 1px;
+	border: solid #d2d2d259 1px;
+	border-top: double 4px #d2d2d259;
 }
 #header .navbar-status a, .d-lg-inline {
     color: #d2d2d2;
+	transition: .2s ease;
 }
-#header .breadcrumb-nav {visibility: hidden;}
-#header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: #d2d2d2!important; }
+#header .navbar-status a:hover {
+	letter-spacing: .4px;
+	color: #d2d2d2;
+	text-shadow: 0px 0px 6px;
+	transition: .2s ease;
+}
+#header .breadcrumb-nav { visibility: hidden;padding: 0!important;margin: 0!important; }
+#header .breadcrumb-item { display: none; }
+#bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: var(--lg)!important; }
 #sidebar {
     background: #0e1c1fc2;
-	top: -37px;
+	border: 1px solid #d2d2d259;
+	border-right: 0px;
 }
 #sidebar .card {
     margin-top: 1em;
@@ -93,13 +110,17 @@ code by #6488 on wd, @poikel on github*/
 }
 #sidebar a {
 	color: #d2d2d2;
-	transition: .1s ease;
+	transition: .2s ease;
 }
 #sidebar a:hover {
 	text-decoration: none!important;
 	letter-spacing: 1px;
-	transition: .1s ease;
+	transition: .2s ease;
 	text-shadow: 0 0 12px;
+}
+#sidebar .fa-angle-right:before {
+	content: '\f1b0';
+	font-size: 9px;
 }
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
@@ -124,7 +145,8 @@ body {
 }
 #main {
     background: #0e1c1fc2;
-	top: -37px;
+	border: 1px solid #d2d2d259;
+	border-left: 0px;
 }
 #main a {
     color: #d2d2d2;
@@ -206,6 +228,9 @@ small {
 	border: 4px double #d2d2d259;
 	filter: drop-shadow(0px 0px 4px #000);
 }
+#denCards a:hover, #denCards img:hover {
+	filter: contrast(1.05) brightness(1.1);
+}
 #denCards .card-header {
 	background: var(--bl);
 	backdrop-filter: none;
@@ -241,6 +266,44 @@ small {
 	content: url('https://i.imgur.com/JtwcoZl.png');
 	object-fit: cover!important;
 	height: 140px;
+}
+#chatMessagePinned {
+	display: none!important;
+}
+#chatMessageContainer {
+	border: 1px solid #d2d2d259;
+}
+.s-chat-message {
+	background: var(--bl)!important;
+	border-bottom: 1px solid #d2d2d259;
+	color: #d2d2d2;
+	text-shadow: 0 0 2px;
+}
+.s-chat-message a {
+	color: var(--lg);
+	transition: .2s ease;
+}
+.s-chat-message a:hover {
+	transition: .2s ease;
+	text-decoration: none;
+	letter-spacing: .4px;
+	color: #d2d2d2;
+	text-shadow: 0 0 8px;
+}
+#fra_chatContainer #txtChatInput, .s-chat-sidebar #label_currentChannel {
+	background: var(--bl);
+	border: 1px solid #d2d2d259;
+	padding-left: 6px;
+}
+a {
+	color: #d2d2d2;
+	transition: .2s ease;
+}
+a:hover {
+	letter-spacing: .4px;
+	text-shadow: 0 0 8px;
+	text-decoration: none;
+	color: #d2d2d2;
 }
 @media only screen and (min-width: 992px) {
 .rain {
