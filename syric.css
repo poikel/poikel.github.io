@@ -104,7 +104,8 @@ code by #6488 on wd, @poikel on github*/
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
     border-radius: 0px 100px 100px 100px!important;
-    border: 2px solid #d2d2d2;
+    border: 2px solid #d2d2d2!important;
+	padding: 0px!important;
 }
 .progress {
     background: var(--bl)!important;
@@ -142,18 +143,18 @@ body {
 	color: #d2d2d2;
 }
 .table, .table th, .table-striped tbody tr:nth-of-type(odd) {
-    background-color: var(--bl2)!important;
+    background-color: transparent!important;
     border: none;
 	color: #d2d2d2;
 }
+.table th {
+	border-bottom: 4px double #d2d2d259;
+}
 .table {
 	border: 1px solid #d2d2d259;
-}
-.table th {
 	border-bottom: 4px double #d2d2d259;
 	text-align: center;
     background: linear-gradient(120deg, var(--bl2), var(--bl))!important;
-
 }
 small {
 	color: #d2d2d2;!important;
@@ -190,4 +191,8 @@ small {
 .copyright:after {
 	content: '\f121\00a0 \00a0 css by #6488';
 	display: block;
+}
+#main div.card.bg-light.border.text-center.mt-3 div, .text-muted {
+	color: #d2d2d2!important;
+	text-shadow: 0 0 4px;
 }
