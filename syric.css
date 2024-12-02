@@ -70,12 +70,12 @@ code by #6488 on wd, @poikel on github*/
 }
 #header .navbar-status a, .d-lg-inline {
     color: #d2d2d2;
-	text-shadow: 0 0 12px;
 }
-#header .breadcrumb-nav {display: none;}
+#header .breadcrumb-nav {visibility: hidden;}
 #header .breadcrumb-nav #bookmarkPage { display: flex; visibility: visible; position: fixed; top: 15px; right: 15px; color: #d2d2d2!important; }
 #sidebar {
     background: #0e1c1fc2;
+	top: -37px;
 }
 #sidebar .card {
     margin-top: 1em;
@@ -124,6 +124,7 @@ body {
 }
 #main {
     background: #0e1c1fc2;
+	top: -37px;
 }
 #main a {
     color: #d2d2d2;
@@ -153,7 +154,10 @@ body {
 .table {
 	border: 1px solid #d2d2d259;
 	text-align: center;
-    background: linear-gradient(120deg, var(--bl2), var(--bl))!important;
+    background: linear-gradient(180deg, var(--bl2), var(--bl))!important;
+}
+.table .bottom {
+	background: var(--b2);
 }
 small {
 	color: #d2d2d2;!important;
@@ -188,8 +192,11 @@ small {
 	background: #0e1c1fc2;;
 }
 .copyright:after {
+	font-family: var(--font), 'Font Awesome 5 Free';
 	content: '\f121\00a0 \00a0 css by #6488';
 	display: block;
+	padding-top: .6em;
+	font-size: .7em;
 }
 #main div.card.bg-light.border.text-center.mt-3 div, .text-muted {
 	color: #d2d2d2!important;
