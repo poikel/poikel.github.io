@@ -124,7 +124,7 @@ code by #6488 on wd, @poikel on github*/
 	content: '\f1b0';
 	font-size: 9px;
 }
-.table .form-row img, .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+.w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img, img.rounded-bottom {
     border-radius: 0px 100px 100px 100px!important;
     border: 2px solid #d2d2d2!important;
