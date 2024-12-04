@@ -129,6 +129,7 @@ code by #6488 on wd, @poikel on github*/
     border-radius: 0px 100px 100px 100px!important;
     border: 2px solid #d2d2d2!important;
 	padding: 0px!important;
+	box-shadow: 0px 0px 10px var(--bl)!important;
 }
 .progress {
     background: var(--bl)!important;
@@ -313,7 +314,34 @@ a:hover {
 .badge {
 	background: var(--dg);
 }
-
+.dropdown-menu, .s-chat-sidebar #fraChatChannelMenu {
+	background: var(--bl);
+	border: 1px solid #d2d2d259;
+	box-shadow: 0px 0px 10px var(--bl);
+	margin-top: .5rem;
+}
+.dropdown-item {
+	background: none;
+}
+.dropdown-item:hover {
+    background: linear-gradient(-90deg, var(--bl2), var(--bl))!important;
+}
+.dropdown-divider {
+	display: none;
+}
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: #d2d2d2;
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+    background: linear-gradient(-90deg, var(--bl2), var(--bl))!important;
+	color: #d2d2d2;
+	text-shadow: 0 0 12px;
+	transition: .2s ease;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: var(--bl2);
+	text-shadow: 0 0 12px;
+}
 @media only screen and (min-width: 992px) {
 .rain {
     background: url('https://i.imgur.com/Llt1RgS.png');
@@ -357,11 +385,11 @@ a:hover {
 	}
 }
 .quote {
-	margin: 1rem;
 	background: #0e1c1fba;
 	border: 1px solid #d2d2d259;
 	text-align: center;
 	padding-top: 1em;
+	box-shadow: 0px 0px 10px var(--bl);
 }
 .box1 {
 	float: left;
@@ -372,20 +400,43 @@ a:hover {
 .box1, .box2 {
 	transition: .5s ease;
 	height: 50px;
-	width: 386px;
 	background-color: #0e1c1fba;
 	overflow: auto;
 	border: 1px solid #d2d2d259;
-	padding: 1em;
+	padding: 1rem;
+	transition: .5s ease;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 100%;
+	box-shadow: 0px 0px 10px var(--bl);
+}
+.box3 {
+	transition: .5s ease;
+	height: 50px;
+	background-color: #0e1c1fba;
+	overflow: auto;
+	border: 1px solid #d2d2d259;
+	padding: 1rem;
+	transition: .5s ease;
+	width: 100%;
+	box-shadow: 0px 0px 10px var(--bl);
+}
+.box3:hover {
+	height: 180px;
+	width: 100%;
+	background-color: #0e1c1fba;
+	overflow: auto;
+	border: 1px solid #d2d2d259;
+	padding: 1rem;
 	transition: .5s ease;
 }
 .box1:hover, .box2:hover {
 	height: 180px;
-	width: 386px;
+	width: 100%;
 	background-color: #0e1c1fba;
 	overflow: auto;
 	border: 1px solid #d2d2d259;
-	padding: 1em;
+	padding: 1rem;
 	transition: .5s ease;
 }
 .boxcontainer {
@@ -405,4 +456,22 @@ a:hover {
 	box-shadow: none;
 	border: none!important;
 	text-shadow: 0 0 12px;
+}
+.btn-danger:active, .btn-danger:focus, .btn-success:active, .btn-success:focus, .btn-info:active, .btn-info:focus, .btn-warning:active, .btn-warning:focus, .btn-primary:active, .btn-primmary:focus {
+	background: var(--lg)!important;
+	box-shadow: none!important;
+	border: none!important;
+	text-shadow: 0 0 12px;
+}
+select.form-control {
+	background: var(--bl2);
+	border: 1px solid #d2d2d259;
+}
+select.form-control:focus {
+	background: var(--bl2);
+	border: 1px solid #d2d2d259;
+	box-shadow: none;
+}
+.combo-selection-parent, .search_field.form-control, .combo-selection-container {
+	background: var(--bl);
 }
