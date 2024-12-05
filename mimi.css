@@ -15,7 +15,7 @@ code by #6488 on wd, @poikel on github*/
 	--b: #887f70;
 	--shd: #271611;
 }
-* { cursor: url('https://cur.cursors-4u.net/games/gam-4/gam376.cur'), auto !important; }
+* { cursor: url('https://i.imgur.com/jluKjhx.png'), auto !important; }
 
 @keyframes float {
 	0% {
@@ -43,6 +43,7 @@ code by #6488 on wd, @poikel on github*/
 	margin-top: 1.7rem;
 	background: var(--b);
 	border: 1px var(--g2) solid;
+	text-shadow: 1px 1px 1px var(--shd);
 }
 .alert a {
     color: var(--c2)!important;
@@ -108,7 +109,7 @@ code by #6488 on wd, @poikel on github*/
     color: var(--c2)!important;
     text-shadow: 1px 1px 1px var(--shd);
     font-weight: 800;
-    font-size: 10px;
+    font-size: 12px;
 }
 #header .navbar-status .text-light, #header .navbar-status a:active {
     box-shadow: none!important;
@@ -136,7 +137,7 @@ span.d-none.d-lg-inline.navbar-text:before {
     transform: rotate(-90deg);
     text-shadow: -1px 1px 1px var(--shd);
 }
-
+@media only screen and (min-width: 991px) {
 .breadcrumb:after {
     position: absolute;
     content: '\f02d \00a0 \00a0 \00a0 css by #6488';
@@ -147,7 +148,7 @@ span.d-none.d-lg-inline.navbar-text:before {
     font-weight: bold;
     text-shadow: 0px 1px 1px var(--shd);
     font-size: 9px;
-}
+}}
 .badge-danger { background: var(--g2); color: var(--c2);}
 .breadcrumb-nav {
     visibility: hidden;
@@ -219,7 +220,7 @@ body {
 	color: var(--c2);
 	text-shadow: 0px 1px 1px var(--shd);
 }
-#main .nav-link[href*='/den/']:after { content: '\f701'; font-family: 'Font Awesome 5 Free'; font-size: 14px;
+#main .nav-link[href*='/den/']:after { content: '\f1b0'; font-family: 'Font Awesome 5 Free'; font-size: 14px;
 }
 #main .nav-link[href*='/profile/']:after { content: '\f277'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;
 }
@@ -232,7 +233,7 @@ body {
 		margin-top: 0;
 	}
 }
-#main > table > tbody > tr:nth-child(1) > th {
+#main table tbody tr:nth-child(1) th {
 	display: none;
 }
 .table {
@@ -254,6 +255,7 @@ body {
 }
 #main .card {
 	background: none;
+	border: none!important;
 }
 #main .table th a {
 	color: var(--c2);
@@ -281,11 +283,9 @@ body {
 #sidebar .card a {
 	color: var(--c2)
 }
-
 #sidebar .fa-angle-right:before {
 	content: '\f7ff';
 }
-
 #denCards a[href*='/dynasty'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
 }
@@ -332,14 +332,16 @@ body {
 .border-none a { color: var(--c2); }
 .text-success { color: var(--g2)!important; }
 .justify-content-between.mb-3 div, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > div > img { border: none !important; }
-.w-50 > a img, .w-50 div a img, .border-none .card img, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img { border: 1px solid var(--c)}
+.w-50 > a img, .w-50 div a img, .border-none .card img, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img { 
+	border: 1px solid var(--c);
+}
 .card-title:before {
 	font-size: 0.875rem !important;
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f71c' !important;
 	padding-right: 10px;
 }
-#main > table:nth-child(11) > tbody > tr:nth-child(2) > td {
+#main table:nth-child(11) tbody tr:nth-child(2) td {
 	display: none;
 }
 .right a, .right .text-success {
@@ -347,4 +349,114 @@ body {
 }
 .left {
 	background: none!important;
+}
+b, .text-muted {
+	color: var(--c2)!important;
+	font-family: var(--font3);
+	text-shadow: 1px 1px 1px var(--shd);
+}
+.s-chat-message {
+	background-image: url("https://i.imgur.com/0nZB1bx.png")!important;
+	background-attachment: fixed!important;
+	background-size: cover!important;
+	color: var(--c);
+	font-family: var(--font3);
+}
+.s-chat-message a {
+	color: var(--c2);
+}
+#chatMessagePinned {
+	display: none;
+}
+#chatMessageContainer {
+	border: solid 1px var(--c2);
+	border-radius: 0px;
+}
+.dropdown-menu {
+	background: var(--g2);
+	border: 2px solid var(--g);
+	margin-top: 1rem;
+	border-image: linear-gradient(to right, transparent, var(--g), transparent);
+    border-image-slice: 1;
+}
+.dropdown-item {
+	background: none;
+}
+.dropdown-item:hover {
+	background: none;
+	text-decoration: underline!important;
+}
+.dropdown-divider {
+	display: none;
+}
+.dropdown-item:nth-child(1):before {
+	content: '\f1b0';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(2):before {
+	content: '\f02d';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(3):before {
+	content: '\f72b';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(4):before {
+	content: '\f723';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(5):before {
+	content: '\f6ba';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(7):before {
+	content: '\f70f';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(8):before {
+	content: '\f6e5';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.dropdown-item:nth-child(10):before {
+	content: '\f6d9';
+	font-family: 'Font Awesome 5 Free';
+	padding-right: 5px;
+}
+.s-chat-sidebar #fraChatChannelMenu {
+	background: var(--g2);
+	border: 2px solid var(--g);
+	margin-top: .4rem;
+	border-image: linear-gradient(to right, transparent, var(--g), transparent);
+    border-image-slice: 1;
+	box-shadow: none;
+}
+#fra_chatContainer .channelMenu .channelSwitcher {
+	font-family: var(--font3);
+	text-transform: lowercase;
+	color: var(--c2);
+	text-shadow: 1px 1px 1px var(--shd);
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: none;
+	text-decoration: underline;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: none;
+	color: var(--c);
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active:before {
+	content: "\f7ff";
+	padding-right: 5px;
+	font-family: 'Font Awesome 5 Free';
+	font-size: 9px;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active:hover {
+	color: var(--c2);
 }
