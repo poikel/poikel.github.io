@@ -41,7 +41,8 @@ code by #6488 on wd, @poikel on github*/
 	font-weight: bold;
 	text-transform: lowercase;
 	margin-top: 1.7rem;
-	background: var(--b);
+	background-image: url("https://i.imgur.com/0nZB1bx.png");
+	background-attachment: fixed;
 	border: 1px var(--g2) solid;
 	text-shadow: 1px 1px 1px var(--shd);
 }
@@ -273,6 +274,10 @@ body {
     background: none;
     text-transform: lowercase;
 }
+#sidebar .card-title {
+	font-weight: bold;
+	font-family: var(--font3);
+}
 #sidebar .card {
 	background: transparent;
 	border: none;
@@ -284,7 +289,7 @@ body {
 	color: var(--c2)
 }
 #sidebar .fa-angle-right:before {
-	content: '\f7ff';
+	content: 'ᛜ';
 }
 #denCards a[href*='/dynasty'] {
     content: url('https://static.wolvden.com/images/items/trophies/skull_wolf.png');
@@ -344,16 +349,16 @@ body {
 #main table:nth-child(11) tbody tr:nth-child(2) td {
 	display: none;
 }
-.right a, .right .text-success {
-	color: var(--c2)!important;
-}
 .left {
 	background: none!important;
 }
-b, .text-muted {
+b, .text-muted, .right a, .right .text-success, small, #txtChatContainer #lblCharacterCounter {
 	color: var(--c2)!important;
 	font-family: var(--font3);
 	text-shadow: 1px 1px 1px var(--shd);
+}
+small {
+	font-family: var(--font2);
 }
 .s-chat-message {
 	background-image: url("https://i.imgur.com/0nZB1bx.png")!important;
@@ -431,8 +436,8 @@ b, .text-muted {
 }
 .s-chat-sidebar #fraChatChannelMenu {
 	background: var(--g2);
-	border: 2px solid var(--g);
 	margin-top: .4rem;
+	border: 2px solid var(--g);
 	border-image: linear-gradient(to right, transparent, var(--g), transparent);
     border-image-slice: 1;
 	box-shadow: none;
@@ -459,4 +464,30 @@ b, .text-muted {
 }
 #fra_chatContainer .channelMenu .channelSwitcher.active:hover {
 	color: var(--c2);
+}
+.s-chat-sidebar #label_currentChannel, #fra_chatContainer #txtChatInput {
+	background: var(--g2);
+	border: 2px solid var(--g);
+	border-image: linear-gradient(to right, transparent, var(--g), transparent);
+    border-image-slice: 1;
+	font-family: var(--font3);
+	color: var(--c2);
+	text-transform: lowercase;
+	text-shadow: 1px 1px 1px var(--shd);
+}
+#fra_chatContainer #txtChatInput:focus-visible {
+	outline: none!important;
+}
+.input-group, #btnToggleSidebarChat i, #txtChatContainer div:nth-child(1) span a {
+	display: none;
+}
+
+.progress {
+	background: var(--g2)!important;
+	border-radius: 0px;
+	margin: 2px;
+	border: 1px solid var(--c);
+}
+.bg-warning, .bg-danger, .bg-success, .bg-info, .bg-primary {
+	background-color: var(--b)!important;
 }
