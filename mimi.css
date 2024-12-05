@@ -114,8 +114,11 @@ code by #6488 on wd, @poikel on github*/
 }
 #header .navbar-status .text-light, #header .navbar-status a:active {
     box-shadow: none!important;
+	background: none;
 }
-
+#header .navbar-status.navbar-expand button:hover {
+	text-decoration: none;
+}
 #header .navbar-status {
     margin-right: 1rem;
     margin-left: 1rem;
@@ -150,7 +153,7 @@ span.d-none.d-lg-inline.navbar-text:before {
     text-shadow: 0px 1px 1px var(--shd);
     font-size: 9px;
 }}
-.badge-danger { background: var(--g2); color: var(--c2);}
+.badge { background: var(--g2); color: var(--c2);}
 .breadcrumb-nav {
     visibility: hidden;
 }
@@ -234,9 +237,6 @@ body {
 		margin-top: 0;
 	}
 }
-#main table tbody tr:nth-child(1) th {
-	display: none;
-}
 .table {
 	border: none;
 }
@@ -245,7 +245,7 @@ body {
 	background-size: cover;
 	background-color: var(--b);
 	background-image: url("https://i.imgur.com/0nZB1bx.png");
-	padding: 40px;
+	padding: 30px;
     text-transform: lowercase;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -253,6 +253,17 @@ body {
 	color: var(--c2);
 	text-shadow: 0px 1px 1px var(--shd);
 	border: 1px solid var(--c);
+}
+select.form-control, select.form-control:active, select.form-control:focus {
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: var(--b);
+	background-image: url("https://i.imgur.com/0nZB1bx.png");
+	text-transform: lowercase;
+	color: var(--c2);
+	text-shadow: 0px 1px 1px var(--shd);
+	border: 1px solid var(--c);
+	box-shadow: none!important;
 }
 #main .card {
 	background: none;
@@ -474,14 +485,15 @@ small {
 	color: var(--c2);
 	text-transform: lowercase;
 	text-shadow: 1px 1px 1px var(--shd);
+	border-radius: 0px;
 }
 #fra_chatContainer #txtChatInput:focus-visible {
 	outline: none!important;
 }
-.input-group, #btnToggleSidebarChat i, #txtChatContainer div:nth-child(1) span a {
+.input-group, #btnToggleSidebarChat i, #txtChatContainer div:nth-child(1) span a, #sidebar .btn-icon {
 	display: none;
 }
-
+a { color: var(--c2); }
 .progress {
 	background: var(--g2)!important;
 	border-radius: 0px;
@@ -490,4 +502,41 @@ small {
 }
 .bg-warning, .bg-danger, .bg-success, .bg-info, .bg-primary {
 	background-color: var(--b)!important;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.btn {
+	background: var(--b);
+	border-bottom: none;
+	border-radius: 0px;
+	font-family: var(--font3);
+	text-transform: lowercase;
+	color: var(--c2);
+	font-weight: bold;
+	border: 1px solid var(--c);
+}
+.btn:hover {
+	background: var(--b);
+	border-bottom: none;
+	border-radius: 0px;
+	font-family: var(--font3);
+	text-transform: lowercase;
+	color: var(--c2);
+	font-weight: bold;
+	border: 1px solid var(--c);
+	box-shadow: none;
+	text-decoration: underline;
+}
+.btn i {
+	display: none;
+}
+#main form button {
+	display: none;
+}
+#footer, #footer a {
+	background: none;
+	font-family: var(--font3);
+	color: var(--c2)!important;
+	text-shadow: 1px 1px 1px var(--shd);
 }
