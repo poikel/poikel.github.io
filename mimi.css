@@ -528,10 +528,7 @@ a { color: var(--c2); }
 	box-shadow: none;
 	text-decoration: underline;
 }
-.btn i {
-	display: none;
-}
-#main form button {
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > form > button {
 	display: none;
 }
 #footer, #footer a {
