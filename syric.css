@@ -150,6 +150,7 @@ body {
     background: #0e1c1fc2;
 	border: 1px solid #d2d2d259;
 	border-left: 0px;
+	color: #d2d2d2;
 }
 #main a {
     color: #d2d2d2;
@@ -481,4 +482,7 @@ select.form-control:focus {
 }
 .right {
 	text-align: left;
+}
+.text-break {
+	color: #d2d2d2;
 }
