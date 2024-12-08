@@ -1,0 +1,55 @@
+/* do not remove credit, edit code or reupload/share 
+this code is *not* free-to-use, made for #53539 on wolvden.com
+code by #6488 on wolvden, @poikel on github.io*/
+
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+:root {
+	--font: "Delius Swash Caps", cursive;
+	--bl: #070409;
+	--dp: #241123;
+	--dp2: #442343;
+	--dp3: #221336;
+	--wh: #e7c9fb;
+	--p: #3c1b63;
+	--p2: #5e1fa5;
+	--p3: #b26fe4;
+}
+* {cursor: url("https://i.imgur.com/4zHhybf.png"), auto !important;}
+#main .card {background-color: transparent;}
+#header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
+.table-striped tbody tr:nth-of-type(odd) {background-color: #ae333300!important;border: none;}
+a {color: var(--p3)!important;}
+body {
+	font-family: var(--font);
+	background-image: url('https://i.imgur.com/BGs55S1.png');
+	color: var(--wh);
+}
+#main, #sidebar {
+	background-color: rgba(0,0,0,0.9);
+}
+#sidebar .card {
+	text-shadow: 0 0 .2em var(--bl);
+	background-color: var(--p);
+	border-bottom: none;
+	box-shadow: 0 0 1em var(--p);
+	background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+}
+.navbar-main {
+	background-color: var(--dp3)!important;
+	margin-top: 1em;
+}
+.navbar-status {
+	background-color: var(--p)!important;
+}
+.breadcrumb-nav {
+	background-color: var(--bl)!important;
+}
+.navbar-main a {
+	font-size: 1.1em!important;
+	font-weight: bold;
+	text-shadow: 0 0 .2em var(--bl);
+}
+.navbar-main a i {font-size: 0px!important;}
+.navbar-main a i:after {font-size:.8rem!important;font-family:"Font Awesome 5 Free";content:"\f654";margin-right:3px;color:var(--wh);}
+.progress {background: var(--bl)!important;border-radius:10px;border:1px solid var(--wh);margin-top:.4em;}
+.bg-warning, .bg-danger, .bg-info, .bg-primary, .bg-success {background:linear-gradient(90deg, var(--p3), var(--wh));border-radius:10px;}
