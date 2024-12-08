@@ -17,6 +17,7 @@ code by #6488 on wolvden, @poikel on github.io*/
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 .table-striped tbody tr:nth-of-type(odd) {background-color: #ae333300!important;border: none;}
 a, .text-muted, .d-lg-inline, small, .b, .text-danger {color: var(--p3)!important;} .justify-content-between.mb-3 div {border: none !important;}
+.text-success {color: var(--p2)!important;}
 ::-webkit-scrollbar {
 	width: 7px;
 	background: var(--p);
@@ -40,6 +41,7 @@ a {transition:.3s ease;}
 a:hover {
 	color: var(--wh)!important;
 	transition: .3s ease;
+	text-decoration: none;
 }
 body {
 	font-family: var(--font);
@@ -55,6 +57,7 @@ body {
 }
 #main .table th, #main td.bottom {
 	background-color:var(--p);
+	color: var(--wh);
 }
 #main .table {border: 1px solid var(--p)}
 #sidebar .card {
@@ -69,7 +72,8 @@ body {
 #sidebar .fa-angle-right:before {
 	content: '\f7d4';
 }
-.w-50 > a img, .w-50 div a img {
+.w-50 > a img, .w-50 div a img, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img,
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img {
 	border-radius: 0px 30% 0px 30%;
 	border: solid 2px var(--wh);
 	filter:drop-shadow(0 0 4px);
@@ -127,4 +131,65 @@ body {
 .bg-light, .bg-dark {background: var(--dp)!important;border:none!important;color:var(--p3)!important;}
 img.rounded-bottom {
 	padding: 0px!important;
+}
+.dropdown-menu, .s-chat-sidebar #fraChatChannelMenu {
+	background: var(--dp)!important;
+	box-shadow: 0 0 .2em var(--bl);
+	border: none;
+}
+.s-chat-sidebar #fraChatChannelMenu {margin-top: .4em;}
+#fra_chatContainer .channelMenu .channelSwitcher {color:var(--p3);}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {background:var(--p);}
+#fra_chatContainer .channelMenu .channelSwitcher.active {color:var(--wh);background:var(--p2);}
+.dropdown-item, .dropdown-item:hover {
+	background: none;
+}
+a.dropdown-item {
+	color:var(--p3)!important;
+	transition: .3s ease;
+}
+a.dropdown-item:hover {
+	color: var(--wh)!important;
+}
+.dropdown-divider {display:none;}
+.s-chat-sidebar #label_currentChannel, #fra_chatContainer #txtChatInput {
+	background: var(--dp);
+	border: none;
+}
+#fra_chatContainer #txtChatInput {padding-left: .3em;color:var(--wh);}
+.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+	background: var(--p3);
+	color: var(--wh);
+	font-weight: bold;
+	border: none;
+}
+.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--p2);
+	color: var(--wh);
+}
+.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+	background: var(--p2)!important;
+	color: var(--wh)!important;
+	text-decoration: underline;
+}
+.btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
+#footer {
+	background: rgba(0,0,0,0.7);
+	color: var(--wh);
+}
+#footer .copyright:after {
+	display: block;
+	content: '🔮 css by #6488';
+	margin-top: .8em;
+}
+.breadcrumb:after {
+	content: '🔮 css by #6488';
+	display: block;
+	font-size: .7rem;
+	position: absolute;
+}
+select.form-control, select.form-control:active, select.form-control:focus {
+	background: var(--dp);
+	border: 1px solid var(--p2);
+	color: var(--wh);
 }
