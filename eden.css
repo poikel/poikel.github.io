@@ -598,3 +598,9 @@ a.dropdown-item {
 #main > table.table.mt-3 > tbody > tr:nth-child(6) > td.right > span {
     color: var(--r7)!important;
 }
+#fraProfileHTML, #fraDenHTML {
+    font-family: var(--text3)!important;
+}
+#fraDenHTML a, #fraProfileHTML a {
+    color: var(--r7);
+}
