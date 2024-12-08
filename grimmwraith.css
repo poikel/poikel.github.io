@@ -193,3 +193,9 @@ select.form-control, select.form-control:active, select.form-control:focus {
 	border: 1px solid var(--p2);
 	color: var(--wh);
 }
+.left, .right {background:var(--bl)!important;}
+.alert {
+	background: var(--dp);
+	border: 1px solid var(--p);
+	color: var(--wh);
+}
