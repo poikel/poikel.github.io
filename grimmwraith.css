@@ -70,7 +70,7 @@ body {
 }
 #sidebar .bookmarks, #sidebar .card-title {font-weight:bold;text-shadow: 0 0 0.3em var(--bl);}
 #sidebar .fa-angle-right:before {
-	content: '\f7d4';
+	content: '\f6b5';
 }
 .w-50 > a img, .w-50 div a img, #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img,
 #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img {
@@ -106,8 +106,46 @@ body {
 	animation-timing-function: ease-in-out;
 	letter-spacing: .04em;
 }
-.navbar-main a i {font-size: 0px!important;}
-.navbar-main a i:after {font-size:.8rem!important;font-family:"Font Awesome 5 Free";content:"\f654";margin-right:3px;color:var(--wh);}
+.navbar-main a i {font-size: 0px!important;color:var(--wh)!important;}
+#main-menu>ul>li:nth-child(1)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f6c2'!important;
+}
+#main-menu>ul>li:nth-child(2)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f06c'!important;
+}
+#main-menu>ul>li:nth-child(3)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f043'!important;
+}
+#main-menu>ul>li:nth-child(4)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f56b'!important;
+}
+#main-menu>ul>li:nth-child(5)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f520'!important;
+}
+#main-menu>ul>li:nth-child(6)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f755'!important;
+}
+#main-menu>ul>li:nth-child(7)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f521'!important;
+}#main-menu>ul>li:nth-child(8)>a i:after {
+	font-size: .8rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f654'!important;
+}
 #header .navbar-main a:hover {
 	animation: bounce 1.5s infinite!important;
 	animation-timing-function: ease-in-out;
@@ -198,4 +236,34 @@ select.form-control, select.form-control:active, select.form-control:focus {
 	background: var(--dp);
 	border: 1px solid var(--p);
 	color: var(--wh);
+}
+#denCards img[src$="packdynasty.png"] {
+	content: url('https://i.imgur.com/PhZRJAY.png');
+	object-fit: cover!important;
+	height: 140px;
+}
+#denCards img[src$="packoverview.png"] {
+	content: url('https://i.imgur.com/dIlii2Z.png');
+	object-fit: cover!important;
+	height: 140px;
+}
+#denCards img[src$="breeding.png"] {
+	content: url('https://i.imgur.com/7ktEYa6.png');
+	object-fit: cover!important;
+	height: 140px;
+}
+#denCards img[src$="pupsitting.png"] {
+	content: url('https://i.imgur.com/aFVjypl.png');
+	object-fit: cover!important;
+	height: 140px;
+}
+#denCards img[src$="nesting.png"] {
+	content: url('https://i.imgur.com/iiAFxA4.png');
+	object-fit: cover!important;
+	height: 140px;
+}
+#denCards img[src$="socializing.png"] {
+	content: url('https://i.imgur.com/TXB3Ags.png');
+	object-fit: cover!important;
+	height: 140px;
 }
