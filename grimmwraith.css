@@ -13,10 +13,10 @@ code by #6488 on wolvden, @poikel on github.io*/
 	--p3: #b26fe4;
 }
 * {cursor: url("https://i.imgur.com/4zHhybf.png"), auto !important;}
-#main .card {background-color: transparent;!important} .badge{background:var(--wh);color:var(--p3)}
+#main .card {background-color: transparent;!important} .badge{background:var(--dp);color:var(--wh)}
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 .table-striped tbody tr:nth-of-type(odd) {background-color: #ae333300!important;border: none;}
-a, .d-lg-inline, small {color: var(--p3)!important;} .justify-content-between.mb-3 div {border: none !important;}
+a, .text-muted, .d-lg-inline, small, .b, .text-danger {color: var(--p3)!important;} .justify-content-between.mb-3 div {border: none !important;}
 ::-webkit-scrollbar {
 	width: 7px;
 	background: var(--p);
@@ -36,6 +36,11 @@ a, .d-lg-inline, small {color: var(--p3)!important;} .justify-content-between.mb
     transform: translateY(-3px);
   }
 }
+a {transition:.3s ease;}
+a:hover {
+	color: var(--wh)!important;
+	transition: .3s ease;
+}
 body {
 	font-family: var(--font);
 	background-image: url('https://i.imgur.com/BGs55S1.png');
@@ -48,12 +53,26 @@ body {
 #main, #sidebar {
 	background-color: rgba(0,0,0,0.9);
 }
+#main .table th, #main td.bottom {
+	background-color:var(--p);
+}
+#main .table {border: 1px solid var(--p)}
 #sidebar .card {
+	border-radius: 0px 30px 0px 30px;
 	text-shadow: 0 0 .2em var(--bl);
 	background-color: var(--p);
 	border-bottom: none;
 	box-shadow: 0 0 1em var(--p);
 	background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+}
+#sidebar .bookmarks, #sidebar .card-title {font-weight:bold;text-shadow: 0 0 0.3em var(--bl);}
+#sidebar .fa-angle-right:before {
+	content: '\f7d4';
+}
+.w-50 > a img, .w-50 div a img {
+	border-radius: 0px 30% 0px 30%;
+	border: solid 2px var(--wh);
+	filter:drop-shadow(0 0 4px);
 }
 #chatMessagePinned{display:none;}
 .s-chat-message {background-color:var(--dp)!important;}
@@ -67,6 +86,9 @@ body {
 }
 #header .navbar-status {
 	background-color: var(--p)!important;
+	background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+	border-top: 2px solid var(--wh);
+	font-weight: bold;
 }
 #header .breadcrumb-nav {
 	background-color: rgba(0,0,0,0.9);
@@ -82,12 +104,15 @@ body {
 }
 .navbar-main a i {font-size: 0px!important;}
 .navbar-main a i:after {font-size:.8rem!important;font-family:"Font Awesome 5 Free";content:"\f654";margin-right:3px;color:var(--wh);}
-#header .navbar-main a:hover:hover {
+#header .navbar-main a:hover {
 	animation: bounce 1.5s infinite!important;
 	animation-timing-function: ease-in-out;
 }
-.progress {background: var(--bl)!important;border-radius:10px;border:1px solid var(--wh);margin-top:.4em;}
-.bg-warning, .bg-danger, .bg-info, .bg-primary, .bg-success {background:linear-gradient(90deg, var(--p3), var(--wh));}
+.progress {background:rgba(0,0,0,0.4)!important;border-radius:10px;border:1px solid var(--wh);margin-top:.4em;}
+.bg-warning {background:var(--wh)!important;}
+.bg-primary, .bg-success {background:var(--p3)!important;}
+.bg-danger {background:var(--p2)!important;}
+.bg-info {background:var(--bl)!important;}
 .nav-tabs {
 	justify-content: center;
 	border: none;
@@ -98,4 +123,8 @@ body {
 }
 .nav-tabs .nav-link {
 	border: none;
+}
+.bg-light, .bg-dark {background: var(--dp)!important;border:none!important;color:var(--p3)!important;}
+img.rounded-bottom {
+	padding: 0px!important;
 }
