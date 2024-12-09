@@ -66,7 +66,7 @@ body {
 	background-color: var(--p);
 	border-bottom: none;
 	box-shadow: 0 0 1em var(--p);
-	background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+	background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
 }
 #sidebar .bookmarks, #sidebar .card-title {font-weight:bold;text-shadow: 0 0 0.3em var(--bl);}
 #sidebar .fa-angle-right:before {
@@ -91,7 +91,7 @@ body {
 }
 #header .navbar-status {
 	background-color: var(--p)!important;
-	background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+	background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
 	border-top: 2px solid var(--wh);
 	font-weight: bold;
 }
