@@ -79,7 +79,8 @@ body {
 	filter:drop-shadow(0 0 4px);
 }
 #chatMessagePinned{display:none;}
-.s-chat-message {background-color:var(--dp)!important;}
+.s-chat-message:nth-of-type(odd) {background-color:var(--dp)!important;}
+.s-chat-message:nth-of-type(even) {background-color:var(--p)!important;}
 #chatMessageContainer {
 	border-radius: 0px;
 	border: 1px solid var(--wh);
@@ -266,4 +267,14 @@ select.form-control, select.form-control:active, select.form-control:focus {
 	content: url('https://i.imgur.com/TXB3Ags.png');
 	object-fit: cover!important;
 	height: 140px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	background: var(--p)!important;
+}
+.table-striped tbody tr:nth-of-type(even) {
+	background: var(--dp)
+}
+.border-bottom {
+	margin: 0px!important;
+	padding: 0px!important;
 }
