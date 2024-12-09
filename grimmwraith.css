@@ -155,7 +155,7 @@ body {
 .bg-warning {background:var(--wh)!important;}
 .bg-primary, .bg-success {background:var(--p3)!important;}
 .bg-danger {background:var(--p2)!important;}
-.bg-info {background:var(--bl)!important;}
+.bg-info {background:#9c7bc7!important;}
 .nav-tabs {
 	justify-content: center;
 	border: none;
