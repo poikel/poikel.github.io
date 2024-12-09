@@ -1,20 +1,51 @@
 /*.
+
+===============
+crossroads to the side
+===============
+
+@media (min-width: 992px) {
+#header .navbar-expand-lg .navbar-nav, #header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end!important;
+    }
+#header .mr-auto, .mx-auto { 
+	margin-right: 0!important;
+	margin-bottom: -1.5rem!important;
+    }
+}
+
+
+===============
 alert images
 ===============
+
+
 alert img[src$="123.png"]
 scout.png / foothunt.png / herbalist.png 
-replace alert images 
+
+
+
 ===============
 remove blue under den cards/lead wolf
 ===============
+
+
 #main .card {background-color: transparent;}
+
+
 ===============
 white featured wolf square removal
 ===============
+
+
 .justify-content-between.mb-3 div { border: none !important; }
+
+
 ===============
 stretch navbar across screen
 ===============
+
+
 @media (min-width: 992px) {
 #header .navbar-status {
 	position: absolute;
@@ -34,16 +65,26 @@ stretch navbar across screen
 	position: absolute;
 }
 }
+
+
+
 ===============
 make table stuff invisible
 ===============
+
+
 .table, .table th, .table-striped tbody tr:nth-of-type(odd) {
     background-color: transparent!important;
     border: none;
 }
+
+
+
 ===============
 den/profile icons center
 ===============
+
+
 .nav-tabs {
 	justify-content: center;
 	border: none;
@@ -55,20 +96,32 @@ den/profile icons center
 .nav-tabs .nav-link {
 	border: none;
 }
+
+
 ===============
 replace den/profile icons
 ===============
+
+
 #main .nav-link[href*='/profile/']:after { content: '\f007'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
 #main .nav-link[href*='/den/']:after { content: '\f015'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+
+
 ===============
 remove box shadow when click on welcome
 ===============
+
+
 #header nav.navbar.navbar-status.navbar-expand div button:focus {
     box-shadow: none;
 }
+
+
 ===============
 cool hover sidebar effect
 ===============
+
+
 #sidebar .card::before,
 #sidebar .card::after {
     content: "";
@@ -99,9 +152,13 @@ cool hover sidebar effect
         height: calc(100% + 9px);
     }
 }
+
+
 ===============
 background animation with image
 ===============
+
+
 .overlay {
 	background: url('https://i.imgur.com/Llt1RgS.png');
 	height: 170%;
