@@ -604,3 +604,4 @@ a.dropdown-item {
 #fraDenHTML a, #fraProfileHTML a {
     color: var(--r7);
 }
+.table .subheader {background: none;}
