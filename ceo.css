@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, #mai
 body {
   font-family: var(--font);
   background-image: url("https://i.imgur.com/yAtnBwt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #main {
   background: var(--main);
