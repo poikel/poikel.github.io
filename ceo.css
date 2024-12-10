@@ -19,7 +19,7 @@ code by #6488 on wolvden, @poikel on github.io*/
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 #main .card, .table .subheader {background-color: transparent;}.justify-content-between.mb-3 div { border: none !important; }
 a, table th, #denCards b {color:var(--link)!important;}
-h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, #main {color:var(--text)!important;}
+h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, #main, #main > table > tbody > tr:nth-child(1) > th a {color:var(--text)!important;}
 body {
   font-family: var(--font);
   background-image: url("https://i.imgur.com/yAtnBwt.png");
@@ -29,14 +29,27 @@ body {
   border: 2px var(--border) solid;
   box-shadow: 0 0 2px var(--border);
   font-weight: bold;
+  text-shadow: 0 0 2px var(--eng);
+}
+.w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+#main table tbody tr td div a:nth-child(3) img {
+  border-radius: 100px;
 }
 .table {border: none;}
+#main > table > tbody > tr:nth-child(2),
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-6.col-sm-12.order-xl-9.order-12 > table {background: var(--main)!important;}
 .table th, .table-striped tbody tr:nth-of-type(odd) {
   background-color: var(--border);
   border: none;
 }
-#main form:nth-child(14) table, #main form .table-striped tbody tr:nth-of-type(odd){
-  background-color: var(--row);
+.border-bottom {
+  margin-left: 3px!important;
+  margin-bottom: 3px!important;
+  padding: 0!important;
+  border: none!important;
+}
+#main form:nth-child(14) table, #main form:nth-child(15) table, table, #main form .table-striped tbody tr:nth-of-type(odd){
+  background-color: var(--row)!important;
   border: none;
   color: var(--text2)!important;
 }
@@ -45,6 +58,8 @@ small, td a, .table .subheader {color:var(--text2)!important;}
   background: var(--main);
   border: 2px var(--border) solid;
   box-shadow: 0 0 2px var(--border);
+  color: var(--text2);
+  text-shadow: 0 0 2px var(--eng);
 }
 #sidebar {
   background: none;
