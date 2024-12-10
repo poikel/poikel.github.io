@@ -1,0 +1,19 @@
+/* do not remove credit, edit code or reupload/share 
+this code is *not* free-to-use, made for #103095 on wolvden.com
+code by #6488 on wolvden, @poikel on github.io*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+:root {
+  --font: "Chilanka", cursive;
+}
+
+body {
+  font-family: var(--font);
+  background-image: url("https://i.imgur.com/yAtnBwt.png");
+}
+
+#main {}
+
+#sidebar {
+  background: none;
+}
