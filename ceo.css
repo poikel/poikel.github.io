@@ -16,9 +16,11 @@ code by #6488 on wolvden, @poikel on github.io*/
   --text: #6d9853;
   --text2: #b1c46e;
 }
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-1/nat4.cur), auto !important;}
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 #main .card, .table .subheader {background-color: transparent;}.justify-content-between.mb-3 div { border: none !important; }
 a, table th, #denCards b {color:var(--link)!important;}
+a:hover {text-decoration: none!important;}
 h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, #main, #main > table > tbody > tr:nth-child(1) > th a {color:var(--text)!important;}
 body {
   font-family: var(--font);
@@ -30,6 +32,54 @@ body {
   box-shadow: 0 0 2px var(--border);
   font-weight: bold;
   text-shadow: 0 0 2px var(--eng);
+}
+#header .navbar-main {background:var(--row);}
+#header .navbar-main a {transition: .3s ease;}
+#header .navbar-main a i {font-size: 0px!important;}
+.navbar-main a i {font-size: 0px!important;color:var(--wh)!important;}
+#main-menu>ul>li:nth-child(1)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f724'!important;
+}
+#main-menu>ul>li:nth-child(2)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f185'!important;
+}
+#main-menu>ul>li:nth-child(3)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f5d7'!important;
+}
+#main-menu>ul>li:nth-child(4)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f56b'!important;
+}
+#main-menu>ul>li:nth-child(5)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f4ba'!important;
+}
+#main-menu>ul>li:nth-child(6)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f185'!important;
+}
+#main-menu>ul>li:nth-child(7)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f185'!important;
+}
+#main-menu>ul>li:nth-child(8)>a i:after {
+  font-size: .8rem;
+  font-family: 'Font Awesome 5 Free' !important;
+  content: '\f185'!important;
+}
+#header .navbar-main a:hover {
+  transition: .3s ease;
+  text-shadow: -1px -1px 0 var(--border), 1px -1px 0 var(--border), -1px 1px 0 var(--border), 1px 1px 0 var(--border);
 }
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img {
