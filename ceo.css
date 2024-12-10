@@ -5,15 +5,51 @@ code by #6488 on wolvden, @poikel on github.io*/
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 :root {
   --font: "Chilanka", cursive;
+  --main: #2c6343;
+  --border: #20482d;
+  --eng: #233e11;
+  --hun: #689c39;
+  --hp: #e0fb70;
+  --exp: #587c2b;
+  --row: #7b8d39;
+  --link: #b2dab1;
+  --text: #6d9853;
+  --text2: #b1c46e;
 }
-
+#header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
+#main .card, .table .subheader {background-color: transparent;}.justify-content-between.mb-3 div { border: none !important; }
+a, table th, #denCards b {color:var(--link)!important;}
+h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, #main {color:var(--text)!important;}
 body {
   font-family: var(--font);
   background-image: url("https://i.imgur.com/yAtnBwt.png");
 }
-
-#main {}
-
+#main {
+  background: var(--main);
+  border: 2px var(--border) solid;
+  box-shadow: 0 0 2px var(--border);
+  font-weight: bold;
+}
+.table {border: none;}
+.table th, .table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--border);
+  border: none;
+}
+#main form:nth-child(14) table, #main form .table-striped tbody tr:nth-of-type(odd){
+  background-color: var(--row);
+  border: none;
+  color: var(--text2)!important;
+}
+small, td a, .table .subheader {color:var(--text2)!important;}
+#sidebar .card {
+  background: var(--main);
+  border: 2px var(--border) solid;
+  box-shadow: 0 0 2px var(--border);
+}
 #sidebar {
   background: none;
 }
+.bg-warning {background:var(--eng)!important;}
+.bg-danger {background:var(--hun)!important;}
+.bg-info {background:var(--hp)!important;}
+.bg-success{background:var(--exp)!important};
