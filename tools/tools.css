@@ -174,4 +174,11 @@ background animation with image
 	opacity: 60%;
 }
 
+===============
+all images EXCEPT CARDS
+===============
+
+.w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+#main table tbody tr td div a:nth-child(3) img
+
 */
