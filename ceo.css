@@ -20,8 +20,13 @@ code by #6488 on wolvden, @poikel on github.io*/
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 #main .card, .table .subheader {background-color: transparent;}.justify-content-between.mb-3 div { border: none !important; }
 a, table th, #denCards b {color:var(--link)!important;}
-a:hover {text-decoration: none!important;}
-h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, #main, #main > table > tbody > tr:nth-child(1) > th a {color:var(--text)!important;}
+a {transition:.3s ease;}
+a:hover {
+  text-decoration: none!important;
+  transition: .3s ease;
+  color: var(--hp)!important;
+}
+h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item:before, #main, #main > table > tbody > tr:nth-child(1) > th a {color:var(--text)!important;}
 body {
   font-family: var(--font);
   background-image: url("https://i.imgur.com/yAtnBwt.png");
@@ -35,9 +40,41 @@ body {
   font-weight: bold;
   text-shadow: 0 0 2px var(--eng);
 }
-#header .navbar-main {background:var(--row);}
-#header .navbar-main a {transition: .3s ease;}
-#header .navbar-main a i {font-size: 0px!important;}
+#sidebar {
+  background: none;
+}
+#sidebar .card {
+  background: var(--main);
+  border: 2px var(--border) solid;
+  box-shadow: 0 0 2px var(--border);
+  color: var(--text2);
+  text-shadow: 0 0 2px var(--eng);
+}
+.nav-tabs {
+  justify-content: left;
+  border: none;
+}
+.nav-tabs .nav-link.active {
+  border: none;
+  background-color: transparent;
+  color: var(--link)!important;
+}
+.nav-tabs .nav-link {
+  border: none;
+  color: var(--text)!important;
+  text-shadow: 0 0 2px var(--eng)!important;
+}
+#header .navbar-main {
+  background: var(--main);
+  border: 2px solid var(--border);
+}
+#header .navbar-main a {
+  transition: .3s ease;
+  text-shadow: 0 0 4px var(--eng);
+}
+#header .navbar-main a i {
+  font-size: 0px!important;
+}
 .navbar-main a i {font-size: 0px!important;color:var(--wh)!important;}
 #main-menu>ul>li:nth-child(1)>a i:after {
   font-size: .8rem;
@@ -80,19 +117,71 @@ body {
   content: '\f185'!important;
 }
 #header .navbar-main a:hover {
+  color: var(--link)!important;
   transition: .3s ease;
   text-shadow: -1px -1px 0 var(--border), 1px -1px 0 var(--border), -1px 1px 0 var(--border), 1px 1px 0 var(--border);
 }
+#header .navbar-status {
+  background: var(--border);
+}
+#header .breadcrumb-nav {
+  background: var(--main);
+  border: 2px solid var(--border);
+  margin-bottom: 1em;
+}
+#denCards img[src$="packdynasty.png"] {
+  content: url('https://i.imgur.com/wzskAIE.png');
+  object-fit: cover!important;
+  height: 140px;
+}
+#denCards img[src$="packoverview.png"] {
+  content: url("https://i.imgur.com/Gpc6sw9.png");
+  object-fit: cover!important;
+  height: 140px;
+}
+#denCards img[src$="breeding.png"] {
+  content: url("https://i.imgur.com/770ZcSl.png");
+  object-fit: cover!important;
+  height: 140px;
+}
+#denCards img[src$="pupsitting.png"] {
+  content: url("https://i.imgur.com/U7Znl4v.png");
+  object-fit: cover!important;
+  height: 140px;
+}
+#denCards img[src$="nesting.png"] {
+  content: url("https://i.imgur.com/i3wk34O.png");
+  object-fit: cover!important;
+  height: 140px;
+}
+#denCards img[src$="socializing.png"] {
+  content: url("https://i.imgur.com/t4XfDqh.png");
+  object-fit: cover!important;
+  height: 140px;
+}
+small, td a, .table .subheader {color:var(--text2)!important;}
+.bg-warning {background:var(--eng)!important;}
+.bg-danger {background:var(--hun)!important;}
+.bg-info {background:var(--hp)!important;}
+.bg-success {background:var(--exp)!important;}
+.bg-primary {background:var(--text2)!important;}
+.progress {background:rgba(0,0,0,0.2)!important;}
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img {
   border-radius: 100px;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 2px var(--eng);
 }
 .table {border: none;}
-#main > table > tbody > tr:nth-child(2),
-#main > table > tbody > tr:nth-child(2) > td > div.col-xl-6.col-sm-12.order-xl-9.order-12 > table {background: var(--main)!important;}
-.table th, .table-striped tbody tr:nth-of-type(odd) {
-  background-color: var(--border);
+.table th, td.bottom {
+  background-color: var(--row)!important;
   border: none;
+}
+.table-striped tbody tr:nth-of-type(odd){
+  background: var(--main);
+}
+#main > table > tbody > tr:nth-child(2) {
+  background: var(--main)!important;
 }
 .border-bottom {
   margin-left: 3px!important;
@@ -100,23 +189,24 @@ body {
   padding: 0!important;
   border: none!important;
 }
-#main form:nth-child(14) table, #main form:nth-child(15) table, table, #main form .table-striped tbody tr:nth-of-type(odd){
-  background-color: var(--row)!important;
+#main .table-striped tbody tr:nth-of-type(odd){
+  background-color: var(--border)!important;
   border: none;
   color: var(--text2)!important;
 }
-small, td a, .table .subheader {color:var(--text2)!important;}
-#sidebar .card {
-  background: var(--main);
-  border: 2px var(--border) solid;
-  box-shadow: 0 0 2px var(--border);
+.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+  background: var(--border);
+  color: var(--text);
+  font-weight: bold;
+  border: none;
+}
+.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+  background: var(--border);
   color: var(--text2);
-  text-shadow: 0 0 2px var(--eng);
 }
-#sidebar {
-  background: none;
+.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+  background: var(--eng)!important;
+  color: var(--text2)!important;
+  text-decoration: underline;
 }
-.bg-warning {background:var(--eng)!important;}
-.bg-danger {background:var(--hun)!important;}
-.bg-info {background:var(--hp)!important;}
-.bg-success{background:var(--exp)!important};
+.btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
