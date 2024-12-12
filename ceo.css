@@ -69,6 +69,7 @@ body {
   color: var(--text)!important;
   text-shadow: 0 0 2px var(--eng)!important;
 }
+.nav-tabs .nav-link:hover {color:var(--link)!important;}
 #header .navbar-main {
   background: var(--main);
   border: 2px solid var(--border);
@@ -274,6 +275,7 @@ a.dropdown-item:hover {
   text-shadow: -1px -1px 0 var(--border), 1px -1px 0 var(--border), -1px 1px 0 var(--border), 1px 1px 0 var(--border);
 }
 .dropdown-divider {display:none;}
+.left {background:var(--border)!important;}
 ::-webkit-scrollbar {
   background: var(--border);
   width: 7px;
