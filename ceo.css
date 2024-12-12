@@ -28,6 +28,7 @@ a:hover {
 }
 h1, h2, h3, h4, h5, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item:before, #main, #main > table > tbody > tr:nth-child(1) > th a {color:var(--text)!important;}
 .alert {background: var(--main);border:2px solid var(--border);box-shadow: 0 0 2px var(--border);}
+.alert .fas {color:var(--link);}
 body {
   font-family: var(--font);
   background-image: url("https://i.imgur.com/yAtnBwt.png");
