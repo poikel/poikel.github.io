@@ -208,6 +208,9 @@ small, td a, .table .subheader {color:var(--text2)!important;}
   padding: 0!important;
   border: none!important;
 }
+.bg-light, .bg-dark {
+  background: var(--main)!important;
+}
 #main .table-striped tbody tr:nth-of-type(odd){
   background-color: var(--border)!important;
   border: none;
