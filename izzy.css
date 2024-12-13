@@ -10,6 +10,8 @@ code by #6488 on wd, @poikel on github*/
     --3: #78593a;
     --4: #826c4b;
     --5: #201408;
+    --text: #c6ae97;
+    --icons: "Font Awesome 5 Free";
 }
 ::-webkit-scrollbar {
     background: var(--1);
@@ -21,7 +23,7 @@ code by #6488 on wd, @poikel on github*/
 }
 .boxcontainer {
     background: none;
-    height: auto;
+    height: ;
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -34,11 +36,91 @@ code by #6488 on wd, @poikel on github*/
     text-align: left;
     padding: 1rem;
 }
-a:hover {
+a, span, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item, .breadcrumb-item:before, #main {
+    color: var(--text)!important;
+    font-weight: bold;
+    transition: .3s ease;
+}
+a:hover, a:hover i {
     color: var(--5)!important;
     transition: .3s ease;
+    text-decoration: none;
 }
 body {
     font-family: var(--font);
     background-image: url("https://i.imgur.com/8j3ySzv.png");
+}
+#main {
+    background: var(--2);
+}
+#main .card {background-color: transparent;}
+.justify-content-between.mb-3 div { border: none !important;}
+#sidebar {
+    background: var(--2);
+}
+#sidebar .card {
+    background: var(--3);
+    border-bottom: none;
+    color: var(--text);
+    border-radius: 12px;
+}
+#sidebar .card-title {
+    font-weight: bold;
+}
+#sidebar .card-title:before {
+    font-family: var(--icons);
+    content: "\f78e";
+    font-size: 0.875rem;
+    padding: .5rem
+}
+#header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
+#header .navbar-main {
+    background: var(--1);
+    margin-top: .5em;
+}
+#header .navbar-status {
+    background: var(--3);
+}
+#header .breadcrumb-nav {
+    background: var(--2);
+}
+#header .navbar-main a {
+    font-size: 1rem!important;
+}
+#denCards img {
+    transition: .3s ease;
+}
+#denCards img:hover {
+    transition: .3s ease;
+    filter: sepia(0.2) blur(.03em) saturate(1.5);
+}
+#denCards img[src$="packdynasty.png"] {
+    content: url("https://i.imgur.com/xsGQIGu.png");
+    object-fit: cover!important;
+    height: 134px;
+}
+#denCards img[src$="overview.png"] {
+    content: url("https://i.imgur.com/N6YLRjd.png");
+    object-fit: cover!important;
+    height: 134px;
+}
+#denCards img[src$="breeding.png"] {
+    content: url("https://i.imgur.com/vnIEGit.png");
+    object-fit: cover!important;
+    height: 134px;
+}
+#denCards img[src$="pupsitting.png"] {
+    content: url("https://i.imgur.com/yA7pgzl.png");
+    object-fit: cover!important;
+    height: 134px;
+}
+#denCards img[src$="nesting.png"] {
+    content: url("https://i.imgur.com/aj7lheL.png");
+    object-fit: cover!important;
+    height: 134px;
+}
+#denCards img[src$="socializing.png"] {
+    content: url("https://i.imgur.com/0jO3QOL.png");
+    object-fit: cover!important;
+    height: 134px;
 }
