@@ -22,7 +22,6 @@ code by #6488 on wd, @poikel on github*/
     border-radius: 20px;
 }
 .boxcontainer {
-    background: none;
     height: ;
     padding: 0px;
     display: flex;
@@ -35,6 +34,8 @@ code by #6488 on wd, @poikel on github*/
     overflow: auto;
     text-align: left;
     padding: 1rem;
+    margin: .5em;
+    background: var(--4);
 }
 a, span, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item, .breadcrumb-item:before, #main {
     color: var(--text)!important;
@@ -86,6 +87,14 @@ body {
 }
 #header .navbar-main a {
     font-size: 1rem!important;
+}
+#header .navbar-main a i {
+    color: var(--text)!important;
+    transition: .3s ease;
+}
+#header .navbar-main a:hover i {
+    color: var(--5)!important;
+    transition: .3s ease;
 }
 #denCards img {
     transition: .3s ease;
