@@ -21,8 +21,12 @@ code by #6488 on wd, @poikel on github*/
     background: var(--3);
     border-radius: 20px;
 }
+#main ::-webkit-scrollbar {
+	border-radius: 20px;
+	width: 3px;
+}
 .boxcontainer {
-    height: ;
+    height: auto;
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -37,21 +41,12 @@ code by #6488 on wd, @poikel on github*/
     margin: .5em;
     background: var(--4);
     box-shadow: 0 0 4px var(--1);
+	border-radius: 10px 0px 0px 10px;
 }
 .alert {
     background: var(--3);
     border: 1px solid var(--1);
     color: var(--text);
-}
-a, span, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item, .breadcrumb-item:before, #main {
-    color: var(--text)!important;
-    font-weight: bold;
-    transition: .3s ease;
-}
-a:hover, a:hover i {
-    color: var(--5)!important;
-    transition: .3s ease;
-    text-decoration: none;
 }
 body {
     font-family: var(--font);
@@ -95,6 +90,16 @@ body {
 #sidebar .small span {
     margin-bottom: 0.2rem;
 }
+#chatMessagePinned {
+	display: none;
+}
+#chatMessageContainer {
+	border-radius: 0px;
+	border: solid var(--2) 1px;
+}
+.s-chat-message {
+	background: var(--4)!important;
+}
 .progress {
     background: var(--5)!important;
     border-radius: 30px;
@@ -102,7 +107,7 @@ body {
     margin-bottom: .1em;
 }
 .bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {
-    background: linear-gradient(90deg, var(--4), var(--text))!important;
+    background: var(--text)!important;
 }
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 #header .navbar-main {
@@ -110,7 +115,12 @@ body {
     margin-top: .5em;
 }
 #header .navbar-status {
-    background: var(--3);
+    background: var(--3)!important;
+	color: var(--text);
+	transition: .3s ease;
+}
+#header .navbar-status span:hover, #header .navbar-status .d-md-inline:hover {
+    color: var(--5)!important;
 }
 #header .breadcrumb-nav {
     background: var(--2);
@@ -126,8 +136,25 @@ body {
     color: var(--5)!important;
     transition: .3s ease;
 }
+.breadcrumb-nav:before {
+	content: '🦌\00a0 css by #6488';
+	position: absolute;
+	display: block;
+	right: 7rem;
+	padding-top: .8em;
+	color: var(--5);
+	font-weight: bold;
+	font-size: .7rem;
+}
 #denCards img {
     transition: .3s ease;
+	border-radius: 20px;
+}
+.w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+#main table tbody tr td div a:nth-child(3) img {
+	filter: sepia(0.5);
+	border-radius: 10px;
+	border: 2px solid var(--1);
 }
 #denCards img:hover {
     transition: .3s ease;
@@ -163,13 +190,64 @@ body {
     object-fit: cover!important;
     height: 134px;
 }
+#denCards .card-header {border-radius: 0px 0px 20px 20px;backdrop-filter:blur(1px);}
 .table, .table .subheader, td.bottom {
     background: var(--3)!important;
-    border: none;
+    border: solid 1px var(--1);
 }
 .table-striped tbody tr:nth-of-type(odd), .table th {
     background: var(--4);
+	color: var(--text);
 }
 .border, .border-bottom, .border-left, .border-right, .border-top {
     border: none!important;
+}
+.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+	background: var(--4);
+	color: var(--text);
+	font-weight: bold;
+	border: none;
+}
+.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--1);
+	color: var(--text);
+}
+.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+	background: var(--5)!important;
+	color: var(--text)!important;
+}
+.btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
+.dropdown-menu, .s-chat-sidebar #fraChatChannelMenu {
+	background: var(--3)!important;
+	border: 1px solid var(--1);
+	box-shadow: none;
+	color: var(--text);
+	border-radius: 10px;
+}
+.dropdown-item, .dropdown-item:hover {
+  background: none;
+}
+a.dropdown-item {
+  color:var(--text)!important;
+  transition: .3s ease;
+  text-shadow: 0 0 2px var(--border);
+}
+a.dropdown-item:hover {
+	backdrop-filter: brightness(1.1);
+}
+.dropdown-divider {display:none;}
+#fra_chatContainer .channelMenu .channelSwitcher {
+	background: none;
+	color: var(--text);
+}
+.left {background:var(--3)!important;}
+a, span, .text-muted, .d-lg-inline, small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item, .breadcrumb-item:before, #main {
+    color: var(--text)!important;
+    font-weight: bold;
+    transition: .3s ease;
+}
+a:hover, a:hover i {
+    color: var(--5)!important;
+    transition: .3s ease;
+    text-decoration: none;
 }
