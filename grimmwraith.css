@@ -180,6 +180,7 @@ img.rounded-bottom {
 #fra_chatContainer .channelMenu .channelSwitcher {color:var(--p3);}
 #fra_chatContainer .channelMenu .channelSwitcher:hover {background:var(--p);}
 #fra_chatContainer .channelMenu .channelSwitcher.active {color:var(--wh);background:var(--p2);}
+.s-chat-message_claim {background:var(--p2);border:none;}
 .dropdown-item, .dropdown-item:hover {
 	background: none;
 }
