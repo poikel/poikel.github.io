@@ -490,7 +490,7 @@ a.dropdown-item {
     background: none;
     animation: blink 1.5s infinite;
 }
-
+.s-chat-message_claim {background:var(--r4);color:#fff;border:none;}
 #footer {
     background: none;
     font-family: var(--text);
