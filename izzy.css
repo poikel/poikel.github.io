@@ -221,6 +221,9 @@ body {
 .table th {
 	border-radius: 10px 10px 0px 0px;
 }
+.bg-dark, .bg-light {
+	background: none!important;
+}
 .border, .border-bottom, .border-left, .border-right, .border-top {
     border: none!important;
 }
@@ -288,6 +291,10 @@ a.dropdown-item:hover {
 #fra_chatContainer #txtChatInput {
 	padding-left: .5em;
 }
+.s-chat-message_claim {
+	background: var(--1);
+	border: none;
+}
 .left {background:var(--3)!important;border-radius: 0px 0px 10px 10px;}
 #footer {
 	background: var(--3);
@@ -321,7 +328,6 @@ a:hover, a:hover i {
 .fa-circle:before {
 	color: var(--1);
 }
-.s-chat-message_claim {
+.badge {
 	background: var(--1);
-	border: none;
 }
