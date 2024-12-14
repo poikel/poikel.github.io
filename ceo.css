@@ -280,6 +280,7 @@ a.dropdown-item:hover {
 }
 .dropdown-divider {display:none;}
 .left {background:var(--border)!important;}
+.badge {background: var(--border);color:var(--text2);}
 ::-webkit-scrollbar {
   background: var(--border);
   width: 7px;
