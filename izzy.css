@@ -288,7 +288,7 @@ a.dropdown-item:hover {
 #fra_chatContainer #txtChatInput {
 	padding-left: .5em;
 }
-.left {background:var(--3)!important;}
+.left {background:var(--3)!important;border-radius: 0px 0px 10px 10px;}
 #footer {
 	background: var(--3);
 	border-radius: 0px 0px 10px 10px;
