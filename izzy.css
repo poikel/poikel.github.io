@@ -319,7 +319,7 @@ a:hover, a:hover i {
     text-decoration: none;
 }
 .fa-circle:before {
-	color: var(--1)
+	color: var(--1);
 }
 .s-chat-message_claim {
 	background: var(--1);
