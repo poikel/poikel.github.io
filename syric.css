@@ -344,6 +344,7 @@ a:hover {
 	background: var(--bl2);
 	text-shadow: 0 0 12px;
 }
+.s-chat-message_claim {background:var(--bl2);color:#d2d2d2;border:none;}
 @media only screen and (min-width: 992px) {
 .rain {
     background: url('https://i.imgur.com/Llt1RgS.png');
