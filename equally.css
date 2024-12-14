@@ -1,0 +1,112 @@
+/* do not remove credit, edit code or reupload/share 
+this code is *not* free-to-use, made for #149291 on wolvden.com
+code by #6488 on wolvden, @poikel on github.io*/
+
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+:root {
+    --l: "Road Rage", sans-serif;
+    --s: "Neucha", serif;
+    --1: #2b2e27;
+    --2: #454829;
+    --3: #38331d;
+    --4: #0f1314;
+    --5: #200202;
+}
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat820.cur), auto !important;}
+.alert {
+    background: rgba(32,2,2,0.6);
+    backdrop-filter:blur(3px);
+    color: var(--2);
+    border: 1px solid var(--5)
+}
+.alert a {
+    color: var(--2)!important;
+    font-weight: bold;
+}
+a, span, small, .breadcrumb-item.active {
+    color: #fff!important;
+}
+h1, h2, h3, h4, h5, .table th {
+    font-family: var(--l);
+}
+body {
+    background-image: url("https://i.imgur.com/zHLQy71.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#header .navbar-main {
+    font-family: var(--l);
+    background: var(--1)
+}
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 2rem;
+}
+#header .navbar-main a {
+    font-size: 1.6rem!important;
+    color: var(--2)!important;
+    text-shadow: 0 0 2px var(--2);
+    transition: .1s ease;
+}
+#header .navbar-main a i {
+    color: var(--2)!important;
+    transition: .1s ease;
+}
+#main-menu li:nth-child(1) a i,
+#main-menu li:nth-child(3) a i
+{font-size: 0px!important;}
+#main-menu li:nth-child(1) a i:after {
+	font-size: 1rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f08d'!important;
+}
+#main-menu li:nth-child(3) a i:after {
+	font-size: 1rem;
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f578'!important;
+}
+#header .navbar-main a:hover {
+    color: var(--4)!important;
+    text-shadow: 0 0 2px var(--4);
+    transition: .1s ease;
+}
+#header .navbar-main a:hover i {
+    color: var(--4)!important;
+    text-shadow: 0 0 2px var(--4);
+    transition: .1s ease;
+}
+#main {
+    font-family: var(--s);
+    background: rgba(15,19,20,0.9);
+}
+#sidebar {
+    background: rgba(15,19,20,0.9);
+}
+#sidebar .small span {margin-bottom:.4em;font-family:var(--s);}
+.progress {
+    background: var(--4)!important;
+    margin-bottom: .4em;
+    border: solid 1px var(--4);
+    border-radius: 10px;
+}
+.bg-warning {
+    background: var(--5)!important;
+}
+.bg-danger {
+    background: var(--3)!important;
+}
+.bg-primary {
+    background: var(--2)!important;
+}
+.bg-info {
+    background: var(--1)!important;
+}
+.bg-success {
+    background: var(--2)!important;
+}
+#sidebar .card-title {
+    font-size: 1.6rem;
+}
+#sidebar .card {
+    margin-top:1em;
+}
