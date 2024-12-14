@@ -154,15 +154,14 @@ body {
     color: var(--5)!important;
     transition: .3s ease;
 }
-.breadcrumb-nav:before {
+.breadcrumb:after {
 	content: '🦌\00a0 css by #6488';
-	position: absolute;
 	display: block;
-	right: 7rem;
-	padding-top: .8em;
+	font-size: .7rem;
+	position: absolute;
 	color: var(--5);
 	font-weight: bold;
-	font-size: .7rem;
+	right: 40px;
 }
 #denCards img {
     transition: .3s ease;
