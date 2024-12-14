@@ -47,6 +47,7 @@ code by #6488 on wd, @poikel on github*/
     background: var(--3);
     border: 1px solid var(--1);
     color: var(--text);
+	border-radius: 10px;
 }
 body {
     font-family: var(--font);
@@ -54,6 +55,9 @@ body {
 }
 #main {
     background: var(--2);
+	border-right: 1px solid var(--1);
+	border-top: 1px solid var(--1);
+	border-radius: 0px 10px 0px 0px
 }
 #main h1 {text-align: center;font-weight: bold;letter-spacing:.1em;text-shadow:0 0 1px var(--5);}
 #main .card {background-color: transparent;}
@@ -72,11 +76,17 @@ body {
 }
 #sidebar {
     background: var(--2);
+	border-left: 1px solid var(--1);
+	border-top: 1px solid var(--1);
+	border-radius: 10px 0px 0px 0px;
 }
 #sidebar .card {
     background: var(--3);
     border-bottom: none;
     color: var(--text);
+	border-radius: 10px;
+	border: 1px solid var(--1);
+	margin-top: 1rem;
 }
 #sidebar .card-title {
     font-weight: bold;
@@ -107,23 +117,31 @@ body {
     margin-bottom: .1em;
 }
 .bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {
-    background: var(--text)!important;
+    background: var(--2)!important;
 }
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 #header .navbar-main {
     background: var(--1);
     margin-top: .5em;
+	border-radius: 10px 10px 0px 0px;
+	border: 1px solid var(--5);
 }
 #header .navbar-status {
     background: var(--3)!important;
 	color: var(--text);
 	transition: .3s ease;
+	border: 1px solid var(--1);
+	border-top: none;
 }
 #header .navbar-status span:hover, #header .navbar-status .d-md-inline:hover {
     color: var(--5)!important;
 }
 #header .breadcrumb-nav {
     background: var(--2);
+	border: 1px solid var(--1);
+	border-top: none;
+	margin-bottom: .4em;
+	border-radius: 0px 0px 10px 10px;
 }
 #header .navbar-main a {
     font-size: 1rem!important;
@@ -152,9 +170,10 @@ body {
 }
 .w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
 #main table tbody tr td div a:nth-child(3) img {
-	filter: sepia(0.5);
+	filter: sepia(0.2) saturate(1.3);
 	border-radius: 10px;
-	border: 2px solid var(--1);
+	border: 1px solid var(--2);
+	transition: .3s ease!important;
 }
 #denCards img:hover {
     transition: .3s ease;
@@ -193,11 +212,15 @@ body {
 #denCards .card-header {border-radius: 0px 0px 20px 20px;backdrop-filter:blur(1px);}
 .table, .table .subheader, td.bottom {
     background: var(--3)!important;
-    border: solid 1px var(--1);
+	border: none;
+	border-radius: 10px;
 }
 .table-striped tbody tr:nth-of-type(odd), .table th {
     background: var(--4);
 	color: var(--text);
+}
+.table th {
+	border-radius: 10px 10px 0px 0px;
 }
 .border, .border-bottom, .border-left, .border-right, .border-top {
     border: none!important;
@@ -207,14 +230,18 @@ body {
 	color: var(--text);
 	font-weight: bold;
 	border: none;
+	border-radius: 10px;
+	border: 1px solid var(--1);
 }
 .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
 	background: var(--1);
 	color: var(--text);
+	border: 1px solid var(--1);
 }
 .btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
 	background: var(--5)!important;
 	color: var(--text)!important;
+	border: 1px solid var(--1)!important;
 }
 .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
 .dropdown-menu, .s-chat-sidebar #fraChatChannelMenu {
@@ -236,11 +263,52 @@ a.dropdown-item:hover {
 	backdrop-filter: brightness(1.1);
 }
 .dropdown-divider {display:none;}
+#fraChatChannelMenu {
+	margin-top: .3rem;
+}
 #fra_chatContainer .channelMenu .channelSwitcher {
+	color: var(--text);
+	transition: .3s ease;
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
 	background: none;
+	backdrop-filter: brightness(1.1);
+	color: var(--5);
+	transition: .3s ease;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: var(--2);
+	color: var(--5);
+}
+.s-chat-sidebar #label_currentChannel, #fra_chatContainer #txtChatInput {
+	border-radius: 10px;
+	background: var(--2);
+	border: 1px solid var(--1);
 	color: var(--text);
 }
+#fra_chatContainer #txtChatInput {
+	padding-left: .5em;
+}
 .left {background:var(--3)!important;}
+#footer {
+	background: var(--3);
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: .5em;
+	border: 1px solid var(--1);
+}
+.copyright:after {
+	content: '🦌\00a0 css by #6488';
+	display: block;
+	padding-top: 1em;
+	color: var(--5);
+}
+select.form-control, select.form-control:active, select.form-control:focus {
+	background: var(--4);
+	border-radius: 10px;
+	border: 1px solid var(--1);
+	color: var(--text);
+	box-shadow: none;
+}
 a, span, .text-muted, .d-lg-inline, small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item, .breadcrumb-item:before, #main {
     color: var(--text)!important;
     font-weight: bold;
