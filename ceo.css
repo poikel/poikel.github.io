@@ -262,6 +262,7 @@ select.form-control, select.form-control:active, select.form-control:focus {
 .s-chat-message:nth-of-type(odd) {background-color:var(--main)!important;}
 .s-chat-message:nth-of-type(even) {background-color:var(--border)!important;}
 .s-chat-message {color:var(--text2);}
+.s-chat-message_claim {background:var(--border);color:var(--text2);border:none;}
 #chatMessageContainer {
   border-radius: 0px;
   border: 2px solid var(--border);
