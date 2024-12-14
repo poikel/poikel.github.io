@@ -36,6 +36,12 @@ code by #6488 on wd, @poikel on github*/
     padding: 1rem;
     margin: .5em;
     background: var(--4);
+    box-shadow: 0 0 4px var(--1);
+}
+.alert {
+    background: var(--3);
+    border: 1px solid var(--1);
+    color: var(--text);
 }
 a, span, .text-muted, .d-lg-inline,  small, .b, b, .text-danger, .breadcrumb-item.active, .breadcrumb-item, .breadcrumb-item:before, #main {
     color: var(--text)!important;
@@ -54,8 +60,21 @@ body {
 #main {
     background: var(--2);
 }
+#main h1 {text-align: center;font-weight: bold;letter-spacing:.1em;text-shadow:0 0 1px var(--5);}
 #main .card {background-color: transparent;}
 .justify-content-between.mb-3 div { border: none !important;}
+.nav-tabs {
+	justify-content: center;
+	border: none;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+    color: var(--5)!important;
+}
+.nav-tabs .nav-link {
+	border: none;
+}
 #sidebar {
     background: var(--2);
 }
@@ -63,7 +82,6 @@ body {
     background: var(--3);
     border-bottom: none;
     color: var(--text);
-    border-radius: 12px;
 }
 #sidebar .card-title {
     font-weight: bold;
@@ -73,6 +91,18 @@ body {
     content: "\f78e";
     font-size: 0.875rem;
     padding: .5rem
+}
+#sidebar .small span {
+    margin-bottom: 0.2rem;
+}
+.progress {
+    background: var(--5)!important;
+    border-radius: 30px;
+    border: 1px solid var(--5);
+    margin-bottom: .1em;
+}
+.bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {
+    background: linear-gradient(90deg, var(--4), var(--text))!important;
 }
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 #header .navbar-main {
@@ -132,4 +162,14 @@ body {
     content: url("https://i.imgur.com/0jO3QOL.png");
     object-fit: cover!important;
     height: 134px;
+}
+.table, .table .subheader, td.bottom {
+    background: var(--3)!important;
+    border: none;
+}
+.table-striped tbody tr:nth-of-type(odd), .table th {
+    background: var(--4);
+}
+.border, .border-bottom, .border-left, .border-right, .border-top {
+    border: none!important;
 }
