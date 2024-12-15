@@ -114,6 +114,43 @@ body {
 #main {
     font-family: var(--s);
     background: rgba(15,19,20,0.8);
+	color: var(--2);
+}
+#main h1 {
+	text-align:center;
+	font-size: 2.5rem;
+	letter-spacing: .2px;
+}
+.nav-tabs {
+	justify-content: center;
+	border: none;
+	font-family: var(--l)!important;
+	font-size: 1rem;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+	color: var(--5);
+}
+.nav-tabs .nav-link {
+	border: none;
+	font-size: 0px;
+	margin-right: 1rem;
+	padding: 0px;
+}
+.nav-tabs .nav-link:hover {
+	color: var(--5)!important;
+}
+#main .nav-link[href*='/profile/']:after {
+    content: '\f2ce';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px;
+}
+
+#main .nav-link[href*='/den/']:after {
+    content: '\f08d';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px;
 }
 #sidebar {
     background: rgba(15,19,20,0.8);
@@ -214,8 +251,85 @@ td a:hover {
 .bg-light {
 	border: 1px solid var(--2)
 }
+.text-wrap {margin-bottom: .5em;}
 .badge {
 	color: var(--3);
 	background: var(--2);
 	font-weight: bold;
 }
+img.rounded-bottom {
+	padding: 0px!important;
+}
+#denCards img[src$="packdynasty.png"] {
+	content: url("https://i.imgur.com/I1wlUR1.jpeg");
+	object-fit: cover;
+	height: 134px;
+	object-position: bottom;
+}
+#denCards img[src$="overview.png"] {
+	content: url("https://i.imgur.com/CSD6uY7.jpeg");
+	object-fit: cover;
+	height: 134px;
+}
+#denCards img[src$="breeding.png"] {
+	content: url("https://i.imgur.com/pG7PeiC.jpeg");
+	object-fit: cover;
+	height: 134px;
+}
+#denCards img[src$="pupsitting.png"] {
+	content: url("https://i.imgur.com/pfQIOsu.jpeg");
+	object-fit: cover;
+	height: 134px;
+}
+#denCards img[src$="nesting.png"] {
+	content: url("https://i.imgur.com/ifLH9XG.jpeg");
+	object-fit: cover;
+	height: 134px;
+	object-position: top;
+}
+#denCards img[src$="socializing.png"] {
+	content: url("https://i.imgur.com/x8GMRWs.jpeg");
+	object-fit: cover;
+	height: 134px;
+}
+#denCards img {
+	border: 1px solid var(--1)
+}
+#denCards .card-header {
+	background: none;
+	backdrop-filter: blur(3px) sepia(.5);
+	border-radius: 0px;
+}
+#denCards .card-header b {
+	color: var(--2)!important;
+	text-shadow: 0 0 3px rgb(0,0,0,0.5);
+}
+th.top {
+	text-align: center!important;
+	font-size: 1.3rem;
+	box-shadow: 0 0 1rem inset rgb(0,0,0,0.4);
+}
+th.top a {
+	font-size: 0.8rem;
+	font-family: var(--s);
+}
+td.bottom {
+	background: var(--2)!important;
+}
+.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+	background: var(--1);
+	color: var(--2);
+	font-weight: bold;
+	border: none;
+	font-family: var(--s);
+}
+.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--2);
+	color: var(--1);
+}
+.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+	background: var(--2)!important;
+	color: var(--1)!important;
+	text-decoration: underline;
+}
+.btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
