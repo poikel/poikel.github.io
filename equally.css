@@ -14,6 +14,8 @@ code by #6488 on wolvden, @poikel on github.io*/
     --5: #200202;
 }
 * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat820.cur), auto !important;}
+.justify-content-between.mb-3 div { border: none !important; }
+#header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 .alert {
     background: rgba(32,2,2,0.6);
     backdrop-filter:blur(3px);
@@ -24,8 +26,17 @@ code by #6488 on wolvden, @poikel on github.io*/
     color: var(--2)!important;
     font-weight: bold;
 }
-a, span, small, .breadcrumb-item.active {
-    color: #fff!important;
+a {
+    color: var(--2);
+}
+.text-light {
+	color: var(--2)!important;
+}
+b {
+	color: var(--2)!important;
+}
+small {
+	color: var(--2)!important;
 }
 h1, h2, h3, h4, h5, .table th {
     font-family: var(--l);
@@ -37,7 +48,8 @@ body {
 }
 #header .navbar-main {
     font-family: var(--l);
-    background: var(--1)
+    background: var(--1);
+	box-shadow: 0 0 1rem inset rgb(0,0,0,0.4);
 }
 .navbar-expand-lg .navbar-collapse {
     margin-left: 2rem;
@@ -46,11 +58,9 @@ body {
     font-size: 1.6rem!important;
     color: var(--2)!important;
     text-shadow: 0 0 2px var(--2);
-    transition: .1s ease;
 }
 #header .navbar-main a i {
     color: var(--2)!important;
-    transition: .1s ease;
 }
 #main-menu li:nth-child(1) a i,
 #main-menu li:nth-child(3) a i
@@ -75,18 +85,73 @@ body {
     text-shadow: 0 0 2px var(--4);
     transition: .1s ease;
 }
+#header .navbar-status {
+	background: var(--4);
+	font-family: var(--s);
+	font-size: 1rem!important;
+	color: var(--2);
+	font-weight: bold;
+	box-shadow: 0 0 1rem inset rgb(0,0,0,0.4);
+}
+#header .navbar-status a {
+	color: var(--2)!important;
+}
+#header .navbar-status a:hover {
+	color: var(--3)!important;
+}
+#header .breadcrumb-nav {
+	background: var(--5);
+	box-shadow: 0 0 1rem inset rgb(0,0,0,0.4);
+}
+.breadcrumb-item, .breadcrumb-item:before {
+	color: var(--2)!important;
+	font-family: var(--s);
+	font-weight: bold;
+}
+.text-danger, .text-success {
+	color: var(--5)!important;
+}
 #main {
     font-family: var(--s);
-    background: rgba(15,19,20,0.9);
+    background: rgba(15,19,20,0.8);
 }
 #sidebar {
-    background: rgba(15,19,20,0.9);
+    background: rgba(15,19,20,0.8);
 }
 #sidebar .small span {margin-bottom:.4em;font-family:var(--s);}
+#sidebar .card {
+	background: rgba(15,19,20,0.8);
+	border: 1px solid var(--2);
+	border-radius: 0px;
+	box-shadow: 0 0 3rem inset rgb(0,0,0,0.4);
+	color: var(--2);
+	font-weight: bold;
+	font-family: var(--s)
+}
+#sidebar .card-title, #quest-widget h4 {
+    font-size: 1.6rem;
+	text-align: center;
+}
+#sidebar .card {
+    margin-top:1em;
+}
+#sidebar .card a {
+	color: var(--1);
+	opacity: 100%;
+	font-weight: bold;
+	text-shadow: 0 0 black;
+	transition: .1s ease;
+}
+#sidebar .card a:hover {
+	color: var(--2);
+	text-decoration: none;
+    text-shadow: 0 0 2px var(--2);
+    transition: .1s ease;
+}
 .progress {
     background: var(--4)!important;
     margin-bottom: .4em;
-    border: solid 1px var(--4);
+    border: solid 1px var(--2);
     border-radius: 10px;
 }
 .bg-warning {
@@ -104,9 +169,53 @@ body {
 .bg-success {
     background: var(--2)!important;
 }
-#sidebar .card-title {
-    font-size: 1.6rem;
+.table {
+	background: var(--1);
+	border: 1px solid var(--2);
+	box-shadow: 0 0 1rem inset rgb(0,0,0,0.4);
 }
-#sidebar .card {
-    margin-top:1em;
+.table th {
+	background: var(--2);
+	color: var(--3);
+	
+}
+.table th a {
+	color: var(--3);
+    text-shadow: 0 0 2px var(--3);
+    transition: .1s ease;
+}
+.table th a:hover {
+	color: var(--4);
+	text-decoration: none;
+    text-shadow: 0 0 2px var(--4);
+    transition: .1s ease;
+}
+.table th span {
+	font-size: 1.6rem;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	background: transparent;
+}
+td {
+	color: var(--2)!important;
+	font-weight: bold;
+}
+td a {transition: .1s ease;}
+td a:hover {
+	color: var(--4);
+	text-decoration: none;
+    text-shadow: 0 0 2px var(--4);
+    transition: .1s ease;
+}
+#main .card {background-color: transparent;}
+.bg-light, .bg-dark {
+	background: var(--4)!important;
+}
+.bg-light {
+	border: 1px solid var(--2)
+}
+.badge {
+	color: var(--3);
+	background: var(--2);
+	font-weight: bold;
 }
