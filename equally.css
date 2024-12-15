@@ -12,14 +12,19 @@ code by #6488 on wolvden, @poikel on github.io*/
     --3: #38331d;
     --4: #0f1314;
     --5: #200202;
+	--6: #2d2d2d;
+	--7: #442425;
+	--8: #6c5545;
+	--9: #626131;
+	--10: #a9a580;
 }
 * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat820.cur), auto !important;}
 .justify-content-between.mb-3 div { border: none !important; }
 #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
 .alert {
-    background: rgba(32,2,2,0.6);
+    background: rgb(68,36,37,0.6);
     backdrop-filter:blur(3px);
-    color: var(--2);
+    color: var(--9);
     border: 1px solid var(--5)
 }
 .alert a {
@@ -27,7 +32,7 @@ code by #6488 on wolvden, @poikel on github.io*/
     font-weight: bold;
 }
 a {
-    color: var(--2);
+    color: var(--9);
 }
 .text-light {
 	color: var(--2)!important;
@@ -76,13 +81,13 @@ body {
 	content: '\f578'!important;
 }
 #header .navbar-main a:hover {
-    color: var(--4)!important;
-    text-shadow: 0 0 2px var(--4);
+    color: var(--10)!important;
+    text-shadow: 0 0 2px var(--10);
     transition: .1s ease;
 }
 #header .navbar-main a:hover i {
-    color: var(--4)!important;
-    text-shadow: 0 0 2px var(--4);
+    color: var(--10)!important;
+    text-shadow: 0 0 2px var(--10);
     transition: .1s ease;
 }
 #header .navbar-status {
@@ -95,13 +100,23 @@ body {
 }
 #header .navbar-status a {
 	color: var(--2)!important;
+	transition: .1s ease;
 }
 #header .navbar-status a:hover {
-	color: var(--3)!important;
+	color: var(--10)!important;
+	transition: .1s ease;
 }
 #header .breadcrumb-nav {
 	background: var(--5);
 	box-shadow: 0 0 1rem inset rgb(0,0,0,0.4);
+}
+#header .breadcrumb-nav a {
+	transition: .1s ease;
+}
+#header .breadcrumb-nav a:hover {
+	transition: .1s ease;
+	color: var(--10);
+	text-decoration: none;
 }
 .breadcrumb-item, .breadcrumb-item:before {
 	color: var(--2)!important;
@@ -109,7 +124,7 @@ body {
 	font-weight: bold;
 }
 .text-danger, .text-success {
-	color: var(--5)!important;
+	color: var(--7)!important;
 }
 #main {
     font-family: var(--s);
@@ -120,6 +135,8 @@ body {
 	text-align:center;
 	font-size: 2.5rem;
 	letter-spacing: .2px;
+	color: var(--9);
+	text-shadow: 0 0 2px var(--2);
 }
 .nav-tabs {
 	justify-content: center;
@@ -130,7 +147,7 @@ body {
 .nav-tabs .nav-link.active {
 	border: none;
 	background-color: transparent;
-	color: var(--5);
+	color: var(--10);
 }
 .nav-tabs .nav-link {
 	border: none;
@@ -139,7 +156,7 @@ body {
 	padding: 0px;
 }
 .nav-tabs .nav-link:hover {
-	color: var(--5)!important;
+	color: var(--10)!important;
 }
 #main .nav-link[href*='/profile/']:after {
     content: '\f2ce';
@@ -163,7 +180,7 @@ body {
 	box-shadow: 0 0 3rem inset rgb(0,0,0,0.4);
 	color: var(--2);
 	font-weight: bold;
-	font-family: var(--s)
+	font-family: var(--s);
 }
 #sidebar .card-title, #quest-widget h4 {
     font-size: 1.6rem;
@@ -173,14 +190,13 @@ body {
     margin-top:1em;
 }
 #sidebar .card a {
-	color: var(--1);
+	color: var(--2);
 	opacity: 100%;
 	font-weight: bold;
-	text-shadow: 0 0 black;
 	transition: .1s ease;
 }
 #sidebar .card a:hover {
-	color: var(--2);
+	color: var(--10);
 	text-decoration: none;
     text-shadow: 0 0 2px var(--2);
     transition: .1s ease;
@@ -198,7 +214,7 @@ body {
     background: var(--3)!important;
 }
 .bg-primary {
-    background: var(--2)!important;
+    background: var(--7)!important;
 }
 .bg-info {
     background: var(--1)!important;
@@ -213,18 +229,17 @@ body {
 }
 .table th {
 	background: var(--2);
-	color: var(--3);
-	
+	color: var(--7);
 }
 .table th a {
-	color: var(--3);
+	color: var(--7);
     text-shadow: 0 0 2px var(--3);
     transition: .1s ease;
 }
 .table th a:hover {
-	color: var(--4);
+	color: var(--10);
 	text-decoration: none;
-    text-shadow: 0 0 2px var(--4);
+    text-shadow: 0 0 2px var(--10);
     transition: .1s ease;
 }
 .table th span {
@@ -234,12 +249,12 @@ body {
 	background: transparent;
 }
 td {
-	color: var(--2)!important;
+	color: var(--9)!important;
 	font-weight: bold;
 }
 td a {transition: .1s ease;}
 td a:hover {
-	color: var(--4);
+	color: var(--10);
 	text-decoration: none;
     text-shadow: 0 0 2px var(--4);
     transition: .1s ease;
@@ -253,8 +268,8 @@ td a:hover {
 }
 .text-wrap {margin-bottom: .5em;}
 .badge {
-	color: var(--3);
-	background: var(--2);
+	color: var(--5);
+	background: var(--7);
 	font-weight: bold;
 }
 img.rounded-bottom {
@@ -301,7 +316,7 @@ img.rounded-bottom {
 	border-radius: 0px;
 }
 #denCards .card-header b {
-	color: var(--2)!important;
+	color: var(--7)!important;
 	text-shadow: 0 0 3px rgb(0,0,0,0.5);
 }
 th.top {
