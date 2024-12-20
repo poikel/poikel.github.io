@@ -80,15 +80,19 @@ code by #6488 on wolvden, @poikel on github.io*/
 	.text-danger {
 		color: var(--gray4)!important;
 	}
-
-	.btn-success, .btn-danger, .btn-primary, .btn-warning {
-		background: var(--blue);
-		border: none;
+	.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+		background: var(--blue)!important;
+		border: none!important;
+		box-shadow: none!important;
 	}
-
-	.btn-success:hover, .btn-danger:hover, .btn-primary:hover, .btn-warning:hover {
-		background: var(--blue2);
-		transition: .2s ease;
+	.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background-color: var(--blue2)!important;
+		box-shadow: none!important;
+	}
+	.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+		background: var(--blue2)!important;
+		text-decoration: underline!important;
+		box-shadow: none!important;
 	}
 
     /* BOX STUFF */
