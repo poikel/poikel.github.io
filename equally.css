@@ -33,8 +33,14 @@ code by #6488 on wolvden, @poikel on github.io*/
 }
 a {
     color: var(--9);
+	transition: .1s ease;
 }
-.text-light {
+a:hover {
+	text-decoration: none;
+	color: var(--10);
+	transition: .1s ease;
+}
+.text-light, #lblCharacterCounter {
 	color: var(--2)!important;
 }
 b {
@@ -129,7 +135,7 @@ body {
 #main {
     font-family: var(--s);
     background: rgba(15,19,20,0.8);
-	color: var(--2);
+	color: var(--10);
 }
 #main h1 {
 	text-align:center;
@@ -316,7 +322,7 @@ img.rounded-bottom {
 	border-radius: 0px;
 }
 #denCards .card-header b {
-	color: var(--7)!important;
+	color: #ece7ca!important;
 	text-shadow: 0 0 3px rgb(0,0,0,0.5);
 }
 th.top {
@@ -348,3 +354,71 @@ td.bottom {
 	text-decoration: underline;
 }
 .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
+#chatMessageContainer {
+	border-radius: 0px;
+	border: 1px solid var(--9);
+	font-family: var(--s);
+	font-size: .9rem!important;
+}
+.s-chat-message {
+	color: var(--10);
+}
+.s-chat-message a {
+	color: var(--9);
+	transition: .1s ease;
+}
+.s-chat-message a:hover {
+	color: var(--10);
+	transition: .1s ease;
+	text-decoration: none;
+	font-weight: bold;
+}
+.s-chat-message {
+	background-color: var(--1)!important;
+}
+#chatMessagePinned {
+	display: none;
+}
+.s-chat-sidebar #label_currentChannel, #fra_chatContainer #txtChatInput {
+	background: var(--1);
+	border-radius: 0px;
+	border: 1px solid var(--9);
+	color: var(--10);
+	font-family:var(--s);
+}
+input.form-control, input.form-control:focus, select.form-control, select.form-control:focus, textarea.form-control, textarea.form-control:focus {
+	color: var(--10);
+	background: var(--4);
+	border-radius: 0px;
+	border: 1px solid var(--9);
+	box-shadow: none;
+}
+#footer {
+	background: rgba(15,19,20,0.8);
+	font-family: var(--s);
+	color: var(--9);
+}
+.copyright:after {
+	display: block;
+	content: 'css by #6488 🖤';
+	color: var(--10);
+	margin-top: .6rem;
+}
+#footer a {
+	color: var(--10)!important;
+}
+.breadcrumb:after {
+	content: 'css by #6488 🖤';
+	display: block;
+	font-family: var(--s);
+	right: 40px;
+	position: absolute;
+	font-size: .7rem;
+	margin-top: 3px;
+	color: var(--9);
+	font-weight: bold;
+}
+.left, .right {
+	background-color: var(--1)!important;
+	font-weight: bold!important;
+}
