@@ -422,3 +422,42 @@ input.form-control, input.form-control:focus, select.form-control, select.form-c
 	background-color: var(--1)!important;
 	font-weight: bold!important;
 }
+.dropdown-divider {
+	display: none;
+}
+.dropdown-menu {
+	background: var(--4);
+	border-radius: 0px;
+	border: 1px solid var(--1);
+}
+.dropdown-item {
+	background: none;
+}
+a.dropdown-item:hover {
+	background: none!important;
+}
+
+.s-chat-sidebar #fraChatChannelMenu {
+	background: var(--1);
+	margin-top: .5rem;
+	border-radius: 0px;
+	border: 1px solid var(--9);
+	font-family: var(--s);
+}
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: var(--10);
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: var(--2);
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: var(--2);
+	color: #fff;
+}
+::-webkit-scrollbar {
+	width: 7px;
+	background: var(--5);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--7);
+}
