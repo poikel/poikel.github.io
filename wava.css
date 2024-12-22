@@ -1,0 +1,66 @@
+/* do not remove credit, edit code or reupload 
+this code is *not* free-to-use, made for #148859 on wolvden.com
+code by #6488 on wd, @poikel on github*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {cursor: url(https://cur.cursors-4u.net/symbols/sym-3/sym216.ani), url(https://cur.cursors-4u.net/symbols/sym-3/sym216.png), auto !important;}
+
+:root {
+    --font: "Playfair Display", serif;
+    --g: #272727;
+    --g2: #3C3C3C; 
+    --g3: #141414;
+    --sf: #22C17D;
+    --sf2: #51DCAB;
+    --sf3: #6EEBC1;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--g);
+    color: var(--sf3);
+}
+body a {
+    transition: .2s ease;
+}
+body a:hover {
+    color: var(--sf3);
+    text-decoration: none;
+    transition: .2s ease;
+    text-shadow: 0 0 5px;
+    letter-spacing: 0.03rem;
+}
+#main {
+    background: var(--g3);
+}
+#header .navbar-main {
+    background: var(--g2);
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+#header .navbar-main a {
+    color: var(--g3)!important;
+    font-weight: bolder;
+    font-size: 1rem!important;
+    transition: .2s ease;
+    text-shadow: none;
+}
+#header .navbar-main a:hover {
+    letter-spacing: 0px!important;
+    color: var(--sf3)!important;
+    text-shadow: 0 0 5px;
+}
+#header .navbar-main a:hover i {
+    letter-spacing: 0px!important;
+    color: var(--sf3)!important;
+    text-shadow: 0 0 5px;
+}
+#header .navbar-main a i {
+    color: var(--g3)!important;
+    transition: .2s ease;
+    text-shadow: none;
+}
+#header .navbar-status {
+    background: var(--g);
+}
+#header .breadcrumb-nav {
+    background: var(--g3);
+}
