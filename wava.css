@@ -20,9 +20,16 @@
         border: 1px solid var(--g);
         color: var(--sf);
         font-weight: bold;
+        text-align: center;
     }
     .alert a {
-        color: var(--g3)
+        color: var(--g3)!important;
+        transition: .2s ease;
+    }
+    .alert a:hover {
+        color: var(--sf3)!important;
+        transition: .2s ease;
+        letter-spacing: 0.03rem;
     }
     body {
         font-family: var(--font);
@@ -73,7 +80,6 @@
         color: var(--g3);
         transition: .2s ease;
         font-weight: bold;
-        border: 2px ridge var(--g);
     }
     #header .navbar-status a {
         color: var(--sf2);
@@ -95,6 +101,34 @@
         font-size: .7rem;
         text-shadow: 0 0 5px;
     }
+    .nav-tabs {
+    	border: none;
+    }
+    .nav-tabs .nav-link.active {
+    	border: none;
+    	background-color: var(--g);
+        border-radius: 13px 0px 13px 0px!important;
+        margin-right: .6rem;
+        color: var(--sf2);
+        text-shadow: 0 0 3px;
+        border: solid 2px var(--g2);
+    }
+    .nav-tabs .nav-link {
+    	border: none;
+        background-color: var(--g);
+        border-radius: 13px 0px 13px 0px!important;
+        color: var(--g3);
+        font-weight: bold;
+        text-shadow: 0 0 3px #ffffff2b;
+        border: solid 2px var(--g2);
+    }
+    .nav-tabs .nav-link:hover {
+        letter-spacing: 0px;
+        color: var(--sf2);
+        text-shadow: 0 0 3px var(--sf2);
+        border: solid 2px var(--sf2);
+        box-shadow: 0px 0px 7px var(--sf2);
+    }
     .progress {
         background: var(--g)!important;
         border-radius: 30px;
@@ -104,4 +138,17 @@
     }
     .bg-warning, .bg-danger, .bg-primary, .bg-info, .bg-success {
         background: var(--sf)!important;
+    }
+    #sidebar {
+        background: var(--g3);
+    }
+    #sidebar a {
+        color: var(--g3);
+        font-weight: bold;
+        transition: .2s ease;
+    }
+    #sidebar a:hover {
+        color: var(--sf3);
+        transition: .2s ease;
+        letter-spacing: 0.03rem;
     }
