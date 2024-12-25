@@ -172,12 +172,6 @@
         border-radius: 0px!important;
         font-weight: bold;
     }
-    #denCards img {
-        filter: grayscale(90%);
-    }
-    #denCards img:hover {
-        filter: brightness(0.1);
-    }
     #main .card {background-color: transparent;}
     .table {
         background-color: var(--g)!important;
@@ -246,7 +240,7 @@
     .btn-warning:focus,
     .btn-primary:focus,
     .btn-info:focus,
-    .btn {
+    {
         box-shadow:none!important;
         border: 3px double var(--g)!important;
     }
