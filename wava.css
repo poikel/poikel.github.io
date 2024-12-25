@@ -93,6 +93,9 @@
     #header .breadcrumb-nav {
         background: var(--g3);
     }
+    #header .breadcrumb-nav a {
+        color: var(--sf3)
+    }
     .breadcrumb:after {
         position: absolute;
         right: 2.8rem;
@@ -151,4 +154,30 @@
         color: var(--sf3);
         transition: .2s ease;
         letter-spacing: 0.03rem;
+    }
+    #denCards a:hover {
+        letter-spacing: 0px!important;
+        text-shadow: none;
+    }
+    #denCards .card-header {
+        border-radius: 0px!important;
+        font-weight: bold;
+    }
+    #main .card {background-color: transparent;}
+    .table {
+        background-color: var(--g)!important;
+        border: 1px solid var(--sf);
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: var(--g)!important;
+    }
+    .table th, .table .subheader, .table .bottom {
+        background: var(--g3);
+        border-top: 1px solid var(--sf);
+        border-bottom: 1px solid var(--sf);
+        color: var(--sf3);
+    }
+    .table a {
+        color: var(--g3);
+        font-we
     }
