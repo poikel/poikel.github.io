@@ -14,7 +14,7 @@
         --sf3: #6EEBC1;
     }
     .justify-content-between.mb-3 div { border: none !important; }
-    #header > nav.navbar.navbar-status.navbar-expand > div > button {color:var(--g3)!important;}
+    #header > nav.navbar.navbar-status.navbar-expand > div > button {color:var(--g3)!important;border:none!important;}
     #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
     .alert {
         background: var(--g2);
