@@ -14,6 +14,7 @@
         --sf3: #6EEBC1;
     }
     .justify-content-between.mb-3 div { border: none !important; }
+    #header > nav.navbar.navbar-status.navbar-expand > div > button {color:var(--g3)!important;}
     #header nav.navbar.navbar-status.navbar-expand div button:focus {box-shadow: none;}
     .alert {
         background: var(--g2);
@@ -48,6 +49,7 @@
     }
     #main {
         background: var(--g3);
+        background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
     }
     #header .navbar-main {
         background: var(--g2);
@@ -104,6 +106,9 @@
         font-size: .7rem;
         text-shadow: 0 0 5px;
     }
+    #bookmarkPage {
+        color: var(--sf3)!important;
+    }
     .nav-tabs {
     	border: none;
     }
@@ -144,6 +149,10 @@
     }
     #sidebar {
         background: var(--g3);
+        background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+    }
+    #sidebar .card {
+        border: 4px double var(--g);
     }
     #sidebar a {
         color: var(--g3);
@@ -163,6 +172,12 @@
         border-radius: 0px!important;
         font-weight: bold;
     }
+    #denCards img {
+        filter: grayscale(90%);
+    }
+    #denCards img:hover {
+        filter: brightness(0.1);
+    }
     #main .card {background-color: transparent;}
     .table {
         background-color: var(--g)!important;
@@ -171,13 +186,88 @@
     .table-striped tbody tr:nth-of-type(odd) {
         background-color: var(--g)!important;
     }
-    .table th, .table .subheader, .table .bottom {
-        background: var(--g3);
+    .table th {
+        background: var(--sf);
         border-top: 1px solid var(--sf);
         border-bottom: 1px solid var(--sf);
-        color: var(--sf3);
-    }
-    .table a {
         color: var(--g3);
-        font-we
+    }
+    .table a, .table th a {
+        color: var(--g3);
+        font-weight: bold;
+    }
+    .table a:hover, .table th a:hover {
+        color: var(--sf3);
+        text-shadow: 0 0 2px black;
+    }
+    .table .subheader {
+        background: var(--g3);
+        border-bottom: 4px double var(--sf)
+    }
+    .table .bottom {
+        border-top: 4px double var(--sf);
+        background: var(--g3);
+    }
+    .border-bottom {
+        border-bottom: none!important;
+    }
+    .btn-success,
+    .btn-danger,
+    .btn-warning,
+    .btn-primary,
+    .btn-info {
+    	background: var(--g3);
+    	color: var(--sf);
+    	font-weight: bold;
+    	border: 3px double var(--g)!important;
+}
+    .btn-success:hover,
+    .btn-danger:hover,
+    .btn-warning:hover,
+    .btn-primary:hover,
+    .btn-info:hover {
+    	background: var(--sf);
+    	color: var(--g3);
+        font-weight: bold;
+        border: 3px double var(--g)!important;
+    }
+    .btn-success:active,
+    .btn-danger:active,
+    .btn-warning:active,
+    .btn-primary:active,
+    .btn-info:active {
+    	background: var(--p2)!important;
+    	color: var(--wh)!important;
+    	text-decoration: underline;
+        border: 3px double var(--g)!important;
+    }
+    .btn-success:focus,
+    .btn-danger:focus,
+    .btn-warning:focus,
+    .btn-primary:focus,
+    .btn-info:focus,
+    .btn {
+        box-shadow:none!important;
+        border: 3px double var(--g)!important;
+    }
+    .text-danger,
+    .text-success,
+    .text-warning {
+        color: var(--sf3)!important;
+        transition: .2s ease;
+    }
+    .text-danger:hover,
+    .text-success:hover,
+    .text-warning:hover {
+        text-decoration: none;
+        text-shadow: 0 0 4px;
+        transition: .2s ease;
+    }
+    ::-webkit-scrollbar {
+        background: var(--sf);
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--g3);
+        border-radius: 10px;
     }
