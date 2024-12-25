@@ -214,6 +214,7 @@
     	color: var(--sf);
     	font-weight: bold;
     	border: 3px double var(--g)!important;
+        box-shadow: none!important;
 }
     .btn-success:hover,
     .btn-danger:hover,
@@ -224,16 +225,19 @@
     	color: var(--g3);
         font-weight: bold;
         border: 3px double var(--g)!important;
+        box-shadow: none!important;
+
     }
     .btn-success:active,
     .btn-danger:active,
     .btn-warning:active,
     .btn-primary:active,
     .btn-info:active {
-    	background: var(--p2)!important;
-    	color: var(--wh)!important;
+    	background: var(--sf2)!important;
+    	color: var(--g3)!important;
     	text-decoration: underline;
         border: 3px double var(--g)!important;
+        box-shadow: none!important;
     }
     .btn-success:focus,
     .btn-danger:focus,
