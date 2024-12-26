@@ -49,11 +49,11 @@
     }
     #main {
         background: var(--g3);
-        background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     }
     #header .navbar-main {
         background: var(--g2);
-        background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     }
     #header .navbar-main a {
         color: var(--g3)!important;
@@ -78,19 +78,19 @@
         text-shadow: none;
     }
     #header .navbar-status {
-        background: var(--g2);
-        color: var(--g3);
+        background: var(--sf2);
+        color: var(--g3)!important;
         transition: .2s ease;
         font-weight: bold;
     }
     #header .navbar-status a {
-        color: var(--sf2);
+        color: var(--g3);
         transition: .2s ease;
     }
     #header .navbar-status a:hover {
-        text-shadow: 0 0 5px!important;
-        color: var(--sf2)!important;
-        letter-spacing: 0px;
+        text-shadow: none!important;
+        color: var(--g3)!important;
+        letter-spacing: 0.03rem;
     }
     #header .breadcrumb-nav {
         background: var(--g3);
@@ -117,17 +117,15 @@
     	background-color: var(--g);
         border-radius: 13px 0px 13px 0px!important;
         margin-right: .6rem;
-        color: var(--sf2);
-        text-shadow: 0 0 3px;
+            color: var(--sf2);
         border: solid 2px var(--g2);
     }
     .nav-tabs .nav-link {
     	border: none;
         background-color: var(--g);
         border-radius: 13px 0px 13px 0px!important;
-        color: var(--g3);
+        color: var(--sf);
         font-weight: bold;
-        text-shadow: 0 0 3px #ffffff2b;
         border: solid 2px var(--g2);
     }
     .nav-tabs .nav-link:hover {
@@ -149,10 +147,13 @@
     }
     #sidebar {
         background: var(--g3);
-        background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     }
     #sidebar .card {
-        border: 4px double var(--g);
+        border-top: 4px double var(--sf2);
+        border-bottom: 4px double var(--sf2);
+        margin-top: 1rem;
+        box-shadow: 0 0 10px var(--g3);
     }
     #sidebar a {
         color: var(--g3);
@@ -163,6 +164,29 @@
         color: var(--sf3);
         transition: .2s ease;
         letter-spacing: 0.03rem;
+    }
+    #chatMessageContainer {
+        border-radius: 0px;
+        border: none;
+        border-top: 4px double var(--sf2);
+        border-bottom: 4px double var(--sf2);
+        box-shadow: 0 0 10px var(--g3);
+    }
+    #chatMessagePinned {display:none;}
+    .s-chat-message {
+        background: var(--g2)!important;
+    }
+    .s-chat-message a {
+        color: var(--g3);
+        font-weight: bold;
+    }
+    #fra_chatContainer #txtChatInput {
+        border: none;
+        border-radius: 0px;
+        border: solid 1px var(--g2);
+        background: var(--g3);
+        padding: 6px;
+        color: var(--sf3);
     }
     #denCards a:hover {
         letter-spacing: 0px!important;
@@ -181,10 +205,12 @@
         background-color: var(--g)!important;
     }
     .table th {
+        font-weight: bold!important;
         background: var(--sf);
         border-top: 1px solid var(--sf);
         border-bottom: 1px solid var(--sf);
         color: var(--g3);
+        background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
     }
     .table a, .table th a {
         color: var(--g3);
@@ -262,10 +288,36 @@
         transition: .2s ease;
     }
     ::-webkit-scrollbar {
-        background: var(--sf);
+        background: var(--g3);
         width: 7px;
     }
     ::-webkit-scrollbar-thumb {
-        background: var(--g3);
+        background: var(--sf3);
         border-radius: 10px;
+    }
+    body a, .btn-link {
+        color: var(--sf);
+    }
+    select.form-control, select.form-control:active, select.form-control:focus {
+    	background: var(--g);
+    	border: 1px solid var(--g2);
+    	color: var(--sf);
+        box-shadow: none!important;
+    }
+    .w-50 > a img{
+        border-radius: 30px 0px 30px 0px;
+        border: double 4px var(--sf2);
+        box-shadow: 0 0 10px var(--g3);
+    }
+    .w-50 div a img {
+        border-radius: 15px 0px 15px 0px;
+        border: solid 1px var(--sf2);
+        box-shadow: 0 0 10px var(--g3);
+    }
+    #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+    #main table tbody tr td div a:nth-child(3) img {
+        border-radius: 30px 0px 30px 0px;
+        border: double 4px var(--sf);
+        box-shadow: 0 0 10px var(--g3);
+        margin-top: 6px;
     }
