@@ -173,6 +173,11 @@
         box-shadow: 0 0 10px var(--g3);
     }
     #chatMessagePinned {display:none;}
+    .s-chat-sidebar #label_currentChannel {
+        background: var(--g3);
+        border-radius: 0px;
+        border: none;
+    }
     .s-chat-message {
         background: var(--g2)!important;
     }
@@ -320,4 +325,20 @@
         border: double 4px var(--sf);
         box-shadow: 0 0 10px var(--g3);
         margin-top: 6px;
+    }
+    .dropdown-menu {
+        background: var(--sf2);
+        border-radius: 0p;
+        border: 4px double var(--g3);
+    }
+    a.dropdown-item {
+        background: none;
+        color: var(--g3)!important;
+        font-weight: bold!important;
+    }
+    a.dropdown-item:hover {
+        background: var(--sf)
+    }
+    .dropdown-divider {
+        display: none;
     }
