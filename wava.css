@@ -52,6 +52,9 @@
         background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     }
     #header .navbar-main {
+        margin-top: 1rem;
+        border-image: linear-gradient(to right, #3acfd500 0%, var(--sf2) 50%, #00000000 100%) 1;
+        border-top: 2px solid;
         background: var(--g2);
         background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     }
@@ -94,6 +97,8 @@
     }
     #header .breadcrumb-nav {
         background: var(--g3);
+        border-image: linear-gradient(to right, #3acfd500 0%, var(--sf2) 50%, #00000000 100%) 1;
+        border-bottom: 2px solid;
     }
     #header .breadcrumb-nav a {
         color: var(--sf3)
@@ -150,8 +155,9 @@
         background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
     }
     #sidebar .card {
-        border-top: 4px double var(--sf2);
-        border-bottom: 4px double var(--sf2);
+        border-image: linear-gradient(to right, #3acfd500 0%, var(--sf2) 50%, #00000000 100%) 1;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
         margin-top: 1rem;
         box-shadow: 0 0 10px var(--g3);
     }
@@ -168,8 +174,9 @@
     #chatMessageContainer {
         border-radius: 0px;
         border: none;
-        border-top: 4px double var(--sf2);
-        border-bottom: 4px double var(--sf2);
+        border-image: linear-gradient(to right, #3acfd500 0%, var(--sf2) 50%, #00000000 100%) 1;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
         box-shadow: 0 0 10px var(--g3);
     }
     #chatMessagePinned {display:none;}
@@ -192,6 +199,32 @@
         background: var(--g3);
         padding: 6px;
         color: var(--sf3);
+    }
+    .s-chat-sidebar #fraChatChannelMenu {
+        margin-top: .5rem;
+        background: var(--g3);
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #3acfd500 0%, var(--sf2) 50%, #00000000 100%) 1;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher {
+        color: var(--sf2);
+        font-weight: normal;
+        border-radius: 0px;
+        transition: .2s ease;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher:hover {
+        background: var(--sf);
+        color: var(--g3);
+        font-weight:bold;
+        border-radius: 0px;
+        transition: .2s ease;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher.active {
+        background: var(--sf2);
+        border-radius: 0px;
+        color: var(--g3);
+        font-weight: bold;
     }
     #denCards a:hover {
         letter-spacing: 0px!important;
@@ -297,8 +330,8 @@
         width: 7px;
     }
     ::-webkit-scrollbar-thumb {
-        background: var(--sf3);
-        border-radius: 10px;
+        background: var(--sf);
+        border-radius: 0px;
     }
     body a, .btn-link {
         color: var(--sf);
@@ -328,8 +361,8 @@
     }
     .dropdown-menu {
         background: var(--sf2);
-        border-radius: 0p;
-        border: 4px double var(--g3);
+        border-radius: 0px;
+        border: 1px solid var(--g3);
     }
     a.dropdown-item {
         background: none;
@@ -341,4 +374,23 @@
     }
     .dropdown-divider {
         display: none;
+    }
+    #footer {
+        border-top: 2px solid;
+        border-image: linear-gradient(to right, #3acfd500 0%, var(--sf2) 50%, #00000000 100%) 1;
+        color: var(--sf);
+        font-weight: bold;
+        background: var(--g3);
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    }
+    #footer a {
+        color: var(--sf3)!important;
+    }
+    #footer .copyright:after {
+        content: '\f120 \00a0 \00a0 css by #6488';
+        font-family: var(--font), 'Font Awesome 5 Free';
+        font-size: .7rem;
+        display: block;
+        margin-top: .8rem;
+        color: var(--sf3);
     }
