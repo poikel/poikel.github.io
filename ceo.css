@@ -123,9 +123,9 @@ body {
   content: '\f75c'!important;
 }
 #header .navbar-main a:hover {
-  color: var(--link)!important;
+  color: var(--hp)!important;
   transition: .3s ease;
-  text-shadow: -1px -1px 0 var(--border), 1px -1px 0 var(--border), -1px 1px 0 var(--border), 1px 1px 0 var(--border);
+  text-shadow: 0 0 7px #0e2c18!important;
 }
 #header .navbar-status {
   background: var(--border);
@@ -276,7 +276,9 @@ a.dropdown-item {
   text-shadow: 0 0 2px var(--border);
 }
 a.dropdown-item:hover {
-  text-shadow: -1px -1px 0 var(--border), 1px -1px 0 var(--border), -1px 1px 0 var(--border), 1px 1px 0 var(--border);
+  color: var(--hp)!important;
+  transition: .3s ease;
+  text-shadow: 0 0 7px #0e2c18!important;
 }
 .dropdown-divider {display:none;}
 .left {background:var(--border)!important;}
@@ -302,4 +304,8 @@ a.dropdown-item:hover {
   margin-top: .4em;
   content: '\f06c\00a0 css by #6488';
   color: var(--link);
+}
+#sidebar .fa-angle-right:before {
+  content: '\f06c';
+  font-size: 12px;
 }
