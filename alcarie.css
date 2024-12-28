@@ -156,6 +156,7 @@ body {
     background: linear-gradient(to right, transparent, var(--3), transparent);
     border-image: linear-gradient(to right, #ffffff00 0%, var(--5) 50%, #00000000 100%) 1;
     text-align: center;
+    border-width: 2px;
     border-width: 1px;
 }
 #main h1 {
@@ -170,9 +171,13 @@ body {
     background: #031018e8;
 }
 #header .navbar-main {
+    background: var(--2);
     background: linear-gradient(to right, var(--1), var(--2), var(--1));
     margin-top: 1rem;
     border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #ffffff00 0%, var(--5) 50%, #00000000 100%) 1;
+}
 #header .navbar-main a {
     color: var(--5)!important;
     font-weight: bold;
