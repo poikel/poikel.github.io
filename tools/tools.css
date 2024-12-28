@@ -1,4 +1,14 @@
 /*.
+===============
+replace wolf title
+===============
+body.theme_default span#lblPackLeaderTitle {
+    display: none
+}
+
+body.theme_default table.table.table-striped.border-none.mt-3.mb-0 tbody tr th.pt-1.pb-1 a:before {
+    content: "text here "
+}
 
 ===============
 crossroads to the side
