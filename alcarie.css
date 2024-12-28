@@ -11,65 +11,6 @@
     --5: #8d9ea5;
     --6: #ffffff;
 }
-
-body {
-    font-family: var(--font);
-    background-image: url('https://i.imgur.com/VCER3YC.jpeg');
-}
-.alert {
-    background: linear-gradient(to right, transparent, var(--3), transparent);
-    border-image: linear-gradient(to right, #ffffff00 0%, var(--5) 50%, #00000000 100%) 1;
-    text-align: center;
-    border-width: 1px;
-}
-#main h1 {
-    font-family: var(--font2);
-    font-size: 3.5rem;
-    text-align: center;
-    letter-spacing: 1px;
-    color: var(--6);
-    text-shadow: 0 0 18px var(--4), 0 0 5px var(--6);
-}
-#main {
-    background: #031018e8;
-}
-#header .navbar-main {
-    background: linear-gradient(to right, var(--1), var(--2), var(--1));
-    margin-top: 1rem;
-    border-radius: 10px 10px 0px 0px;
-#header .navbar-main a {
-    color: var(--5)!important;
-    font-weight: bold;
-}
-#header .navbar-main a i {
-    color: var(--5)!important;
-}
-.nav-tabs {
-	justify-content: center;
-	border: none;
-}
-.nav-tabs .nav-link.active {
-	border: none;
-	background-color: transparent;
-    color: var(--6);
-    text-shadow: 0 0 6px var(--5);
-}
-.nav-tabs .nav-link {
-	border: none;
-    font-size: 0px;
-    margin: 0px;
-    padding: 0px;
-    color: var(--5);
-    text-shadow: 0 0 6px var(--4);
-	transition: .3s ease;
-}
-.nav-tabs .nav-link:hover {
-    color: var(--6);
-	text-shadow: 0 0 6px var(--5);
-    transition: .3s ease;
-}
-#main .nav-link[href*='/profile/']:after { content: '\f7cf'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
-#main .nav-link[href*='/den/']:after { content: '\f6fc'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
 .snowflake {
   color: #fff;
   font-size: 1rem;
@@ -98,7 +39,6 @@ body {
         transform: translateX(80px);
     }
 }
-
 .snowflake {
     position: fixed;
     top: -10%;
@@ -208,3 +148,61 @@ body {
     left: 65%;
     animation-delay: 2.5s;
 }
+body {
+    font-family: var(--font);
+    background-image: url('https://i.imgur.com/VCER3YC.jpeg');
+}
+.alert {
+    background: linear-gradient(to right, transparent, var(--3), transparent);
+    border-image: linear-gradient(to right, #ffffff00 0%, var(--5) 50%, #00000000 100%) 1;
+    text-align: center;
+    border-width: 1px;
+}
+#main h1 {
+    font-family: var(--font2);
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--6);
+    text-shadow: 0 0 18px var(--4), 0 0 5px var(--6);
+}
+#main {
+    background: #031018e8;
+}
+#header .navbar-main {
+    background: linear-gradient(to right, var(--1), var(--2), var(--1));
+    margin-top: 1rem;
+    border-radius: 10px 10px 0px 0px;
+#header .navbar-main a {
+    color: var(--5)!important;
+    font-weight: bold;
+}
+#header .navbar-main a i {
+    color: var(--5)!important;
+}
+.nav-tabs {
+	justify-content: center;
+	border: none;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+    color: var(--6);
+    text-shadow: 0 0 6px var(--5);
+}
+.nav-tabs .nav-link {
+	border: none;
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: var(--5);
+    text-shadow: 0 0 6px var(--4);
+	transition: .3s ease;
+}
+.nav-tabs .nav-link:hover {
+    color: var(--6);
+	text-shadow: 0 0 6px var(--5);
+    transition: .3s ease;
+}
+#main .nav-link[href*='/profile/']:after { content: '\f7cf'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
+#main .nav-link[href*='/den/']:after { content: '\f6fc'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
