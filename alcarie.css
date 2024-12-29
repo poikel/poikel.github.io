@@ -165,6 +165,11 @@ body {
     border-width: 1px;
 	color: var(--6);
 }
+.text-danger,
+.text-success,
+.text-warning {
+	color: var(--5)!important;
+}
 #main h1 {
     font-family: var(--font2);
     font-size: 3.5rem;
@@ -418,12 +423,33 @@ span.user_current_gc:before {
 	box-shadow: 0 0 10px var(--6);
 	transition: .3s ease;
 }
+#main .table th {
+	background: var(--3);
+	color: var(--5)
+}
+#main .card {background-color: transparent;}
+#main .table {
+	border: 1px solid var(--3);
+	color: var(--6);
+}
+#main .table a {
+	color: var(--5);
+	transition: .3s ease;
+}
+#main .table a:hover {
+	color: var(--6);
+	text-shadow: 0 0 4px;
+	transition: .3s ease;
+}
+#main .table-striped tbody tr:nth-of-type(odd) {
+	background: none!important;
+}
 #main form .table th {
 	text-align: center;
 	font-size: 1rem;
 }
 #main form .table-striped tbody tr:nth-of-type(odd) {
-	background-color: var(--1);
+    background: linear-gradient(to right, var(--1), var(--2), var(--1))!important;
 	color: var(--6);
 }
 #main form .table-striped tbody tr:nth-of-type(odd) a,
@@ -436,6 +462,9 @@ span.user_current_gc:before {
 	color: var(--6);
 }
 #main form .table-striped tbody tr:nth-of-type(even) {
-	background-color: var(--2);
+    background: linear-gradient(to right, var(--1), var(--2), var(--1));
 	color: var(--6);
+}
+#main form .table {
+	border: 1px solid var(--3);
 }
