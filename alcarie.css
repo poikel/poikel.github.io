@@ -156,7 +156,7 @@ body {
 }
 .alert {
     background: linear-gradient(to right, transparent, var(--3), transparent);
-    border-image: linear-gradient(to right, #ffffff00 0%, var(--5) 50%, #00000000 100%) 1;
+    border-image: linear-gradient(to right, #ffffff00 0%, var(--3) 50%, #00000000 100%) 1;
     text-align: center;
     border-width: 2px;
     border-width: 1px;
@@ -183,7 +183,7 @@ body {
     background: linear-gradient(to right, var(--1), var(--2), var(--1));
     margin-top: 1rem;
     border-radius: 10px 10px 0px 0px;
-    border-bottom: 3px double var(--5);
+    border-bottom: 3px double var(--2);
 }
 #header .navbar-main a {
     color: var(--4)!important;
@@ -215,6 +215,8 @@ body {
 	background-color: var(--2);
 	color: var(--4);
 	font-weight: bold;
+	border-bottom: 1px solid;
+	border-image: linear-gradient(to right, transparent 0%, var(--3) 50%, transparent 100%) 1;
 }
 #header .navbar-status a {
 	color: var(--4);
@@ -230,8 +232,8 @@ body {
 	color: var(--4)!important;
 	font-size: 1rem;
 }
-#header .breadcrumb-nav, {
-	font-size: 0px;
+#header .breadcrumb-nav .breadcrumb-item {
+	display: none;
 	}
 }
 #header .navbar-status .d-md-inline {
@@ -276,6 +278,44 @@ span.user_current_gc:before {
 	color: var(--6)!important;
 	transition: .3s ease;
 	text-shadow: 0 0 4px;
+}
+#sidebar {
+	background: #031018e8;
+}
+#sidebar .card {
+	background: var(--2)!important;
+	border-left: 3px double var(--3)!important;
+	border-top: 1px solid var(--3)!important;
+	border-right: 3px double var(--3)!important;
+	border-bottom: 1px solid var(--3)!important;
+	box-shadow: 0 0 10px var(--1)!important;
+	color: var(--6);
+}
+#sidebar .card a {
+	color: var(--4);
+	transition: .3s ease;
+}
+#sidebar .card a:hover {
+	color: var(--6);
+	text-shadow: 0 0 4px;
+	text-decoration: none;
+}
+#sidebar .fa-angle-right:before {
+	content: '•';
+	text-shadow: 0 0 4px;
+	font-size: 12px;
+}
+.progress {
+	border-radius: 0px;
+	border: 1px solid var(--3);
+	background: var(--1)!important;
+}
+.bg-warning,
+.bg-danger,
+.bg-info,
+.bg-primary,
+.bg-success {
+	background: linear-gradient(to right, var(--5), var(--4));
 }
 .nav-tabs {
 	justify-content: center;
