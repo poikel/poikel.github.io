@@ -170,6 +170,7 @@ body {
     color: var(--6);
     text-shadow: 0 0 18px var(--4), 0 0 5px var(--6);
 	transition: .6s ease;
+	cursor: default;
 }
 #main h1:hover {
 	letter-spacing: 2px;
@@ -343,3 +344,55 @@ span.user_current_gc:before {
 }
 #main .nav-link[href*='/profile/']:after { content: '\f7cf'; font-family: 'Font Awesome 5 Free'; font-size: 14px; padding-right: 15px;}
 #main .nav-link[href*='/den/']:after { content: '\f6fc'; font-family: 'Font Awesome 5 Free'; font-size: 14px;}
+#denCards img[src$="dynasty.png"] {
+	object-fit: cover;
+	content: url('https://i.imgur.com/qQwnQcB.png');
+	max-height: 134px;
+	object-position: bottom;
+}
+#denCards img[src$="overview.png"] {
+	object-fit: cover;
+	content: url('https://i.imgur.com/RsMSKLS.png');
+	max-height: 134px;
+	object-position: center;
+}
+#denCards img[src$="breeding.png"] {
+	object-fit: cover;
+	content: url('https://i.imgur.com/rCH3Meq.png');
+	max-height: 134px;
+	object-position: bottom;
+}
+#denCards img[src$="pupsitting.png"] {
+	object-fit: cover;
+	content: url('https://i.imgur.com/Fcbs9de.png');
+	max-height: 134px;
+	object-position: center;
+}
+#denCards img[src$="nesting.png"] {
+	object-fit: cover;
+	content: url('https://i.imgur.com/CUfad03.png');
+	max-height: 134px;
+	object-position: bottom;
+}
+#denCards img[src$="socializing.png"] {
+	object-fit: cover;
+	content: url('https://i.imgur.com/FHa8oXc.png');
+	max-height: 134px;
+	object-position: bottom;
+}
+#denCards .card-header {
+	border-radius: 0px;
+	padding: 3px;
+	backdrop-filter: blur(1px);
+	background: #00000078;
+	color: var(--6);
+}
+#denCards img {
+	transition: .3s ease;
+}
+#denCards img:hover {
+	filter: brightness(130%)!important;
+	border: solid 1px var(--6);
+	box-shadow: 0 0 10px var(--6);
+	transition: .3s ease;
+}
