@@ -220,18 +220,44 @@ body {
 	color: var(--4);
 	transition: .3s ease;
 }
+@media only screen and (min-width: 992px) {
+#bookmarkPage {
+	display: flex;
+	visibility: visible;
+	position: fixed;
+	top:15px;
+	right: 15px;
+	color: var(--4)!important;
+	font-size: 1rem;
+}
+#header .breadcrumb-nav, {
+	font-size: 0px;
+	}
+}
+#header .navbar-status .d-md-inline {
+	padding: 0px;
+	margin: 0px;
+	display: none!important;
+}
+#header .breadcrumb-nav {
+	background-color: #031018e8!important;
+}
+#header .breadcrumb-nav a,
+#header .breadcrumb-item,
+.breadcrumb-item:before,
+#bookmarkPage {
+	color: var(--4)!important;
+}
 i.icon.icon-beetle-gold,
 i.icon.icon-beetle-silver {
-	display: none !important;
+	display: none!important;
 }
-  
 span.user_current_sc:before {
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f2dc';
 	font-size: 14px;
 	padding-right: 3px;
 }
-  
 span.user_current_gc:before {
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f7cf';
