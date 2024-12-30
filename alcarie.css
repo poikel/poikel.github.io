@@ -423,9 +423,9 @@ span.user_current_gc:before {
 	box-shadow: 0 0 10px var(--6);
 	transition: .3s ease;
 }
-#main .table th {
-	background: var(--3);
-	color: var(--5)
+#main .table th, .table .bottom {
+	background: linear-gradient(to right, var(--3), var(--4), var(--3));
+	color: var(--6);
 }
 #main .card {background-color: transparent;}
 #main .table {
