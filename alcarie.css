@@ -429,7 +429,7 @@ span.user_current_gc:before {
 }
 #main .card {background-color: transparent;}
 #main .table {
-	border: 1px solid var(--3);
+	border: 3px double var(--3);
 	color: var(--6);
 }
 #main .table a {
@@ -467,4 +467,38 @@ span.user_current_gc:before {
 }
 #main form .table {
 	border: 1px solid var(--3);
+}
+#chatMessagePinned {
+	display: none;
+}
+#chatMessageContainer,
+.s-chat-sidebar #label_currentChannel {
+	border-radius: 0px;
+	background: none;
+	border: double 3px var(--3);
+	color: var(--6);
+}
+.s-chat-message {
+	color: var(--6);
+	font-weight: bold;
+	background: var(--1)!important;
+	border-image: linear-gradient(to right, transparent 0%, var(--3) 50%, transparent 100%) 1;
+	border-bottom: 1px solid;
+}
+.s-chat-message a {
+	color: var(--5);
+	font-weight: bold!important;
+	transition: .3s ease;
+}
+.s-chat-message a:hover {
+	text-shadow: 0 0 4px;
+	color: var(--6);
+}
+#fra_chatContainer #txtChatInput {
+	border-radius: 0px;
+	background: var(--2);
+	border: 3px double var(--3);
+	padding-left: .3rem;
+	color: var(--5);
+	font-weight: bold;
 }
