@@ -1,0 +1,487 @@
+/* do not remove credit, edit code or reupload 
+    this code is *not* free-to-use, made for #75080 on wolvden.com
+    code by #6488 on wd, @poikel on github*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+ 
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat949.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat949.png), auto !important;} /* End https://www.cursors-4u.com */
+
+    :root {
+        --main: 'Cardo';
+        --accent: 'Dancing Script';
+        --green: #2c4c3b;
+        --green2: #182c25;
+        --green3: #656d4a;
+        --cream: #FADBC6;
+		--brown: #251e15;
+		--brown2: #796a51;
+    }
+
+    /* TWEAKS */
+
+    .justify-content-between.mb-3 div {
+		  border: none !important;
+	  }
+
+	.alert {
+		text-align: center;
+		background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+		color: var(--cream);
+	}
+
+    body {
+        background-image: url('https://i.imgur.com/Dc6SnKG.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: var(--main);
+		text-transform: lowercase;
+    }
+
+    #main:before {
+        content: 'css by #6488 🦌';
+        display: block;
+        text-align: right;
+        color: var(--brown);
+        font-weight: 600;
+        font-size: 14px;
+        padding-bottom: 16px;
+    }
+
+    /* TOP BAR, EDITS, ICONS */
+    #header .navbar-main i {
+        font-size: 0px!important;
+    }
+
+    #header .navbar-main i:before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f78e';
+        font-size: 16px;
+    }
+
+    #header .navbar-main .nav-link {
+        font-size: 1.2rem;
+        text-transform: lowercase;
+    }
+
+    #header .navbar-main {
+        height: auto;
+        background: transparent;
+        height: 70px;
+    }
+
+	#header .navbar-main a {
+		color: var(--cream)!important;
+		text-shadow: 1px 1px 1px var(--brown);
+		transition: .1s ease;
+	}
+ 
+	#header .navbar-main a i {
+		color: var(--brown2)!important;
+		text-shadow: 1px 1px 1px var(--brown);
+	}
+
+	#header .navbar-main a:hover {
+		color: var(--green3)!important;
+		transition: .1s ease;
+	}
+
+    @media (min-width: 992px) {
+    #header .navbar-expand-lg .navbar-nav, #header .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end!important;
+    }
+    #header .mr-auto, .mx-auto { 
+		margin-right: 0!important;
+		margin-bottom: -16px!important;
+	}
+}
+
+	#header .navbar-status {
+		background: var(--green);
+		border: 1px solid var(--green2);
+		color: var(--cream);
+		text-shadow: 1px 1px 1px var(--brown);
+		font-size: 12px;
+		background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+	}
+
+	#header .navbar-status a, #header .navbar-status .dropdown-toggle {
+		color: var(--cream)!important;
+		font-size: 12px;
+		text-shadow: 1px 1px 1px var(--brown);
+	}
+
+	#header .breadcrumb-nav {
+		visibility: hidden;
+	}
+
+	#header .breadcrumb-nav #bookmarkPage {
+		visibility: visible;
+		color: var(--cream)!important;
+		text-shadow: 1px 1px 1px var(--brown);
+	}
+
+/* SIDEBAR & MAIN STUFF */
+
+#sidebar {
+	background: transparent;
+	color: var(--cream);
+	text-shadow: 1px 1px 1px var(--brown);
+}
+
+#sidebar a {
+	color: var(--green2);
+	text-shadow: none;
+	font-weight: 600;
+	transition: .2s ease;
+}
+
+#sidebar a:hover {
+	color: var(--cream);
+	text-decoration: none;
+	transition: .2s ease;
+}
+
+#sidebar .card {
+	background: var(--green3);
+	border-bottom: none;
+	border: 1px solid var(--green2);
+	background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+}
+
+#sidebar .bookmarks i {
+	font-size: 0px;
+}
+
+#sidebar .bookmarks i:before {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f78e';
+	font-size: 12px;
+}
+
+#main {
+	background: #656d4ad4;
+	background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+	border: 1px solid var(--green2)
+}
+
+#main .card {
+	background: none;
+}
+
+.table th {
+	background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+	background-color: #3e442c;
+	border: 1px solid var(--green2);
+	text-align: center;
+}
+
+.table a, .table th a {
+	color: #b4c176;
+}
+	
+/* DEN CARDS AND IMAGES */
+
+    #denCards .card {
+		background-color: transparent;
+    }
+
+    #denCards img {
+        border-radius: 4px;}
+
+    #denCards .card-header {
+        border-radius: 0px 0px 4px 4px;
+        backdrop-filter: blur(2px);
+        background: #4e492d75;
+    }
+
+	#denCards .card-header:before {
+		content: '\f7ff';
+		font-family: 'Font Awesome 5 Free';
+		font-size: 10px;
+		padding: 2px;
+	}
+
+	#denCards img:hover {
+		filter: sepia(30%);
+	}
+
+    div.card.text-center>img[alt="Pack Dynasty"] {
+        content: url('https://i.imgur.com/A8W4dVi.png');
+        max-height: 150px;
+        transition: .2s ease;
+        
+    }
+    div.card.text-center>img[alt="Pack Overview"] {
+        content: url('https://i.imgur.com/LuxIAJz.png');
+        max-height: 150px;
+        transition: .2s ease;
+    }
+    div.card.text-center>img[alt="Breeding"] {
+        content: url('https://i.imgur.com/AuxLV3S.png');
+        max-height: 150px;
+        transition: .2s ease;
+    }
+    div.card.text-center>img[alt="Pupsitting"] {
+        content: url('https://i.imgur.com/4GkxT8M.png');
+        max-height: 150px;
+        transition: .2s ease;
+    }
+    div.card.text-center>img[alt="Nesting"] {
+        content: url('https://i.imgur.com/hEkdZOl.png');
+        max-height: 150px;
+        transition: .2s ease;
+    }
+    div.card.text-center>img[alt="Socializing"] {
+        content: url('https://i.imgur.com/vVh9Zxz.png');
+        max-height: 150px;
+        transition: .2s ease;
+    }
+
+	.justify-content-between.mb-3 div {
+		border: none !important;
+	}
+  
+	  .rounded-bottom,
+	  .rounded-left,
+	  #main>table>tbody>tr:nth-child(2)>td>div.col-xl-3.col-sm-7.text-center>div>a>img,
+	  #main>table>tbody>tr:nth-child(2)>td>div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf>a:nth-child(3)>img {
+		  border-radius: 50% !important;
+		  max-width: 94% !important;
+	  }
+
+	  .w-50>a img,
+	  .w-50 div a img {
+		  border-radius: 60px;
+		  border: solid 2px var(--black);
+	  }
+
+	.table-striped {
+		color: var(--green2);
+		border: none;
+	}
+
+	.table-striped tbody tr:nth-of-type(odd) {
+		background: transparent!important;
+	}
+
+	.bg-light, .text-light {
+		background: none!important;
+	}
+
+	/* BUTTONS TOP/BOTTOM OF DEN */
+
+	.nav-tabs .nav-link.active {
+		background: none;
+		border: none;
+	}
+
+	.nav-tabs {
+		justify-content: center!important;
+		border: none;
+	}
+	
+	.nav-tabs .nav-link {
+		border: none!important;
+		font-size: 0px;
+	}
+	
+	.fa-home:before {
+		font-size: 20px;
+		font-family: 'Font Awesome 5 Free' !important;
+		content: '\f78e' !important;
+		color: var(--cream);
+	}
+	
+	.fa-user:before {
+		font-size: 20px;
+		font-family: 'Font Awesome 5 Free' !important;
+		content: '\f78e' !important;
+		-webkit-transform: scale(-1, 1);
+		display: block;
+		color: var(--cream);
+	}
+
+	.btn-primary, .btn-success, .btn-danger, .btn-info {
+		color: var(--cream);
+		background: var(--green3);
+		border: 1px solid var(--green2);
+		text-transform: lowercase;
+	}
+
+	.btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-info:hover {
+		background: #848d5f;
+		border: 1px solid var(--green2);
+		color: #fff;
+	}
+
+	.table .bottom {
+		background: none;
+	}
+
+	/* CHAT BOX */
+
+	#chatMessageContainer {
+		border: 1px solid var(--green2);
+	}
+
+	#txtChatInput {
+		background: #3e442c!important;
+		background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png')!important;
+		border: 1px solid var(--green2)!important;
+		margin-bottom: 2px;
+		color: var(--cream)!important;
+	}
+
+	.s-chat-message {
+		color: #9daa66;
+		background: #3e442c!important;
+		background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png')!important;
+	}
+
+	.s-chat-message a {
+		color: var(--brown);
+		font-weight: 600;
+		text-decoration: underline;
+	}
+
+	#chatMessagePinned {
+		background-color: #848d5f!important;
+		color: var(--green2)!important;
+		border: none;
+		padding: 4px;
+	}
+
+	#chatMessagePinned a {
+		color: var(--cream);
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher {
+		color: var(--cream);
+		text-transform: lowercase;
+		text-shadow: 1px 1px var(--brown);
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher.active {
+		background: rgba(0,0,0,0.3);
+	}
+
+	.s-chat-sidebar #fraChatChannelMenu {
+		border: 1px solid var(--green2);
+	    background: var(--green3);
+	    background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+	    border-radius: 3px;
+	    filter: drop-shadow(0px 0px 1px #3a4028);
+		margin-top: 3px;
+		box-shadow: none;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher:before {
+		font-family: 'Font Awesome 5 Free';
+		content: '\f7ff';
+		padding-right: 4px;
+		font-size: 8px;
+	}
+
+	#fra_chatContainer .channelMenu .channelSwitcher:hover {
+		background: none;
+		text-decoration: underline;
+		background: rgba(0,0,0,0.3);
+	}
+
+	.s-chat-sidebar #label_currentChannel {
+		background: none;
+		border: none;
+		text-transform: lowercase;
+		color: var(--cream);
+	}
+
+	/* PROGRESS BARS */
+
+	.bg-warning, .bg-danger, .bg-primary, .bg-success, .bg-info {
+		background: linear-gradient(90deg, var(--green),#9daa66);
+		border-radius: 7px;
+		border: solid 1px var(--green);
+	}
+
+	.progress {
+		background: rgba(0,0,0,0.3)!important;
+		border-radius: 7px;
+		margin-top: 2px;
+	}
+
+	/* TWEAKS */
+
+	#main h1 {
+		text-align: center;
+		color: white;
+		text-shadow: 0px 0px 6px white;
+	}
+
+	select.form-control {
+		background: var(--green3);
+		border: solid 1px var(--green2);
+		color: var(--cream);
+		text-transform: lowercase;
+	}
+
+	a, .b, small {
+		color: var(--cream);
+		font-weight: 800;
+	}
+
+
+	.dropdown-menu {
+		border: 1px solid var(--green2);
+		background: var(--green3);
+		background-image: url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+		border-radius: 3px;
+		filter: drop-shadow(0px 0px 1px #3a4028);
+	}
+
+	.dropdown-menu i:before {
+		font-size: 15px!important;
+	}
+
+	.dropdown-menu a {
+		background: none!important;
+		text-align: left;
+	}
+
+	.dropdown-menu a:hover {
+		text-decoration: underline!important;
+	}
+
+	.dropdown-divider {
+		border: none!important;
+		visibility: hidden!important;
+	}
+
+	::-webkit-scrollbar {
+		width: 0;
+	  }
+  
+	  ::-webkit-scrollbar-track {
+		  display: none!important;
+	  }
+  
+	  ::-webkit-scrollbar-thumb {
+		background: 0 0
+	  }
+
+	.badge-danger {
+		background:  #0000004a;;
+		text-shadow: none;
+	}
+
+.table .subheader {
+	background: none;
+}
+#footer, #footer a {
+	background: none;
+	color: var(--cream)!important;
+}
+.left {
+	background: none!important;
+}
