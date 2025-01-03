@@ -277,6 +277,7 @@ span.user_current_gc:before {
 }
 #header .navbar-status .btn {
 	color: var(--4)!important;
+	background: none!important;
 }
 #header .navbar-status .btn:focus {
     box-shadow: none;
