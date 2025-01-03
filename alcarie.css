@@ -502,3 +502,23 @@ span.user_current_gc:before {
 	color: var(--5);
 	font-weight: bold;
 }
+.btn {
+	background: var(--3)!important;
+	border-bottom: none!important;
+	border-radius: 0px!important;	
+	color: var(--5)!important;
+	transition: .2s ease;
+}
+.btn:hover {
+	background: var(--4)!important;
+	color: var(--6)!important;
+	transition: .2s ease;
+}
+.btn:focus {
+	box-shadow: none!important;
+}
+#main form button,
+#sidebar .btn-icon,
+#fraChatSettings .btn {
+	background: none!important;
+}
