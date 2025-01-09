@@ -430,11 +430,13 @@ span.user_current_gc:before {
 }
 #main .card {background-color: transparent;}
 #main .table {
-	border: 3px double var(--3);
+	border: 1px solid var(--3);
 	color: var(--6);
+	border-left: 3px double var(--3);
+	border-right: 3px double var(--3);
 }
 #main .table a {
-	color: var(--5);
+	color: var(--6);
 	transition: .3s ease;
 }
 #main .table a:hover {
@@ -522,4 +524,95 @@ span.user_current_gc:before {
 #sidebar .btn-icon,
 #fraChatSettings .btn {
 	background: none!important;
+}
+.dropdown-menu {
+	background: var(--2);
+	border-radius: 0px;
+	border-top: 1px solid var(--3);
+	border-bottom: 1px solid var(--3);
+	border-left: 3px double var(--3);
+	border-right: 3px double var(--3);
+}
+a.dropdown-item {
+	background: none;
+	color: var(--4)!important
+}
+.dropdown-divider {
+	display: none;
+}
+a.dropdown-item:hover {
+	background: none;
+}
+.s-chat-sidebar #fraChatChannelMenu {
+	background: var(--2);
+	border-radius: 0px;
+	border-top: 1px solid var(--3);
+	border-bottom: 1px solid var(--3);
+	border-left: 3px double var(--3);
+	border-right: 3px double var(--3);
+	margin-top: .4rem;
+}
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+	background: linear-gradient(to right, var(--2), var(--3));
+	border-radius: 0px;
+	color: var(--6);
+	text-shadow: 0 0 4px;
+}
+#fra_chatContainer .channelMenu .channelSwitcher {
+	color: var(--4);
+	border-radius: 0px;
+	transition: .3s ease;
+	background: var(--2)
+}
+#fra_chatContainer .channelMenu .channelSwitcher:hover {
+	background: linear-gradient(to right, var(--2), var(--3));
+	border-radius: 0px;
+	color: var(--6);
+	text-shadow: 0 0 4px;
+	transition: .3 ease!important;
+}
+#footer {
+	background: #031018e8;
+	color: var(--3);
+	font-weight: bold;
+}
+#footer a {
+	color: var(--4)!important;
+}
+.copyright:after {
+	display: block;
+	content: 'CSS by #6488 ❄';
+	margin-top: .5rem;
+	color: var(--5);
+}
+#main:before {
+	content: 'css by #6488 ❄';
+	color: var(--6);
+	position: absolute;
+	right: 1rem;
+	top: 0rem;
+	font-size: .7rem;
+}
+::-webkit-scrollbar {
+	background: var(--2);
+	width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--3);
+	border-radius: 0px;
+}
+.justify-content-between.mb-3 div { border: none !important; }
+.w-50 a img, .w-50 div a img, #main table tbody tr td div.col-xl-3.col-sm-7.text-center div a img,
+#main table tbody tr td div a:nth-child(3) img {
+	border-radius: 0px;
+	border: 1px solid var(--5);
+	box-shadow: 0 0 8px var(--1);
+}
+select.form-control, select.form-control:active, select.form-control:focus {
+	background: var(--2);
+	border: 1px solid var(--1);
+	color: var(--6);
+	text-shadow: 0 0 4px;
+	box-shadow: none;
+	border-radius: 0px;
 }
