@@ -186,6 +186,7 @@ body {
 }
 #main {
     background: #031018e8;
+	color: var(--6);
 }
 #header .navbar-main {
     background: var(--2);
@@ -637,4 +638,7 @@ small {
 .left {
 	background: none!important;
 	text-shadow: 0 0 4px;
+}
+.border-bottom {
+	border: none!important;
 }
