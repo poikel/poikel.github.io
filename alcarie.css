@@ -592,6 +592,7 @@ a.dropdown-item:hover {
 	right: 1rem;
 	top: 0rem;
 	font-size: .7rem;
+	z-index: 1;
 }
 ::-webkit-scrollbar {
 	background: var(--2);
@@ -615,4 +616,25 @@ select.form-control, select.form-control:active, select.form-control:focus {
 	text-shadow: 0 0 4px;
 	box-shadow: none;
 	border-radius: 0px;
+}
+.badge {
+	background: var(--5);
+	color: var(--6);
+	text-shadow: 0 0 4px;
+}
+.bg-light {
+	background: none!important;
+}
+.bg-dark {
+	background: none!important;
+}
+small {
+	color: var(--6)
+}
+.accordion .card .card-header .btn {
+	background: none!important;
+}
+.left {
+	background: none!important;
+	text-shadow: 0 0 4px;
 }
