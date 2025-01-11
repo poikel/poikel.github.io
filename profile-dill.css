@@ -17,42 +17,40 @@
         color: var(--4)!important;
     }
     #header .navbar-main {
-        background: var(--3);
+        background: var(--1);
     }
     #header .navbar-status {
-        background: var(--2);
+        background: var(--3);
         color: var(--6);
         text-shadow: 0 0 2px var(--3);
-    }
-    @media only screen and (min-width: 992px) {
-    #bookmarkPage {
-    	display: flex;
-    	visibility: visible;
-    	position: fixed;
-    	top:15px;
-    	right: 15px;
-    	color: var(--5)!important;
-    }
-    #header .breadcrumb-item {
-    	display: none;
-    	}
-    }
-    #header .navbar-status .d-md-inline {
-    	padding: 0px;
-    	margin: 0px;
-    	display: none!important;
+        border-radius: 20px;
+        box-shadow: 0 0 4px var(--2);
+        border: 1px solid var(--4);
     }
     #header .breadcrumb-nav {
-        background-color: transparent;
+        background: var(--1)
+    }
+    #header .navbar-main a {
+        font-size: 1rem;
     }
     #main {
         background: var(--3);
     }
+    #sidebar {
+        background: var(--3);
+    }
+    #sidebar .card {
+        margin-top: 1rem;
+    }
+    .table {
+        border: none;
+    }
     .left, .right {
-        background: var(--4);
-        color: var(--1)!important;
+        background: var(--1);
+        color: var(--6)!important;
         font-weight: bold;
+        text-shadow: 0 0 1px black;
     }
     .right a, .right .text-success {
-        color: var(--1)!important;
+        color: var(--5)!important;
     }
