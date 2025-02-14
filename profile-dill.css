@@ -12,41 +12,67 @@
   --font: "Baskervville SC", serif;
 
     body {
-        background: var(--1);
+        background: var(--4);
         font-family: var(--font);
         color: var(--4)!important;
     }
+    #header nav.navbar.navbar-status.navbar-expand div button:focus {
+        box-shadow: none;
+    }
     #header .navbar-main {
         background: var(--1);
+        border-radius: 0 0 10px 10px;
     }
     #header .navbar-status {
-        background: var(--3);
-        color: var(--6);
-        text-shadow: 0 0 2px var(--3);
-        border-radius: 20px;
-        box-shadow: 0 0 4px var(--2);
-        border: 1px solid var(--4);
+        background: var(--4);
+        color: var(--2);
+        font-weight: bold;
+    }
+    #header .navbar-status a {
+        color: var(--2);
+    }
+    #header .navbar-status .d-md-inline {
+	padding: 0px;
+	margin: 0px;
+	display: none!important;
     }
     #header .breadcrumb-nav {
-        background: var(--1)
+        background: var(--1);
+        border-radius: 10px 10px 0px 0px
     }
     #header .navbar-main a {
         font-size: 1rem;
     }
     #main {
-        background: var(--3);
+        background: var(--1);
     }
     #sidebar {
-        background: var(--3);
+        background: var(--1);
+        color: var(--2)!important;
+        font-weight: bold!important;
     }
     #sidebar .card {
-        margin-top: 1rem;
+        background: var(--3);
+        border-radius: 10px;
+        border-bottom: none;
+    }
+    #sidebar a {
+        color: var(--5);
+    }
+    #sidebar a:hover {
+        color: var(--6);
+        text-shadow: 0 0 3px;
+    }
+    #footer {
+        background: var(--1);
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 1rem;
     }
     .table {
         border: none;
     }
     .left, .right {
-        background: var(--1);
+        background: var(--3);
         color: var(--6)!important;
         font-weight: bold;
         text-shadow: 0 0 1px black;
