@@ -25,7 +25,8 @@
     }
     #header .navbar-main a {
         color: var(--4);
-        font-style: 
+        font-weight: bold;
+        letter-spacing: .04rem;
     }
     #header .navbar-main {
         background: var(--1);
@@ -74,12 +75,15 @@
     #sidebar {
         background: var(--1);
         color: var(--2)!important;
-        font-weight: bold!important;
+    }
+    #sidebar .small span {
+        font-weight: bold;
     }
     #sidebar .card {
         background: var(--3);
         border-radius: 10px;
         border-bottom: none;
+        box-shadow: var(--4) 1px 1px 0px 2px;
     }
     #sidebar a {
         color: var(--5);
@@ -103,16 +107,35 @@
         border-radius: 0 0 10px 10px;
         margin-bottom: 1rem;
     }
+    .nav-tabs {
+    	justify-content: left;
+    	border: none;
+    }
+    .nav-tabs .nav-link.active {
+    	border: none;
+    	background-color: transparent;
+        color: red;
+    }
+    .nav-tabs .nav-link {
+    	border: none;
+        color: pink;
+    }
+    .nav-tabs .nav-link:hover {
+        color: blue;
+    }
     th {
         border-radius: 10px 10px 0px 0px;
         background: var(--3);
         text-align: center;
-        border-bottom: 3px double var(--1);
+        border-bottom: 3px double var(--4);
         color: var(--6);
     }
     th a {
         color: var(--1);
         font-size: 0px;
+    }
+    th a:hover {
+        letter-spacing: 0px!important;
     }
     th .fas {
         transition: .2s ease;
@@ -128,40 +151,30 @@
     }
     .table {
         border: none;
+        color: var(--5);
+        text-shadow: 0 0 2px black;
+        background: var(--3);
+        border-radius: 10px;
+        box-shadow: var(--4) 1px 1px 0px 2px;
     }
-    #main > table.table.mt-3 > tbody > tr:nth-child(6) > td.left.b {
-        border-radius: 0px 0px 0px 10px
+    .table a {
+        color: var(--5);
+        text-shadow: 0 0 2px black;
+        transition: .2s ease-in-out;
     }
-    #main > table.table.mt-3 > tbody > tr:nth-child(2) > td.right.text-right {
-        border-radius: 0 0 10px 0;
+    .table a:hover {
+        color: var(--6);
+        letter-spacing: 1px;
+        transition: .2s ease-in-out;
+        text-decoration: none;
     }
     #main > table:nth-child(9) img {
         border-radius: 0px 40px;
         filter: grayscale(.5);
         border: 3px double var(--5)
     }
-    #main > table:nth-child(9) > tbody > tr:nth-child(2) > td,
-    #main > table:nth-child(10) > tbody > tr:nth-child(2) > td {
-        background: var(--3)!important;
-        border-radius: 0 0 10px 10px!important;
-        text-shadow: 0 0 1px black!important;
-        color: var(--6)!important;
-    }
-    #main > table:nth-child(9) > tbody > tr:nth-child(2) > td a,
-    #main > table:nth-child(10) > tbody > tr:nth-child(2) > td a {
-        color: var(--5)!important;
-        text-shadow: 0 0 2px black!important;
-        transition: .2s ease-in-out!important;
-    }
-    #main > table:nth-child(9) > tbody > tr:nth-child(2) > td a:hover,
-    #main > table:nth-child(10) > tbody > tr:nth-child(2) > td a:hover {
-        text-decoration: none!important;
-        letter-spacing: 1px!important;
-        transition: .2s ease-in-out!important;
-        color: var(--6)!important;
-    }
     .left, .right {
-        background: var(--3);
+        background: transparent;
         color: var(--5)!important;
         font-weight: bold;
         text-shadow: 0 0 2px black;
@@ -170,11 +183,15 @@
         color: var(--5)!important;
         text-shadow: 0 0 2px black!important;
     }
+    .table .form-row div img {
+        border-radius: 0px 40px;
+        border:  double 3px var(--4);
+    }
     .boxcontainer {
-    height: auto;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
     }
     .box1 {
         width: 100%;
