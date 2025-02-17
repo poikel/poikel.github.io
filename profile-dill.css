@@ -69,6 +69,24 @@
     #header .navbar-main a {
         font-size: 1rem;
     }
+    .alert {
+        background: var(--4);
+        border-radius: 10px;
+        border: 3px double var(--1);
+        color: var(--2);
+        font-weight: bold;
+    }
+    .alert a {
+        color: var(--5);
+        transition: .2s ease;
+    }
+    .alert a:hover {
+        color: var(--6);
+        text-shadow: 0 0 4px;
+        letter-spacing: 1px;
+        transition: .2s ease;
+        text-decoration: none;
+    }
     #main {
         background: var(--1);
     }
@@ -102,6 +120,20 @@
         color: var(--4);
         text-shadow: 0 0 4px var(--2);
     }
+    .progress {
+        background: var(--1)!important;
+        border-radius: 10px;
+        margin-top: .2rem;
+    }
+    .bg-warning,
+    .bg-danger,
+    .bg-info,
+    .bg-primary,
+    .bg-success {
+    	background: linear-gradient(to right, var(--5), var(--4));
+        border-radius: 10px;
+        border: 1px solid var(--2);
+    }
     #footer {
         background: var(--1);
         border-radius: 0 0 10px 10px;
@@ -114,14 +146,24 @@
     .nav-tabs .nav-link.active {
     	border: none;
     	background-color: transparent;
-        color: red;
+        color: var(--6);
+        text-shadow: 0 0 4px;
+        border-radius: 50px;
+        border: 1px solid var(--5);
     }
     .nav-tabs .nav-link {
     	border: none;
-        color: pink;
+        color: var(--4);
+        border-radius: 50px;
+        border: 1px solid var(--5);
+        margin-left: .5rem;
+        transition: .2s ease;
     }
     .nav-tabs .nav-link:hover {
-        color: blue;
+        color: var(--6);
+        text-shadow: 0 0 4px;
+        box-shadow: 0 0 5px 0px var(--5);
+        transition: .2s ease;
     }
     th {
         border-radius: 10px 10px 0px 0px;
