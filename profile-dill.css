@@ -142,23 +142,23 @@
     }
     #main > table:nth-child(9) > tbody > tr:nth-child(2) > td,
     #main > table:nth-child(10) > tbody > tr:nth-child(2) > td {
-        background: var(--3);
-        border-radius: 0 0 10px 10px;
-        text-shadow: 0 0 1px black;
+        background: var(--3)!important;
+        border-radius: 0 0 10px 10px!important;
+        text-shadow: 0 0 1px black!important;
         color: var(--6)!important;
     }
     #main > table:nth-child(9) > tbody > tr:nth-child(2) > td a,
     #main > table:nth-child(10) > tbody > tr:nth-child(2) > td a {
-        color: var(--5);
-        text-shadow: 0 0 2px black;
-        transition: .2s ease-in-out;
+        color: var(--5)!important;
+        text-shadow: 0 0 2px black!important;
+        transition: .2s ease-in-out!important;
     }
     #main > table:nth-child(9) > tbody > tr:nth-child(2) > td a:hover,
     #main > table:nth-child(10) > tbody > tr:nth-child(2) > td a:hover {
-        text-decoration: none;
-        letter-spacing: 1px;
-        transition: .2s ease-in-out;
-        color: var(--6);
+        text-decoration: none!important;
+        letter-spacing: 1px!important;
+        transition: .2s ease-in-out!important;
+        color: var(--6)!important;
     }
     .left, .right {
         background: var(--3);
