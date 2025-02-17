@@ -19,6 +19,14 @@
     #header nav.navbar.navbar-status.navbar-expand div button:focus {
         box-shadow: none;
     }
+    #header .navbar-status button {
+        color: var(--2)!important;
+        text-shadow: 0 0 2px var(--3);
+    }
+    #header .navbar-main a {
+        color: var(--4);
+        font-style: 
+    }
     #header .navbar-main {
         background: var(--1);
         border-radius: 0 0 10px 10px;
@@ -27,18 +35,35 @@
         background: var(--4);
         color: var(--2);
         font-weight: bold;
+        text-shadow: 0 0 2px var(--3);
     }
     #header .navbar-status a {
         color: var(--2);
+        text-shadow: 0 0 2px var(--3);
     }
     #header .navbar-status .d-md-inline {
-	padding: 0px;
-	margin: 0px;
-	display: none!important;
+    	padding: 0px;
+    	margin: 0px;
+    	display: none!important;
+    }
+    .badge {
+        background: var(--3);
+        color: var(--5);
     }
     #header .breadcrumb-nav {
         background: var(--1);
-        border-radius: 10px 10px 0px 0px
+        border-radius: 10px 10px 0px 0px;
+    }
+    #bookmarkPage {
+        color: var(--3)!important;
+        font-size: 0px;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+    #bookmarkPage:before {
+        content: '\f7cf';
+        font-size: 1rem;
+        text-shadow: 0 0 4px var(--2)!important;
     }
     #header .navbar-main a {
         font-size: 1rem;
@@ -58,27 +83,92 @@
     }
     #sidebar a {
         color: var(--5);
+        transition: .2s ease-in-out;
     }
     #sidebar a:hover {
         color: var(--6);
         text-shadow: 0 0 3px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: .2s ease-in-out;
+    }
+    #sidebar .fa-angle-right:before {
+        content: '\f2dc';
+        font-size: 0.7rem;
+        color: var(--4);
+        text-shadow: 0 0 4px var(--2);
     }
     #footer {
         background: var(--1);
         border-radius: 0 0 10px 10px;
         margin-bottom: 1rem;
     }
+    th {
+        border-radius: 10px 10px 0px 0px;
+        background: var(--3);
+        text-align: center;
+        border-bottom: 3px double var(--1);
+        color: var(--6);
+    }
+    th a {
+        color: var(--1);
+        font-size: 0px;
+    }
+    th .fas {
+        transition: .2s ease;
+    }
+    th a .fas:before {
+        font-size: 1rem;
+        content: '\f2dc';
+        text-shadow: 0 0 3px var(--4);
+    }
+    th a .fas:hover {
+        color: var(--6);
+        transition: .2s ease;
+    }
     .table {
         border: none;
     }
+    #main > table.table.mt-3 > tbody > tr:nth-child(6) > td.left.b {
+        border-radius: 0px 0px 0px 10px
+    }
+    #main > table.table.mt-3 > tbody > tr:nth-child(2) > td.right.text-right {
+        border-radius: 0 0 10px 0;
+    }
+    #main > table:nth-child(9) img {
+        border-radius: 0px 40px;
+        filter: grayscale(.5);
+        border: 3px double var(--5)
+    }
+    #main > table:nth-child(9) > tbody > tr:nth-child(2) > td,
+    #main > table:nth-child(10) > tbody > tr:nth-child(2) > td {
+        background: var(--3);
+        border-radius: 0 0 10px 10px;
+        text-shadow: 0 0 1px black;
+        color: var(--6)!important;
+    }
+    #main > table:nth-child(9) > tbody > tr:nth-child(2) > td a,
+    #main > table:nth-child(10) > tbody > tr:nth-child(2) > td a {
+        color: var(--5);
+        text-shadow: 0 0 2px black;
+        transition: .2s ease-in-out;
+    }
+    #main > table:nth-child(9) > tbody > tr:nth-child(2) > td a:hover,
+    #main > table:nth-child(10) > tbody > tr:nth-child(2) > td a:hover {
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: .2s ease-in-out;
+        color: var(--6);
+    }
     .left, .right {
         background: var(--3);
-        color: var(--6)!important;
+        color: var(--5)!important;
         font-weight: bold;
-        text-shadow: 0 0 1px black;
+        text-shadow: 0 0 2px black;
     }
     .right a, .right .text-success {
         color: var(--5)!important;
+        text-shadow: 0 0 2px black!important;
     }
     .boxcontainer {
     height: auto;
