@@ -8,7 +8,7 @@
   --3: #768A96;
   --4: #AAC7D8;
   --5: #DFEBF6;
-  --6: #E6E6E6;
+  --6: #fff;
   --font: "Baskervville SC", serif;
 
     body {
@@ -27,6 +27,16 @@
         color: var(--4);
         font-weight: bold;
         letter-spacing: .04rem;
+        transition: .2s ease;
+    }
+    #header .navbar-main a i {
+        color: var(--5)!important;
+    }
+    #header .navbar-main a:hover {
+        text-shadow: 0 0 3px;
+        transition: .2s ease;
+        color: var(--4);
+        transform: rotate(2deg);
     }
     #header .navbar-main {
         background: var(--1);
@@ -41,6 +51,12 @@
     #header .navbar-status a {
         color: var(--2);
         text-shadow: 0 0 2px var(--3);
+        transition: .2s ease;
+    }
+    #header .navbar-status a:hover {
+        color: var(--5)!important;
+        text-shadow: 0 0 2px var(--1);
+        transition: .2s ease;
     }
     #header .navbar-status .d-md-inline {
     	padding: 0px;
@@ -55,16 +71,27 @@
         background: var(--1);
         border-radius: 10px 10px 0px 0px;
     }
+    #header .breadcrumb-item.active,
+    .breadcrumb-item+.breadcrumb-item:before {
+        color: var(--3);
+        font-weight: bold;
+    }
     #bookmarkPage {
         color: var(--3)!important;
         font-size: 0px;
         margin-top: .5rem;
         margin-bottom: .5rem;
+        transition: .2s ease;
     }
     #bookmarkPage:before {
         content: '\f7cf';
         font-size: 1rem;
         text-shadow: 0 0 4px var(--2)!important;
+    }
+    #bookmarkPage:hover {
+        color: var(--6)!important;
+        text-shadow: 0 0 4px!important;
+        transition: .2s ease;
     }
     #header .navbar-main a {
         font-size: 1rem;
@@ -87,6 +114,14 @@
         transition: .2s ease;
         text-decoration: none;
     }
+    a {
+	text-decoration: none;
+    color: var(--link);
+    transition: .5s;
+}
+    a:hover, a:active {
+    	text-decoration: none;
+    }
     #main {
         background: var(--1);
     }
@@ -96,6 +131,10 @@
     }
     #sidebar .small span {
         font-weight: bold;
+    }
+    #sidebar h4 {
+        font-weight: bolder;
+        color: var(--5)
     }
     #sidebar .card {
         background: var(--3);
@@ -119,6 +158,9 @@
         font-size: 0.7rem;
         color: var(--4);
         text-shadow: 0 0 4px var(--2);
+    }
+    #sidebar .small, small {
+        font-weight: bold;
     }
     .progress {
         background: var(--1)!important;
@@ -259,4 +301,29 @@
         background: linear-gradient(to bottom, var(--4), var(--2));
         border-radius: 20px;
         border: 1px solid var(--4)
+    }
+    .btn {
+    	background: var(--2)!important;
+    	border-radius: 0px!important;	
+    	color: var(--5)!important;
+    	transition: .2s ease;
+        border-radius: 5px!important;
+        border: 1px solid var(--4);
+    }
+    .btn:hover {
+    	background: var(--4)!important;
+    	color: var(--6)!important;
+    	transition: .2s ease;
+        text-shadow: 0 0 2px var(--2);
+    }
+    .btn:focus {
+    	box-shadow: none!important;
+    }
+    #main form button,
+    #sidebar .btn-icon,
+    #fraChatSettings .btn {
+    	background: none!important;
+    }
+    #header .navbar-status .btn {
+    	background: none!important;
     }
