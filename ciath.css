@@ -57,6 +57,10 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     content: url('https://www.lioden.com/images/items/Other/antiaging.png');
     filter: drop-shadow(0 0 4px);
     padding: 1rem;
+    color: black;
+}
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img:hover {
+    color: black;
 }
 .navbar {
     width: 89%;
