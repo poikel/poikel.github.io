@@ -33,8 +33,12 @@ body {
     background: var(--8);
     margin-top: 1.5rem;
     border-radius: 20px;
-    color: var(--4);
+    color: var(--9);
+    font-weight: bold;
     border: 1px solid var(--9);
+}
+.topbar .welcomeback:before {
+    content: ' ✿ —\00a0'
 }
 .topbar .welcomeback {
     margin-left: 5px;
@@ -60,6 +64,7 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     border-radius: 30px;
     background-color: var(--7);
     border: 1px solid var(--9);
+    margin-bottom: 1rem;
 }
 @media only screen and (min-width: 992px) {
 .navbar:after {
@@ -75,10 +80,16 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     color: var(--9)!important;
     text-transform: lowercase;
     padding: 2rem;
+    transition: .2s ease;
 }
 .navbar a:hover {
     background: none!important;
-    color: var(--4)!important
+    color: var(--4)!important;
+    transition: .2s ease;
+}
+.navbar-default .navbar-nav > li > a {
+    padding-left: 1rem;
+    margin-left: 2.5rem;
 }
 .container.main {
     background: none;
@@ -87,11 +98,66 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 .container.main h1 {
     text-align: center;
 }
-.col-md-3 {
-    
+.sidebar {
+    background-color: #ddbea95e;
+    border-radius: 0 20px 20px 0px;
+}
+.sidebar h3 {
+    text-align: center;
+    color: var(--10);
+}
+.sidebar h3:before {
+    content: '✿ \00a0'
+}
+.sidebar #btnToggleSidebarChat {
+    position: absolute;
+    left: 20rem;
+    top: -2.5rem;
+}
+.sidebar a {
+    color: var(--10);
 }
 .panel {
+    background: var(--1)!important;
+    box-shadow: none!important;
+    border: none!important;
+    border-radius: 20px!important;
+    padding-top: .3rem;
+    color: var(--10);
+    font-weight: bold;
+}
+.panel a {
+    color: var(--4);
+    text-shadow: 0 0 1px var(--10);
+}
+.progress div {
+    color: var(--9);
+    padding-top: 2px;
+}
+.progress {
+    border-radius: 20px;
+    background: var(--4);
+    font-weight: bold;
+}
+.progress-bar {
+    background: linear-gradient(to right, var(--7), var(--5))!important;
+    box-shadow: none;
+    border: 1px solid var(--5);
+    border-radius: 20px;
 }
 .col-md-9.col-xs-12 {
-    background: none;
+    background: #ddbea95e;
+    border-radius: 20px 0px 20px 20px
+}
+#btnToggleSidebarChat {
+    padding-left: .5rem!important;
+    padding-top: .5rem!important;
+}
+input {
+    background: var(--6)!important;
+    border-radius: 7px!important;
+    text-shadow: none!important;
+    text-transform: lowercase!important;
+    color: var(--9)!important;
+    border: 1px solid var(--8)!important;
 }
