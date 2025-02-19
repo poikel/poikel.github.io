@@ -13,6 +13,23 @@ code by #6488 on wolvden, #154799 on lioden, @poikel on github*/
     --7: #ecebe5;
     --font: 'Josefin Sans', serif;
 }
+.alert {
+    background: var(--3);
+    border-radius: 20px;
+    border: solid 1px var(--4);
+    color: var(--7);
+    text-align: center;
+    text-transform: lowercase;
+    text-shadow: 0 0 2px var(--5);
+}
+.alert a {
+    color: var(--6);
+    transition: .2s ease;
+}
+.alert a:hover {
+    letter-spacing: .5px;
+    transition: .2s ease;
+}
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
     content: url('https://www.lioden.com/images/items/Decoration/feather_senagal.png');
     transform: rotateY(180deg);
@@ -44,10 +61,12 @@ body {
     text-shadow: 0 0 4px;
 }
 img[src$="silver.png"] {
-    content: '';
+    content: url('https://i.imgur.com/372OV55.png');
+    width: 33%;
 }
 img[src$="gold.png"] {
-    content: '';
+    content: url('https://i.imgur.com/ZzIDAOD.png');
+    width: 55%;
 }
 .navbar {
     border-radius: 30px;
@@ -59,6 +78,11 @@ img[src$="gold.png"] {
     border-radius: 30px 30px 30px 30px;
     border: none;
     box-shadow: none;
+}
+.container.main h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--5);
 }
 .panel {
     background: var(--1)!important;
