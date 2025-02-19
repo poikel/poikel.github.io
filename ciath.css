@@ -1,97 +1,97 @@
 /* do not remove credit, edit code or reupload 
 this code is *not* free-to-use, made for #32895 on lioden
 code by #6488 on wolvden, #154799 on lioden, @poikel on github*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-* {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat827.cur), auto !important;}
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 :root {
-    --1: #897e62;
-    --2: #71654b;
-    --3: #585832;
-    --4: #3f3a1d;
-    --5: #231605;
-    --6: #acb4a0;
-    --7: #ecebe5;
-    --font: 'Josefin Sans', serif;
+    --1: #B98B73;
+    --2: #CB997E;
+    --3: #DDBEA9;
+    --4: #FFE8D6;
+    --5: #D4C7B0;
+    --6: #B7B7A4;
+    --7: #A5A58D;
+    --8: #6B705C;
+    --9: #3F4238;
+    --10: #1E1F1D;
+    --font: 'Newsreader', serif;
 }
 .alert {
-    background: var(--3);
-    border-radius: 20px;
-    border: solid 1px var(--4);
-    color: var(--7);
-    text-align: center;
-    text-transform: lowercase;
-    text-shadow: 0 0 2px var(--5);
 }
 .alert a {
-    color: var(--6);
-    transition: .2s ease;
+    color: var(--9);
+    font-weight: bold;
 }
 .alert a:hover {
-    letter-spacing: .5px;
-    transition: .2s ease;
-}
-body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-    content: url('https://www.lioden.com/images/items/Decoration/feather_senagal.png');
-    transform: rotateY(180deg);
-    filter: sepia(.2);
 }
 body {
-    background-image: url('https://i.imgur.com/JcTxJpe.png');
+    background-image: url('https://i.imgur.com/1vNv6lS.png');
     background-size: 100%;
-    background-attachment: fixed;
     font-family: var(--font);
+    text-transform: lowercase;
 }
 .topbar {
-    color: var(--7);
-    font-weight: bold;
-    background: url('https://static.tumblr.com/lhxhpsg/Pl8ln7mja/5.jpg');
-    margin-top: 1rem;
+    background: var(--8);
+    margin-top: 1.5rem;
     border-radius: 20px;
-    border: 4px double var(--5);
-    text-transform: lowercase;
-    filter: drop-shadow(0px 0px 2px var(--5));
+    color: var(--4);
+    border: 1px solid var(--9);
+}
+.topbar .welcomeback {
+    margin-left: 5px;
 }
 .topbar a {
-    transition: .2s ease;
-    color: var(--7)!important;
-    text-transform: lowercase;
+    color: var(--4)!important;
+    font-weight: bold;
 }
 .topbar a:hover {
-    letter-spacing: .5px;
-    text-shadow: 0 0 4px;
 }
 img[src$="silver.png"] {
-    content: url('https://i.imgur.com/372OV55.png');
-    width: 33%;
 }
 img[src$="gold.png"] {
-    content: url('https://i.imgur.com/ZzIDAOD.png');
-    width: 55%;
+}
+body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+    content: url('https://www.lioden.com/images/items/Other/antiaging.png');
+    filter: drop-shadow(0 0 4px);
+    padding: 1rem;
 }
 .navbar {
+    width: 89%;
+    margin-left: 6rem;
     border-radius: 30px;
-    background: var(--1);
-    box-shadow: none!important;
+    background-color: var(--7);
+    border: 1px solid var(--9);
+}
+@media only screen and (min-width: 992px) {
+.navbar:after {
+    content: url('https://i.imgur.com/mZuWgzV.png');
+    position: absolute;
+    scale: 1;
+    z-index: 2;
+    transform: translate(95.3rem, -70px);
+    filter: drop-shadow(0 0 4px);
+    }
+}
+.navbar a {
+    color: var(--9)!important;
+    text-transform: lowercase;
+    padding: 2rem;
+}
+.navbar a:hover {
+    background: none!important;
+    color: var(--4)!important
 }
 .container.main {
     background: none;
-    border-radius: 30px 30px 30px 30px;
-    border: none;
     box-shadow: none;
 }
 .container.main h1 {
     text-align: center;
-    font-size: 5rem;
-    color: var(--5);
+}
+.col-md-3 {
+    
 }
 .panel {
-    background: var(--1)!important;
-    box-shadow: none!important;
-    border: none!important;
-    border-radius: 20px;
 }
 .col-md-9.col-xs-12 {
-    margin-top: 1rem;
-    border-radius: 20px;
-    background: var(--1)
+    background: none;
 }
