@@ -222,6 +222,25 @@ input:hover {
     border-bottom: 3px double var(--7);
     color: var(--8);
 }
+@media only screen and (min-width: 992px) {
+#about > tbody > tr:nth-child(1) > td > div:after {
+    content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
+    position: absolute;
+    top: 60rem;
+    right: -2rem;
+    z-index: 1;
+    filter: sepia(.6);
+}
+#about > tbody > tr:nth-child(1) > td > div:before {
+    content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
+    position: absolute;
+    top: 60rem;
+    left: -2rem;
+    z-index: 1;
+    filter: sepia(.6);
+    transform: scaleX(-1);
+    }
+}
 td.bottom {
     border-radius: 0px 0px 20px 20px;
     background: var(--6)!important;
@@ -235,6 +254,15 @@ td.bottom {
 .table a {
     color: var(--8)!important;
     text-decoration: none!important;
+    transition: .2s ease;
+}
+.table a:hover {
+    color: var(--9)!important;
+    transition: .2s ease;
+}
+tr.right td div {
+    color: var(--8)!important;
+    text-shadow: 0 0 1px var(--10);
 }
 .table hr {
     visibility: hidden;
@@ -247,4 +275,20 @@ td.bottom {
 .inner-table .left {
     background: var(--1);
     border-right: 4px double var(--4);
+}
+.member-online {
+    background: #9cac6c;
+    border: 1px solid var(--8)
+}
+a[href$="wishlist.php?id=154799"],
+a[href$="refer.php"] {
+    font-size: 0px;
+}
+a[href$="wishlist.php?id=154799"]:before {
+    content: '✿ —\00a0wishlist'!important;
+    font-size: 18px;
+}
+a[href$="refer.php"]:before {
+    content: '✿ —\00a0refer a friend'!important;
+    font-size: 18px;
 }
