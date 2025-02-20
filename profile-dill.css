@@ -388,7 +388,7 @@
         font-weight: bold;
     }
     .s-chat-message:nth-child(even) {
-        background: linear-gradient(var(--1),);
+        background: #95a8b4;
         color: var(--5);
     }
     .s-chat-message a {
@@ -401,7 +401,7 @@
         letter-spacing: 1px;
     }
     .s-chat-sidebar #fraChatChannelMenu {
-        background: linear-gradient(var(--1), var(--2));;
+        background: linear-gradient(var(--1), #222b30);;
         border-radius: 10px;
         border: 1px solid var(--4);
         margin-top: 1px;
@@ -429,7 +429,7 @@
         text-shadow: 0 0 4px;
     }
     .dropdown-menu {
-        background: linear-gradient(var(--1), var(--2));
+        background: linear-gradient(var(--1), #222b30);
         border-radius: 10px;
         border: 3px double var(--3);
         filter: drop-shadow(0 0 4px #000000a3);
