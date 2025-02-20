@@ -32,11 +32,19 @@ code by #6488 on wolvden, #154799 on lioden, @poikel on github*/
     color: var(--4);
     transition: .2s ease;
 }
+@media only screen and (max-width: 991px) {
+body {
+    background-image: url('https://i.imgur.com/1vNv6lS.png');
+    background-size: cover;
+    }
+}
+@media only screen and (min-width: 992px) {
 body {
     background-image: url('https://i.imgur.com/1vNv6lS.png');
     background-size: 100%;
     font-family: var(--font);
     text-transform: lowercase;
+    }
 }
 .topbar {
     background: var(--8);
@@ -226,7 +234,7 @@ input:hover {
 #about > tbody > tr:nth-child(1) > td > div:after {
     content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
     position: absolute;
-    top: 50rem;
+    top: 55rem;
     right: -2rem;
     z-index: 1;
     filter: sepia(.6);
@@ -234,7 +242,7 @@ input:hover {
 #about > tbody > tr:nth-child(1) > td > div:before {
     content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
     position: absolute;
-    top: 50rem;
+    top: 55rem;
     left: -2rem;
     z-index: 1;
     filter: sepia(.6);
@@ -291,4 +299,21 @@ a[href$="wishlist.php?id=154799"]:before {
 a[href$="refer.php"]:before {
     content: '✿ —\00a0refer a friend'!important;
     font-size: 18px;
+}
+.cave-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/Pondoland_aloe.png')!important;
+    max-height: 130px;
+    filter: sepia(.3);
+}
+a[href$="lionoverview.php?id=32895"] .cave-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/lake_bogoria.png')!important;
+    max-height: 130px;
+}
+a[href$="unsorted.php?id=32895"] .cave-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/lake_bogoria.png')!important;
+    max-height: 130px;
+}
+a[href$="40924"] .cave-grid img {
+	content: url('https://static.lioden.com/images/dynamic/backgrounds/readyforadate.png')!important;
+    max-height: 130px;
 }
