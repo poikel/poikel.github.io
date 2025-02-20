@@ -230,25 +230,6 @@ input:hover {
     border-bottom: 3px double var(--7);
     color: var(--8);
 }
-@media only screen and (min-width: 992px) {
-#about > tbody > tr:nth-child(1) > td > div:after {
-    content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
-    position: absolute;
-    top: 55rem;
-    right: -2rem;
-    z-index: 1;
-    filter: sepia(.6);
-}
-#about > tbody > tr:nth-child(1) > td > div:before {
-    content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
-    position: absolute;
-    top: 55rem;
-    left: -2rem;
-    z-index: 1;
-    filter: sepia(.6);
-    transform: scaleX(-1);
-    }
-}
 td.bottom {
     border-radius: 0px 0px 20px 20px;
     background: var(--6)!important;
