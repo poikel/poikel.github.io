@@ -33,10 +33,10 @@
         color: var(--5)!important;
     }
     #header .navbar-main a:hover {
-        text-shadow: 0 0 3px;
+        text-shadow: 0 0 3px var(--3);
         transition: .2s ease;
         color: var(--4);
-        transform: rotate(2deg);
+        letter-spacing: .9px;
     }
     #header .navbar-main {
         background: var(--1);
@@ -65,7 +65,7 @@
     }
     .badge {
         background: var(--3);
-        color: var(--5);
+        color: var(--2);
     }
     #header .breadcrumb-nav {
         background: var(--1);
@@ -77,8 +77,8 @@
         font-weight: bold;
     }
     #bookmarkPage {
-        color: var(--3)!important;
-        font-size: 0px;
+        color: var(--4)!important;
+        font-size: 10px;
         margin-top: .5rem;
         margin-bottom: .5rem;
         transition: .2s ease;
@@ -97,7 +97,7 @@
         font-size: 1rem;
     }
     .alert {
-        background: var(--4);
+        background: var(--3);
         border-radius: 10px;
         border: 3px double var(--1);
         color: var(--2);
@@ -118,9 +118,13 @@
 	text-decoration: none;
     color: var(--link);
     transition: .5s;
-}
+    }
     a:hover, a:active {
     	text-decoration: none;
+    }
+    #main h1 {
+        text-align: center;
+        color: var(--5);
     }
     #main {
         background: var(--1);
@@ -137,7 +141,7 @@
         color: var(--5)
     }
     #sidebar .card {
-        background: var(--3);
+        background: linear-gradient(#95a8b4, var(--3));
         border-radius: 10px;
         border-bottom: none;
         box-shadow: var(--4) 1px 1px 0px 2px;
@@ -162,6 +166,25 @@
     #sidebar .small, small {
         font-weight: bold;
     }
+    #sidebar #card-user a img {
+        border-radius: 0px 40px;
+        border:  double 3px var(--4);
+        filter: drop-shadow(0 0 1px var(--1))
+    }
+    #card-user > div > div > div:nth-child(1) > div > a > img {
+        border-radius: 0px 10px!important;
+    }
+    .justify-content-between.mb-3 div { border: none !important; }
+    .breadcrumb:after {
+    	content: '❄ css by #6488';
+    	display: block;
+    	font-size: .7rem;
+    	position: absolute;
+    	color: var(--3);
+        text-shadow: 0 0 4px #000000a1;
+    	right: 48px;
+        top: 15px;
+    }
     .progress {
         background: var(--1)!important;
         border-radius: 10px;
@@ -180,9 +203,24 @@
         background: var(--1);
         border-radius: 0 0 10px 10px;
         margin-bottom: 1rem;
+        color: var(--4);
+        font-weight: bold;
+    }
+    #footer a {
+        color:var(--5)!important;
+    }
+    #footer a:hover {
+        text-shadow: 0 0 4px;
+    }
+    #footer .copyright:after {
+        content: '❄ css by #6488';
+        display: block;
+        margin-top: 1rem;
+        color:var(--3);
+        text-shadow: 0 0 4px #000000a1;
     }
     .nav-tabs {
-    	justify-content: left;
+    	justify-content: center;
     	border: none;
     }
     .nav-tabs .nav-link.active {
@@ -209,7 +247,7 @@
     }
     th {
         border-radius: 10px 10px 0px 0px;
-        background: var(--3);
+        background: #95a8b4;
         text-align: center;
         border-bottom: 3px double var(--4);
         color: var(--6);
@@ -303,7 +341,7 @@
         border: 1px solid var(--4)
     }
     .btn {
-    	background: var(--2)!important;
+    	background: #95a8b4!important;
     	border-radius: 0px!important;	
     	color: var(--5)!important;
     	transition: .2s ease;
@@ -326,4 +364,83 @@
     }
     #header .navbar-status .btn {
     	background: none!important;
+    }
+    .s-chat-sidebar #chatMessageContainer {
+        border-radius: 10px!important;
+        border: 1px solid var(--4)
+    }
+    .s-chat-sidebar #label_currentChannel,
+    #fra_chatContainer #txtChatInput {
+        background: var(--1);
+        border: 1px solid var(--4);
+        border-radius: 10px;
+        color: var(--5);
+    }
+    #fra_chatContainer #txtChatInput {
+        padding-left: .3rem;
+    }
+    .s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+        display: none;
+    }
+    .s-chat-message:nth-child(odd) {
+        background: var(--3);
+        color: var(--1);
+        font-weight: bold;
+    }
+    .s-chat-message:nth-child(even) {
+        background: linear-gradient(var(--1),);
+        color: var(--5);
+    }
+    .s-chat-message a {
+        color: var(--5);
+        font-weight: bold;
+    }
+    .s-chat-message a:hover {
+        color: var(--6);
+        text-shadow: 0 0 5px;
+        letter-spacing: 1px;
+    }
+    .s-chat-sidebar #fraChatChannelMenu {
+        background: linear-gradient(var(--1), var(--2));;
+        border-radius: 10px;
+        border: 1px solid var(--4);
+        margin-top: 1px;
+        box-shadow: none;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher {
+        color: var(--5);
+        transition: .2s ease;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher:before {
+        content: '\f2dc';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 8px;
+        margin-right: .3rem;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher:hover {
+        background: var(--1);
+        border-radius: 10px;
+        text-shadow: 0 0 4px;
+        transition: .2s ease;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher.active {
+        background: var(--1);
+        border-radius: 10px;
+        text-shadow: 0 0 4px;
+    }
+    .dropdown-menu {
+        background: linear-gradient(var(--1), var(--2));
+        border-radius: 10px;
+        border: 3px double var(--3);
+        filter: drop-shadow(0 0 4px #000000a3);
+    }
+    a.dropdown-item {
+        background: none;
+        color: var(--4)!important;
+    }
+    a.dropdown-item .fas:before {
+        content: '\f2dc'!important;
+    }
+    .dropdown-divider {
+        display: none;
     }
