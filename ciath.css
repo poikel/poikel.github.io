@@ -226,7 +226,7 @@ input:hover {
 #about > tbody > tr:nth-child(1) > td > div:after {
     content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
     position: absolute;
-    top: 55rem;
+    top: 50rem;
     right: -2rem;
     z-index: 1;
     filter: sepia(.6);
@@ -234,7 +234,7 @@ input:hover {
 #about > tbody > tr:nth-child(1) > td > div:before {
     content: url('https://grousehouse.wiki/images/d/dd/Kava.png?20240129124355');
     position: absolute;
-    top: 55rem;
+    top: 50rem;
     left: -2rem;
     z-index: 1;
     filter: sepia(.6);
