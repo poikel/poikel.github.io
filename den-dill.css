@@ -1,3 +1,76 @@
 /* do not remove credit, edit code or reupload 
     this code is *not* free-to-use, made for #73194 on wolvden.com
     code by #6488 on wd, @poikel on github*/
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+:root {
+    --1: #192524;
+    --2: #3C5759;
+    --3: #959D90;
+    --4: #D1EBDB;
+    --5: #D0D5CE;
+    --6: #EFECE9;
+    --7: #223030;
+    --8: #523D35;
+    --9: #959D90;
+    --10: #BBA58F;
+    --11: #E8D9CD;
+    --12: #EFEFE9;
+    --font: 'Baskervville SC', serif;
+}
+body {
+    font-family: var(--font);
+    background: var(--3);
+    color: var(--5);
+}
+a {
+    color: var(--9);
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none;
+}
+#header .navbar-main {
+    background: var(--8);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 1rem;
+    border-bottom: double 4px var(--10)
+}
+#header .navbar-main a {
+    font-size: 1rem!important;
+    color: var(--10)!important;
+    font-weight: bold!important;
+    text-shadow: 0 0 2px var(--8);
+}
+#header .navbar-main a i {
+    color: var(--10)!important;
+}
+#header .navbar-status {
+    background: var(--10)!important;
+    color: var(--6);
+    font-weight: bold;
+    border-bottom: 4px double var(--5)
+}
+#header .navbar-status a {
+    color: var(--5);
+}
+.badge {
+    background: var(--3);
+    color: var(--6);
+}
+#header .breadcrumb-nav {
+    background: var(--5);
+}
+#header .breadcrumb-item.active,
+.breadcrumb-item:before {
+    color: var(--3)!important;
+    font-weight: bold;
+}
+#bookmarkPage {
+    color: var(--9)!important;
+}
+#sidebar {
+    background: var(--5);
+}
+#main {
+    background: var(--5)
+}
