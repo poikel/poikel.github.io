@@ -71,6 +71,16 @@ a:hover {
 #sidebar {
     background: var(--5);
 }
+#sidebar .card {
+    background: var(--8);
+    border-radius: 10px;
+    box-shadow: none;
+    border-bottom: none;
+}
+#sidebar .card h4 {
+    color: var(--11);
+    text-align:center;
+}
 #main {
-    background: var(--5)
+    background: var(--5);
 }
