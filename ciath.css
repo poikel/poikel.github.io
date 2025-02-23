@@ -36,6 +36,8 @@ code by #6488 on wolvden, #154799 on lioden, @poikel on github*/
 body {
     background-image: url('https://i.imgur.com/1vNv6lS.png');
     background-size: cover;
+    font-family: var(--font);
+    text-transform: lowercase;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -80,21 +82,19 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
     color: black;
 }
 .navbar {
-    width: 89%;
-    margin-left: 6rem;
     border-radius: 30px;
     background-color: var(--7);
     border: 1px solid var(--9);
     margin-bottom: 1rem;
 }
 @media only screen and (min-width: 992px) {
-.navbar:after {
-    content: url('https://i.imgur.com/mZuWgzV.png');
-    position: absolute;
-    scale: 1;
-    z-index: 2;
-    transform: translate(95.3rem, -70px);
-    filter: drop-shadow(0 0 4px);
+.navbar {
+    width: 89%;
+    margin-left: 6rem;
+    border-radius: 30px;
+    background-color: var(--7);
+    border: 1px solid var(--9);
+    margin-bottom: 1rem;
     }
 }
 .navbar a {
@@ -204,6 +204,42 @@ body > div.container.main > div:nth-child(2) > div.sidebar.col-md-3.visible-xs.v
     padding-left: .5rem!important;
     padding-top: .5rem!important;
 }
+#fra_chatContainer {
+    font-family: var(--font);
+}
+#txtChatContainer > div:nth-child(1) > span > a {
+    text-transform: lowercase;
+    color: var(--6)!important;
+}
+.s-chat-sidebar #chatMessageContainer {
+    border-radius: 20px;
+    border: 1px solid var(--3);
+}
+.s-chat-sidebar #label_currentChannel {
+    border-radius: 20px;
+    background: var(--4);
+    border: none;
+    font-family: var(--font);
+    text-transform: lowercase;
+}
+.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+    background-color: var(--1);
+    color: var(--4);
+    border-bottom: none;
+}
+.s-chat-sidebar a {
+    color: var(--4)
+}
+.s-chat-message:nth-child(odd) {
+    background: var(--6);
+    color: var(--8);
+    font-weight: bold;
+}
+.s-chat-message:nth-child(even) {
+    background: var(--7);
+    color: var(--8);
+    font-weight: bold;
+}
 input {
     background: var(--8)!important;
     border-radius: 7px!important;
@@ -224,7 +260,8 @@ input:hover {
     position: absolute;
     filter: saturate(1) drop-shadow(0 0 1px var(--10));
 }
-.table .top {
+.table .top,
+.table th {
     border-radius: 20px 20px 0px 0px;
     background: var(--6);
     border-bottom: 3px double var(--7);
@@ -259,15 +296,27 @@ tr.right td div {
 .inner-table .right {
     background: var(--4);
     font-weight: bold;
-    color: var(--9);
+    color: var(--8);
 }
 .inner-table .left {
     background: var(--1);
     border-right: 4px double var(--4);
+    color: var(--3)
+}
+.table .right_odd {
+    background: var(--6);
+    border-radius: 0px 0px 0px 20px;
+}
+#player > tbody > tr:nth-child(3) > td.right_odd.text-right {
+    border-radius: 0px 0px 20px 0px!important;
 }
 .member-online {
     background: #9cac6c;
     border: 1px solid var(--8)
+}
+.member-offline {
+    background: #b15d32;
+    border: 1px solid #7c4528;
 }
 a[href$="wishlist.php?id=154799"],
 a[href$="refer.php"] {
@@ -281,20 +330,94 @@ a[href$="refer.php"]:before {
     content: '✿ —\00a0refer a friend'!important;
     font-size: 18px;
 }
+.cave-grid {
+    border-radius: 20px;
+    border: 1px solid var(--4);
+    background: var(--4);
+    color: var(--1);
+    font-weight: bold;
+    text-shadow: 0 0 1px var(--10);
+}
 .cave-grid img {
-	content: url('https://static.lioden.com/images/dynamic/backgrounds/Pondoland_aloe.png')!important;
-    max-height: 130px;
-    filter: sepia(.3);
-}
-a[href$="lionoverview.php?id=32895"] .cave-grid img {
-	content: url('https://static.lioden.com/images/dynamic/backgrounds/lake_bogoria.png')!important;
-    max-height: 130px;
-}
-a[href$="unsorted.php?id=32895"] .cave-grid img {
-	content: url('https://static.lioden.com/images/dynamic/backgrounds/lake_bogoria.png')!important;
-    max-height: 130px;
+    object-fit: cover;
 }
 a[href$="40924"] .cave-grid img {
 	content: url('https://static.lioden.com/images/dynamic/backgrounds/readyforadate.png')!important;
     max-height: 130px;
+}
+a[href$="cave.php?id=365464"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/RaffleCoastBG.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=21168"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=140614"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=45701"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=214245"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=403624"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=403625"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+a[href$="cave.php?id=441734"] .cave-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/Maletsunyane_Falls.png')!important;
+    max-height: 130px;
+}
+.mound-grid,
+body > div.container.main > div:nth-child(2) > div.col-md-9.col-xs-12 > center > div:nth-child(35) div .left {
+    background: var(--4);
+    border-radius: 20px;
+    color: var(--1);
+    text-shadow: 0 0 1px var(--10);
+    border: 1px solid var(--4);
+}
+body > div.container.main > div:nth-child(2) > div.col-md-9.col-xs-12 > center > div:nth-child(35) div .left h3 {
+    color: var(--1);
+}
+body > div.container.main > div:nth-child(2) > div.col-md-9.col-xs-12 > center > div:nth-child(35) div .left img {
+    border-radius: 20px;
+}
+.mound-grid img {
+    content: url('https://www.lioden.com/images/items/Other/ubhubhubhu.png');    
+}
+.small {
+    color: var(--4);
+    text-shadow: 0 0 2px var(--9);
+}
+#fraProfileContent {
+    color: var(--4);
+}
+#fraProfileContent a {
+    color: var(--9)
+}
+::-webkit-scrollbar {
+    background: var(--8);
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--7);
+    border-radius: 20px;
+    border: 1px solid var(--9)
+}
+
+#allies > tbody > tr:nth-child(3) > td,
+#allies > tbody > tr:nth-child(5) > td,
+#clans > tbody > tr:nth-child(3) > td,
+#clans > tbody > tr:nth-child(5) > td,
+#clans > tbody > tr:nth-child(7) > td {
+    display: none;
 }
