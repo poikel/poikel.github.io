@@ -413,11 +413,26 @@ body > div.container.main > div:nth-child(2) > div.col-md-9.col-xs-12 > center >
     border-radius: 20px;
     border: 1px solid var(--9)
 }
-
-#allies > tbody > tr:nth-child(3) > td,
-#allies > tbody > tr:nth-child(5) > td,
-#clans > tbody > tr:nth-child(3) > td,
-#clans > tbody > tr:nth-child(5) > td,
-#clans > tbody > tr:nth-child(7) > td {
+#sparring p {
+    color: var(--8)!important
+}
+#sparring.table .right_odd {
+    border-radius: 0px 0px 20px 0px;
+}
+#allies.table .left,
+#clans.table .left {
     display: none;
+}
+
+div .left {
+    background: var(--4);
+    border-radius: 20px;
+    color: var(--1);
+}
+div .left h3 {
+    color: var(--1);
+    font-weight: bold;
+}
+div .left img {
+    border-radius: 20px;
 }
