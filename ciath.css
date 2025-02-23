@@ -436,11 +436,24 @@ div .left h3 {
 div .left img {
     border-radius: 20px;
 }
-#about > tbody > tr:nth-child(1) > td > div:after {
-	content:'css by #154799';
-	position:absolute;
-    font-size: 12.75px;
-    right: 3rem;
-    top: 28rem;
+.feature {
+    background: var(--5)!important;
+    border-radius: 20px!important;
+    border: 1px solid var(--6)!important;
+    color: var(--8);
+}
+.feature h3 {
+    color: var(--1);
     font-weight: bold;
+}
+.breadcrumb:after {
+    content: "css by #154799";
+    color: var(--4);    
+    position: absolute;
+    z-index: 1;
+    }
+
+@media only screen (min-width: 992px)  {
+.breadcrumb:after {
+    right: 20%!important;
 }
