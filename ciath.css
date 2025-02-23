@@ -436,3 +436,11 @@ div .left h3 {
 div .left img {
     border-radius: 20px;
 }
+#about > tbody > tr:nth-child(1) > td > div:after {
+	content:'css by #154799';
+	position:absolute;
+    font-size: 12.75px;
+    right: 3rem;
+    top: 28rem;
+    font-weight: bold;
+}
