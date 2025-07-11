@@ -109,3 +109,16 @@ div.progress {
 #main {
     background: var(--5);
 }
+.nav-tabs {
+    justify-content: center;
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    margin-right: 1rem;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link {
+    background: var(--12);
+    border-radius: 15px;
+    border: none;
+}
