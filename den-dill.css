@@ -110,15 +110,15 @@ div.progress {
     background: var(--5);
 }
 .nav-tabs {
-    justify-content: center;
-    border: none;
+    justify-content: center!important;
+    border: none!important;
 }
 .nav-tabs .nav-link.active {
-    margin-right: 1rem;
+    margin-right: 1rem!important;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link {
-    background: var(--12);
-    border-radius: 15px;
-    border: none;
+    background: var(--12)!important;
+    border-radius: 15px!important;
+    border: none!important;
 }
