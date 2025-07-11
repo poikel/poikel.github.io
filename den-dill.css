@@ -72,14 +72,39 @@ a:hover {
     background: var(--5);
 }
 #sidebar .card {
-    background: var(--8);
+    background: var(--12);
     border-radius: 10px;
     box-shadow: none;
     border-bottom: none;
 }
+.justify-content-between.mb-3 div { border: none !important; }
 #sidebar .card h4 {
-    color: var(--11);
-    text-align:center;
+    color: var(--1);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:.9rem;
+}
+#sidebar .w-50 > a img,
+#sidebar .w-50 div a img {
+    border-radius: 100px;
+    border: solid 2px;
+    filter: sepia(.2)
+}
+#sidebar .card span {
+    color: var(--1);
+    font-weight: bold;
+}
+#sidebar .progress {
+    margin-top: .1rem;
+}
+div.progress {
+    background: var(--8)!important;
+    border-radius: 100px;
+}
+.progress-bar {
+    background: linear-gradient(90deg, var(--10), var(--11))!important;
+    border-radius: 100px;
+    border: 1px solid var(--8);
 }
 #main {
     background: var(--5);
