@@ -90,6 +90,10 @@ a:hover {
     border: solid 2px;
     filter: sepia(.2)
 }
+#sidebar .w-50 > a img:hover,
+#sidebar .w-50 div a img:hover {
+    color: var(--3);
+}
 #sidebar .card span {
     color: var(--1);
     font-weight: bold;
@@ -121,4 +125,95 @@ div.progress {
     background: var(--12)!important;
     border-radius: 15px!important;
     border: none!important;
+    transition: .2s ease;
+    color: var(--3);
 }
+.nav-tabs .nav-link:hover {
+    color: var(--2)!important;
+    transition: .2s ease;
+}
+a {
+    color: var(--3);
+    transition: .2s ease;
+}
+a:hover {
+    color: var(--2);
+    transition: .2s ease;
+}
+.alert {
+    background: var(--11);
+    border-radius: 20px;
+    border: 1px solid var(--10);
+    color: var(--3);
+}
+    #main form button,
+    #sidebar .btn-icon,
+    #fraChatSettings .btn {
+    	background: none!important;
+    }
+    #header .navbar-status .btn {
+    	background: none!important;
+    }
+    .s-chat-sidebar #chatMessageContainer {
+        border-radius: 10px!important;
+        border: none;
+    }
+    .s-chat-sidebar #label_currentChannel,
+    #fra_chatContainer #txtChatInput {
+        background: var(--5);
+        border: none;
+        border-radius: 10px;
+        color: var(--6);
+    }
+    #fra_chatContainer #txtChatInput {
+        padding-left: .3rem;
+    }
+    .s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+        display: none;
+    }
+    .s-chat-message:nth-child(odd) {
+        background: var(--3);
+        color: var(--12);
+        font-weight: bold;
+    }
+    .s-chat-message:nth-child(even) {
+        background: var(--3);
+        color: var(--12);
+    }
+    .s-chat-message a {
+        color: var(--5);
+        font-weight: bold;
+    }
+    .s-chat-message a:hover {
+        color: var(--6);
+        text-shadow: 0 0 5px;
+        letter-spacing: 1px;
+    }
+    .s-chat-sidebar #fraChatChannelMenu {
+        background: var(--3);
+        border-radius: 10px;
+        border: none;
+        margin-top: 3px;
+        box-shadow: 0px 0px 3px 0px var(--1);
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher {
+        color: var(--5);
+        transition: .2s ease;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher:before {
+        content: '\f2dc';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 8px;
+        margin-right: .3rem;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher:hover {
+        background: none;
+        color: var(--6);
+        border-radius: 10px;
+        text-shadow: 0 0 4px;
+        transition: .2s ease;
+    }
+    #fra_chatContainer .channelMenu .channelSwitcher.active {
+        background: var(--5);
+        border-radius: 10px;
+    }
