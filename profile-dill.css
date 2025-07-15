@@ -33,10 +33,9 @@
         color: var(--5)!important;
     }
     #header .navbar-main a:hover {
-        text-shadow: 0 0 3px var(--3);
+        color: var(--5)!important;
+        text-shadow: 0 0 3px var(--5)!important;
         transition: .2s ease;
-        color: var(--4);
-        letter-spacing: .9px;
     }
     #header .navbar-main {
         background: var(--1);
@@ -154,7 +153,6 @@
         color: var(--6);
         text-shadow: 0 0 3px;
         text-decoration: none;
-        letter-spacing: 1px;
         transition: .2s ease-in-out;
     }
     #sidebar .fa-angle-right:before {
