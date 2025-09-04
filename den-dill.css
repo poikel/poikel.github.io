@@ -167,6 +167,8 @@ a:hover {
     }
     #fra_chatContainer #txtChatInput {
         padding-left: .3rem;
+        color: var(--3);
+        font-weight: bold;
     }
     .s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
         display: none;
@@ -217,3 +219,19 @@ a:hover {
         background: var(--5);
         border-radius: 10px;
     }
+    .btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+    	background: var(--8);
+    	color: var(--10);
+    	font-weight: bold;
+    	border: none;
+        border-radius: 10px;
+    }
+    .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--10);
+	color: var(--11);
+    }
+    .btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+    	background: var(--7)!important;
+    	color: var(--11)!important;
+    }
+    .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
