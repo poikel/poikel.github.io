@@ -11,10 +11,64 @@
   --4: #6C5B4B;
   --5: #A48C6A;
 }
+#header nav.navbar.navbar-status.navbar-expand div button:focus {
+    box-shadow: none;
+}
+.justify-content-between.mb-3 div { border: none !important; }
 body {
-    background-image: url('https://ibb.co/tPzcr1ZF');
+    background-image: url('https://i.ibb.co/93h25dwS/lynx-background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: var(--font);
+    color: var(--5);
+    text-transform: lowercase
+}
+a {
+    color: var(--4);
+}
+#header .navbar-main {
+    background-color: var(--4);
+}
+#header .navbar-main .nav-link {
+    color: var(--2);
+    text-transform: lowercase;
+    font-weight: bolder;
+}
+#header .navbar-main .nav-link i {
+    color: var(--5)!important;
+}
+@media (min-width: 992px) {
+#header .navbar-main .nav-item:first-child {
+    margin-left: 4rem;
+    }
+}
+#header .navbar-status {
+    background-color: var(--2);
+    text-transform: lowercase;
+    color: var(--5);
+    font-weight: bolder;
+}
+#header .navbar-status a {
+    color: var(--5);
+}
+i.icon.icon-beetle-gold,
+i.icon.icon-beetle-silver {
+	display: none !important;
+}
+  
+span.user_current_sc:before {
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f5d7';
+	font-size: 14px;
+	padding-right: 3px;
+    color: var(--4);
+}
+  
+span.user_current_gc:before {
+	font-family: 'Font Awesome 5 Free' !important;
+	content: '\f56b';
+	font-size: 14px;
+	padding-right: 3px;
+    color: var(--4);
 }
