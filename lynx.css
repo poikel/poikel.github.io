@@ -1,0 +1,20 @@
+/* do not remove credit, edit code or reupload 
+    this code is *not* free-to-use, made for #165604 on wolvden.com
+    code by #6488 on wd, @poikel on github*/
+
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+:root {
+  --font: "Texturina", serif;
+  --1: #392D15;
+  --2: #36332E;
+  --3: #6A4825;
+  --4: #6C5B4B;
+  --5: #A48C6A;
+}
+body {
+    background-image: url('https://ibb.co/tPzcr1ZF');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font);
+}
