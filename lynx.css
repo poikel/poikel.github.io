@@ -26,6 +26,12 @@ body {
 }
 a {
     color: var(--4);
+	transition: .1s ease;
+}
+a:hover {
+	color: #9f5d2f!important;
+	text-decoration: none;
+	transition: .1s ease;
 }
 #header .navbar-main {
     background-color: var(--4);
@@ -52,11 +58,13 @@ a {
 #header .navbar-status a {
     color: var(--5);
 }
+#header .navbar-status button {
+	color: var(--5)!important;
+}
 i.icon.icon-beetle-gold,
 i.icon.icon-beetle-silver {
 	display: none !important;
 }
-  
 span.user_current_sc:before {
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f5d7';
@@ -64,11 +72,30 @@ span.user_current_sc:before {
 	padding-right: 3px;
     color: var(--4);
 }
-  
 span.user_current_gc:before {
 	font-family: 'Font Awesome 5 Free' !important;
 	content: '\f56b';
 	font-size: 14px;
 	padding-right: 3px;
     color: var(--4);
+}
+#header .breadcrumb-nav {
+	background-color: #262523;
+}
+#bookmarkPage {
+	color: #9f5d2f!important;
+}
+#sidebar {
+	background-color: #262523;
+}
+#sidebar .card {
+	background-color: var(--2);
+	border-bottom: none;
+	border-radius: 0px 20px 0px 20px;
+}
+#sidebar .text-success {
+	color: #9f5d2f!important;
+}
+#main {
+	background-color: #262523de;
 }
