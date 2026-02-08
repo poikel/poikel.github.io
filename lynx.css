@@ -84,6 +84,10 @@ span.user_current_gc:before {
 	padding-right: 3px;
     color: var(--4);
 }
+.badge-danger {
+	background-color: #9f5d2f;
+	color: var(--2);
+}
 #header .breadcrumb-nav {
 	background-color: #262523;
 }
@@ -102,9 +106,31 @@ span.user_current_gc:before {
 	border-bottom: none;
 	border-radius: 0px 20px 0px 20px;
 }
+.alert {
+	background-color: var(--4);
+	color: #9f5d2f;
+	border-color: var(--1);
+}
+.alert a {
+	color: var(--5);
+}
 .text-success {
 	color: #526440!important;
 }
 #main {
 	background-color: #262523de;
+}
+#main h1 {
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: 0 0 10px var(--3);
+	letter-spacing: 0.1rem;
+}
+#main h1:before,
+#main h1:after {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f702';
+	padding: 1rem;
+	font-size: 1.2rem;
+	color: #9f5d2f;
 }
