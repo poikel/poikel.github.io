@@ -50,6 +50,10 @@ a:hover {
     margin-left: 4rem;
     }
 }
+#header .navbar-main .nav-link:hover {
+	letter-spacing:0.1rem!important;
+	text-shadow: 0 0 5px;
+}
 #header .navbar-status {
     background-color: var(--2);
     text-transform: lowercase;
