@@ -280,3 +280,6 @@ select.form-control, select.form-control:active, select.form-control:focus {
 	padding: 0!important;
 	border: none!important;
 }
+.table .subheader {
+	background-color: var(--dp);
+}
