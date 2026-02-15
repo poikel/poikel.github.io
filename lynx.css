@@ -106,13 +106,20 @@ span.user_current_gc:before {
 	border-bottom: none;
 	border-radius: 0px 20px 0px 20px;
 }
+#sidebar .w-50 > a img,
+#sidebar .w-50 div a img {
+	border-radius: 10px 0px;
+	border: 1px dashed var(--3);
+	box-shadow: 0 0 7px #3d29226b;
+}
 .alert {
 	background-color: var(--4);
 	color: #9f5d2f;
 	border-color: var(--1);
 }
-.alert a {
-	color: var(--5);
+.alert a,
+.alert-info a {
+	color: var(--2)!important;
 }
 .text-success {
 	color: #526440!important;
@@ -133,4 +140,87 @@ span.user_current_gc:before {
 	padding: 1rem;
 	font-size: 1.2rem;
 	color: #9f5d2f;
+}
+.nav-tabs {
+	justify-content: center;
+	border: none;
+}
+.nav-tabs .nav-link.active {
+	border: none;
+	background-color: transparent;
+	color: #9f5d2f!important;
+}
+.nav-tabs .nav-link {
+	border: none;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+	background: #262523!important;
+}
+.table-striped tbody tr:nth-of-type(even) {
+	background: #262523;
+}
+.border-bottom {
+	margin: 0!important;
+	padding: 0!important;
+	border: none!important;
+}
+.table .subheader,
+.table .bottom {
+	background-color: transparent;
+}
+.table thead th {
+	background-color: var(--4);
+	border-radius: 10px 10px 0px 0px;
+}
+#main .table {
+	border: none;
+}
+#main > table > tbody > tr:nth-child(1) > th {
+	background: #262523;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+	text-shadow: 0 0 3px;
+}
+#main > table > tbody > tr:nth-child(1) > th:before {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f521';
+	font-size: .8rem;
+	padding: .4rem;
+	color: var(--5);
+}
+#main .table th a {
+	color: var(--5);
+}
+.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
+	background: var(--3);
+	color: var(--1);
+	font-weight: bold;
+	border: none;
+	border-radius: 15px;
+	text-transform: lowercase;
+}
+.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--5);
+	color: var(--3);
+}
+.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+	background: var(--5)!important;
+	color: var(--3)!important;
+}
+.btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {
+	box-shadow:none!important;
+}
+#sidebar .progress {
+	margin-top: .4rem;
+	border-radius: 20px;
+	border: 1px solid var(--5);
+	background-color: #282521!important;
+}
+#sidebar .bg-warning,
+#sidebar .bg-info {
+	background-color: #9f5d2f!important;
+}
+#sidebar .bg-danger,
+#sidebar .bg-success {
+	background-color: #755540!important;
 }
