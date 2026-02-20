@@ -103,7 +103,7 @@ span.user_current_gc:before {
 }
 #sidebar .card {
 	background-color: var(--2);
-	border-bottom: none;
+	border: 2px solid var(--4);
 	border-radius: 0px 20px 0px 20px;
 }
 #sidebar .w-50 > a img,
@@ -171,6 +171,9 @@ span.user_current_gc:before {
 .table thead th {
 	background-color: var(--4);
 	border-radius: 10px 10px 0px 0px;
+}
+#main .card {
+    background: none!important;
 }
 #main .table {
 	border: none;
