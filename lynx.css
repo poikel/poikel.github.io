@@ -109,7 +109,7 @@ span.user_current_gc:before {
 #sidebar .w-50 > a img,
 #sidebar .w-50 div a img {
 	border-radius: 10px 0px;
-	border: 1px dashed var(--3);
+	border: 1px solid var(--3);
 	box-shadow: 0 0 7px #3d29226b;
 }
 .alert {
@@ -157,7 +157,7 @@ span.user_current_gc:before {
 	background: #262523!important;
 }
 .table-striped tbody tr:nth-of-type(even) {
-	background: #262523;
+	background: #36332E;
 }
 .border-bottom {
 	margin: 0!important;
@@ -171,6 +171,21 @@ span.user_current_gc:before {
 .table thead th {
 	background-color: var(--4);
 	border-radius: 10px 10px 0px 0px;
+}
+.copyright:after {
+	display: block;
+	content: 'css by #6488';
+	margin-top: .5rem;
+	color: var(--5);
+}
+#main:before {
+	content: 'css by #6488';
+	color: var(--6);
+	position: absolute;
+	right: 1rem;
+	top: .5rem;
+	font-size: .7rem;
+	z-index: 1;
 }
 #main .card {
     background: none!important;
@@ -226,4 +241,37 @@ span.user_current_gc:before {
 #sidebar .bg-danger,
 #sidebar .bg-success {
 	background-color: #755540!important;
+}
+.bg-warning,
+.bg-success {
+	background-color: var(--3)!important;
+}
+.bg-primary {
+	background-color: var(--4)!important;
+}
+.bg-danger {
+	background-color: var(--5)!important;
+}
+.bg-info {
+	background-color: var(--1)!important;
+}
+.progress {
+	margin-top: .1rem;
+	border-radius: 20px;
+	border: 1px solid var(--4);
+	background-color: #282521!important;
+}
+.border-bottom {
+	border-radius: 20px 0px!important;
+	border: 1px solid var(--3)!important;
+	margin-top: .2rem!important;
+	box-shadow: 0 0 7px #3d29226b;
+}
+#footer {
+	background-color: #262523;
+	color: var(--4);
+}
+#footer a {
+	color: var(--5)!important;
+	font-weight: bolder;
 }
