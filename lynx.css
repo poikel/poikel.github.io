@@ -105,12 +105,14 @@ span.user_current_gc:before {
 	background-color: var(--2);
 	border: 2px solid var(--4);
 	border-radius: 0px 20px 0px 20px;
+	
 }
 #sidebar .w-50 > a img,
 #sidebar .w-50 div a img {
 	border-radius: 10px 0px;
 	border: 1px solid var(--3);
 	box-shadow: 0 0 7px #3d29226b;
+	filter: sepia(40%);
 }
 .alert {
 	background-color: var(--4);
@@ -153,11 +155,8 @@ span.user_current_gc:before {
 .nav-tabs .nav-link {
 	border: none;
 }
-.table-striped tbody tr:nth-of-type(odd) {
-	background: #262523!important;
-}
-.table-striped tbody tr:nth-of-type(even) {
-	background: #36332E;
+.table-striped tbody tr:nth-of-type(2n + 1) {
+	background: none!important;
 }
 .border-bottom {
 	margin: 0!important;
@@ -170,7 +169,7 @@ span.user_current_gc:before {
 }
 .table thead th {
 	background-color: var(--4);
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 10px 10px;
 }
 .copyright:after {
 	display: block;
@@ -185,7 +184,6 @@ span.user_current_gc:before {
 	right: 1rem;
 	top: .5rem;
 	font-size: .7rem;
-	z-index: 1;
 }
 #main .card {
     background: none!important;
@@ -194,10 +192,23 @@ span.user_current_gc:before {
 	border: none;
 }
 #main > table > tbody > tr:nth-child(1) > th {
-	background: #262523;
+	background: var(--4);
 	text-align: center;
-	border-radius: 20px 20px 0px 0px;
+	border-radius: 20px;
 	text-shadow: 0 0 3px;
+}
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-7.text-center > div > a > img,
+#main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > a:nth-child(3) > img {
+	border-radius: 10px 0px;
+	filter: sepia(30%);
+	border: 1px solid var(--3);
+}
+#denCards img {
+	filter: sepia(50%);
+	border-radius: 10px;
+}
+#denCards .card-header {
+	border-radius: 0px;
 }
 #main > table > tbody > tr:nth-child(1) > th:before {
 	font-family: 'Font Awesome 5 Free';
@@ -210,19 +221,16 @@ span.user_current_gc:before {
 	color: var(--5);
 }
 .btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
-	background: var(--3);
-	color: var(--1);
+	background: transparent!important;
+	color: var(--5);
 	font-weight: bold;
 	border: none;
-	border-radius: 15px;
 	text-transform: lowercase;
 }
 .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
-	background: var(--5);
 	color: var(--3);
 }
 .btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
-	background: var(--5)!important;
 	color: var(--3)!important;
 }
 .btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {
@@ -262,7 +270,7 @@ span.user_current_gc:before {
 	background-color: #282521!important;
 }
 .border-bottom {
-	border-radius: 20px 0px!important;
+	border-radius: 10px 0px!important;
 	border: 1px solid var(--3)!important;
 	margin-top: .2rem!important;
 	box-shadow: 0 0 7px #3d29226b;
