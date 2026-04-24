@@ -559,7 +559,7 @@ a { color: var(--c2); }
 	width: 100%;
 }
 .boxcontainer img {
-	width: 100%;
+	width: 50%;
 }
 #main > table {
 	display: none!important;
