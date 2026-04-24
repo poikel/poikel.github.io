@@ -563,6 +563,7 @@ small {
 }
 .box2 {
 	text-align: center;
+	filter: sepia(0.3);
 }
 .box1, .box2 {
 	height: auto;
@@ -576,4 +577,10 @@ small {
 .box2 img {
 	width: 80%;
 	}
+}
+.table .subheader {
+	background: none;
+}
+.table .border-bottom {
+	border: 1px solid var(--c)!important;
 }
