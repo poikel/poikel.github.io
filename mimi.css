@@ -546,20 +546,19 @@ a { color: var(--c2); }
 	text-shadow: 1px 1px 1px var(--shd);
 }
 .boxcontainer {
-	column-gap: 20px;
+	column-gap: 1rem;
 	display: flex;
 	justify-content: center;
-}
-.box1 {
-	float: left;
 }
 .box2 {
 	text-align: left;
 }
 .box1, .box2 {
-	height: 80px;
-	padding: 1rem;
-	margin-bottom:1rem;
+	height: auto;
+	padding: 1em;
+	width: 100%;
+}
+.boxcontainer img {
 	width: 100%;
 }
 #main > table {
