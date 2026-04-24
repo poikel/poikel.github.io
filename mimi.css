@@ -558,8 +558,10 @@ a { color: var(--c2); }
 	padding: 1em;
 	width: 100%;
 }
+@media (min-width: 992px) {
 .boxcontainer img {
 	width: 50%;
+	}
 }
 #main > table {
 	display: none!important;
