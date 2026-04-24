@@ -542,3 +542,8 @@ a { color: var(--c2); }
 	color: var(--c2)!important;
 	text-shadow: 1px 1px 1px var(--shd);
 }
+.boxcontainer {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+}
