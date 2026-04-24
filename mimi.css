@@ -543,7 +543,7 @@ a { color: var(--c2); }
 	text-shadow: 1px 1px 1px var(--shd);
 }
 .boxcontainer {
-  display: flex;
-  column-gap: 1rem;
-  justify-content: center;
+	column-gap: 20px;
+	display: flex;
+	justify-content: center;
 }
