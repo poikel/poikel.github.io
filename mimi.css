@@ -531,6 +531,8 @@ small {
 	border: 1px solid var(--c2);
 	border-radius: 0px;
 	font-family: var(--font3);
+	font-size: 0.6rem;
+	text-transform: lowercase;
 }
 .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
 	background: var(--c);
