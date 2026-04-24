@@ -326,7 +326,18 @@ select.form-control, select.form-control:active, select.form-control:focus {
     content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
     transform: rotateY(180deg);
 }
-#denCards { padding: 1rem; } #denCards a { display: flex; width: 84px; height: 84px; padding: 0; filter: sepia(.3) saturate(.5); transition: .3s ease-in-out } #denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; } #denCards a:hover { filter: sepia(.3) saturate(1) blur(.5px); transition: .3s ease-in-out; }
+#denCards {
+	width: auto;
+}
+#denCards a {
+	display: flex;
+	width: 100%;
+	padding: 0;
+	filter: sepia(.3) saturate(.5);
+	transition: .3s ease-in-out;
+}
+#denCards .col-md-4.col-6 { max-width: 84px; margin: 0 auto; padding: 0; }
+#denCards a:hover { filter: sepia(.3) saturate(1) blur(.5px); transition: .3s ease-in-out; }
 .rounded-bottom, .bg-light, .bg-dark {
 	padding: 0px!important;
 	background: none!important;
@@ -514,28 +525,22 @@ a { color: var(--c2); }
 	background-color: var(--g2);
 	border-radius: 100px;
 }
-.btn {
+.btn-success, .btn-danger, .btn-warning, .btn-primary, .btn-info {
 	background: var(--b);
-	border-bottom: none;
-	border-radius: 0px;
-	font-family: var(--font3);
-	text-transform: lowercase;
 	color: var(--c2);
 	font-weight: bold;
-	border: 1px solid var(--c);
+	border: none;
 }
-.btn:hover {
-	background: var(--b);
-	border-bottom: none;
-	border-radius: 0px;
-	font-family: var(--font3);
-	text-transform: lowercase;
-	color: var(--c2);
-	font-weight: bold;
-	border: 1px solid var(--c);
-	box-shadow: none;
+.btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
+	background: var(--c);
+	color: var(--wh);
+}
+.btn-success:active, .btn-danger:active, .btn-warning:active, .btn-primary:active, .btn-info:active {
+	background: var(--c)!important;
+	color: var(--wh)!important;
 	text-decoration: underline;
 }
+.btn-success:focus, .btn-danger:focus, .btn-warning:focus, .btn-primary:focus, .btn-info:focus, .btn {box-shadow:none!important;}
 #main > table > tbody > tr:nth-child(2) > td > div.col-xl-3.col-sm-5.order-xl-12.order-4.text-center.text-break.featured-wolf > form > button {
 	display: none;
 }
