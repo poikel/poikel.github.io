@@ -170,7 +170,8 @@ body {
 	background-position: right center;
 	text-transform: lowercase!important;
 }
-
+a { color: var(--c2); }
+a:hover { color: var(--c2); }
 #main {
     background: transparent;
 	font-family: var(--font3);
@@ -248,14 +249,12 @@ body {
 	background-size: cover;
 	background-color: var(--b);
 	background-image: url("https://i.ibb.co/84cMDKkP/image.png");
-	padding: 30px;
-    text-transform: lowercase;
-    padding-right: 1rem;
-    padding-left: 1rem;
+	padding: 1.4rem;
+	text-transform: lowercase;
 	font-family: var(--font3);
 	color: var(--c2);
-	text-shadow: 0px 1px 1px var(--shd);
-	border: 1px solid var(--c);
+	text-shadow: 0px 1px 1px var(--shd)!important;
+	border: 1px solid var(--c)!important;
 }
 select.form-control, select.form-control:active, select.form-control:focus {
 	background-attachment: fixed;
@@ -326,8 +325,9 @@ select.form-control, select.form-control:active, select.form-control:focus {
     content: url('https://static.wolvden.com/images/items/other/guarantee6.png');
     transform: rotateY(180deg);
 }
-#denCards {
+#denCards.form-row {
 	width: auto;
+	margin-bottom: 1rem;
 }
 #denCards a {
 	display: flex;
@@ -507,7 +507,6 @@ small {
 .input-group, #btnToggleSidebarChat i, #txtChatContainer div:nth-child(1) span a, #sidebar .btn-icon {
 	display: none;
 }
-a { color: var(--c2); }
 .progress {
 	background: var(--g2)!important;
 	border-radius: 0px;
@@ -529,7 +528,9 @@ a { color: var(--c2); }
 	background: var(--b);
 	color: var(--c2);
 	font-weight: bold;
-	border: none;
+	border: 1px solid var(--c2);
+	border-radius: 0px;
+	font-family: var(--font3);
 }
 .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-primary:hover, .btn-info:hover {
 	background: var(--c);
@@ -556,10 +557,10 @@ a { color: var(--c2); }
 }
 .box1 {
 	width: 200%;
+	text-align: left;
 }
 .box2 {
 	text-align: center;
-	width: auto;
 }
 .box1, .box2 {
 	height: auto;
@@ -567,15 +568,12 @@ a { color: var(--c2); }
 @media only screen and (min-width: 992px) {
 .box2 img {
 	width: 50%;
-	margin-top: 1.3rem;
 	}
 }
 @media only screen and (max-width: 600px) {
 .box2 img {
 	width: 80%;
-	margin-top: 2.5rem;
-	
-}
+	}
 }
 #main > table {
 	display: none!important;
