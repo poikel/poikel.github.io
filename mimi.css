@@ -575,7 +575,3 @@ small {
 	width: 80%;
 	}
 }
-#main > table {
-	display: none!important;
-	visibility: hidden!important;
-}
