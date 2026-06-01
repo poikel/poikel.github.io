@@ -2,7 +2,7 @@
 	this code is free-to-use!
 code by #6488 on wd, @poikel on github*/
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-* { cursor: url('https://i.imgur.com/qpDsiea.png'), auto !important; } a:hover, img:hover { cursor: url('https://i.imgur.com/ll070JO.png'), auto !important;}
+* { cursor: url('https://i.ibb.co/JwCsVxVc/image.png'), auto !important; } a:hover, img:hover { cursor: url('https://i.ibb.co/VWNWR4FT/image.png'), auto !important;}
 :root{
 --or2: #F17B74;
 --wh: #FDF4E7;
@@ -92,7 +92,7 @@ a, .d-lg-inline, #lblCharacterCounter {
 .progress {background:rgb(255 255 255 / 29%)!important;border-radius:100px;margin-bottom:2px;}
 .bg-warning, .bg-danger, .bg-info, .bg-success, .bg-primary {background:linear-gradient(90deg, var(--gr), var(--gr2))!important;border-radius:100px;border:1px solid var(--gr2);}
 body {
-	background-image: url('https://i.imgur.com/xuZZ22B.png');
+	background-image: url('https://i.ibb.co/Rp0skvPz/image.png');
 	background-size: contain;background-repeat: repeat-x;
 	font-family: var(--font);
 }
